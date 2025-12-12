@@ -23,3 +23,9 @@ If dividend cash flows continue to grow at $g$ indefinitely, then we may rewrite
 as follows:
 
 $$PV_t = \sum\nolimits_{i=1}^{\infty} \frac{D_t(1+g)^i}{(1+r)^i} \tag{13}$$
+
+
+Under the cash flow additivity principle, a risk-neutral investor would be indifferent
+between strategies 1 and 2 under the following condition:
+
+$$FV_2 = PV_0 \times (1+r_2)^2 = PV_0 \times (1+r_1)(1+F_{1,1}) \tag{25}$$
