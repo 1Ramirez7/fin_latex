@@ -11,15 +11,17 @@ files/
 .Rhistory
 
 
-time_value_files/
-formulas_files/
+# time_value_files/
+# formulas_files/
 
-time_value.html
-formulas.html
+# time_value.html
+# formulas.html
 
 
-*.docx
-*.xlsx
+# *.docx
+# *.xlsx
 
+
+# **/*.quarto_ipynb
 
 **/*.quarto_ipynb
