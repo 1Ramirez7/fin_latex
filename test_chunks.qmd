@@ -10,37 +10,47 @@ yml code
 
 
 ```{python}
-# Word chunk: Convert to Word doc with tags preserved, using stdin
+# Create formulas_tag.qmd with tags moved outside formulas
 import re
-import subprocess
 
-with open('formulas.qmd', 'r', encoding='utf-8') as f: content = f.read()
+with open('formulas.qmd', 'r', encoding='utf-8') as f: 
+    content = f.read()
 
-# edit formula tag outside formula so they appear in .docx file
+# Move formula tags outside so they appear in Word/PowerPoint
 modified_content = re.sub(r'\$\$([^$]+)\\tag\{([^}]+)\}\$\$', r'$$\1$$ (\2)', content)
 
-# Convert to Word doc using pandoc with stdin
-subprocess.run(['quarto', 'pandoc', '-', '-o', 'formulas.docx'], input=modified_content.encode('utf-8'))
+with open('formulas_tag.qmd', 'w', encoding='utf-8') as f:
+    f.write(modified_content)
 
-print("Word document 'formulas.docx' created with tags preserved.")
+print("Created 'formulas_tag.qmd' with tags preserved outside formulas.")
 ```
 
 
+```{python}
+# Word chunk: Convert to Word doc
+import subprocess
+import shutil
+import os
+
+subprocess.run(['quarto', 'pandoc', 'formulas_tag.qmd', '-o', 'formulas.docx'], check=True)
+
+os.makedirs('_site', exist_ok=True)
+shutil.copy('formulas.docx', '_site/formulas.docx')
+print("Word document 'formulas.docx' created and copied to _site/")
+```
+
 
 ```{python}
-# PowerPoint chunk: Convert to PowerPoint (.pptx) with tags preserved, using stdin
-import re
+# PowerPoint chunk: Convert to PowerPoint
 import subprocess
+import shutil
+import os
 
-with open('formulas.qmd', 'r', encoding='utf-8') as f: content = f.read()
+subprocess.run(['quarto', 'pandoc', 'formulas_tag.qmd', '-o', 'formulas.pptx'], check=True)
 
-# edit formula tag outside formula so they appear in .pptx file slides
-modified_content = re.sub(r'\$\$([^$]+)\\tag\{([^}]+)\}\$\$', r'$$\1$$ (\2)', content)
-
-# Convert to PowerPoint using pandoc via Quarto with stdin
-subprocess.run(['quarto', 'pandoc', '-', '-o', 'formulas.pptx'], input=modified_content.encode('utf-8'))
-
-print("PowerPoint 'formulas.pptx' created with tags preserved.")
+os.makedirs('_site', exist_ok=True)
+shutil.copy('formulas.pptx', '_site/formulas.pptx')
+print("PowerPoint 'formulas.pptx' created and copied to _site/")
 ```
 
 
