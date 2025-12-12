@@ -25,3 +25,19 @@ as follows:
 $$PV_t = \sum\nolimits_{i=1}^{\infty} \frac{D_t(1+g)^i}{(1+r)^i} \tag{13}$$
 
 
+The example in Exhibit 6 shows a company with an initial higher short-term dividend
+growth of $g_s$ for the first three years, followed by lower long-term growth $(g_l \text{, where }g_s > g_l)$ indefinitely thereafter. If we generalize the initial growth phase to $n$ periods
+followed by indefinite slower growth at $g_l$, we obtain a modified version of Equation
+14 as follows:
+
+$$PV_t = \sum\nolimits_{i=1}^{n} \frac{D_t(1+g_s)^i}{(1+r)^i} + \sum\nolimits_{j=n+1}^{\infty} \frac{D_{t+n}(1+g_l)^j}{(1+r)^j} \tag{15}$$
+
+Note that the second expression in Equation 15 involves constant growth starting in
+$n$ periods, for which we can substitute the geometric series simplification:
+
+$$PV_t = \sum\nolimits_{i=1}^{n} \frac{D_t(1+g_s)^i}{(1+r)^i} + \frac{E(S_{t+n})}{(1+r)^n} \tag{16}$$
+
+where the stock value of the stock in n periods $(E(S_{t+n})$ is referred to as the terminal
+value) and is equal to the following:
+
+$$E(S_{t+n}) = \frac{D_{t+n+1}}{r-g_l} \tag{17}$$
