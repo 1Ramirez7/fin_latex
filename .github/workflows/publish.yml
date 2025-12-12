@@ -19,6 +19,9 @@ jobs:
         with:
           # To install LaTeX to build PDF book 
           tinytex: true 
+
+      - name: Install Pandoc
+        uses: pandoc/actions/setup@v1
       
       # Comment out the below section if you are not using python
       - name: Install Python and Dependencies
@@ -26,7 +29,7 @@ jobs:
         with:
           python-version: '3.13'
           #cache: 'pip'
-      - run: pip install jupyter numpy pandas scikit-learn lets-plot palmerpenguins nbformat nbclient tabulate skimpy seaborn matplotlib kaleido pandoc # plotly.express altair altair_viewer
+      - run: pip install jupyter numpy pandas scikit-learn lets-plot palmerpenguins nbformat nbclient tabulate skimpy seaborn matplotlib kaleido # plotly.express altair altair_viewer
       #- run: pip install -r requirements.txt
 
       # Comment out the 2 below section if you are not using R
