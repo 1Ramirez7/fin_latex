@@ -1,0 +1,60 @@
+---
+title: "Untitled"
+format: html
+---
+
+
+
+
+
+```{python}
+# Word chunk: Convert to Word doc with tags preserved, using stdin
+import re
+import subprocess
+
+with open('formulas.qmd', 'r', encoding='utf-8') as f: content = f.read()
+
+# edit formula tag outside formula so they appear in .docx file
+modified_content = re.sub(r'\$\$([^$]+)\\tag\{([^}]+)\}\$\$', r'$$\1$$ (\2)', content)
+
+# Convert to Word doc using pandoc with stdin
+subprocess.run(['quarto', 'pandoc', '-', '-o', 'output/formulas.docx'], input=modified_content.encode('utf-8'))
+
+print("Word document 'output/formulas.docx' created with tags preserved.")
+```
+
+
+
+```{python}
+# PowerPoint chunk: Convert to PowerPoint (.pptx) with tags preserved, using stdin
+import re
+import subprocess
+
+with open('formulas.qmd', 'r', encoding='utf-8') as f: content = f.read()
+
+# edit formula tag outside formula so they appear in .pptx file slides
+modified_content = re.sub(r'\$\$([^$]+)\\tag\{([^}]+)\}\$\$', r'$$\1$$ (\2)', content)
+
+# Convert to PowerPoint using pandoc via Quarto with stdin
+subprocess.run(['quarto', 'pandoc', '-', '-o', 'output/formulas.pptx'], input=modified_content.encode('utf-8'))
+
+print("PowerPoint 'output/formulas.pptx' created with tags preserved.")
+```
+
+
+testing  again
+
+```{python}
+# Convert to PDF, simple as pdf keeps tag
+import subprocess
+
+# Render to PDF using Quarto
+subprocess.run(['quarto', 'render', 'formulas.qmd', '--to', 'pdf', '-o', 'output/formulas.pdf'])
+
+print("PDF document 'output/formulas.pdf' created.")
+```
+
+
+
+
+
