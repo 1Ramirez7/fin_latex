@@ -4,7 +4,7 @@
     "href": "formulas.html",
     "title": "Testing Sample",
     "section": "",
-    "text": "Future value (\\(FV\\)) of a cash flow, where \\(r\\) is the stated discount rate per period and \\(t\\) is the number of compounding periods, is as follows:\n\\[FV_t = PV(1+r)^t \\tag{1}\\]\n\nIf the number of compounding periods t is very large, that is, \\(t \\to \\infty\\), we compound the initial cash flow on a continuous basis as follows:\n\\[FV_t = PVe^{r t} \\tag{2}\\]\n\nIf dividend cash flows continue to grow at \\(g\\) indefinitely, then we may rewrite Equation 10 as follows:\n\\[PV_t = \\sum\\nolimits_{i=1}^{\\infty} \\frac{D_t(1+g)^i}{(1+r)^i} \\tag{13}\\]\n\n\n\n Back to top",
+    "text": "Future value (\\(FV\\)) of a cash flow, where \\(r\\) is the stated discount rate per period and \\(t\\) is the number of compounding periods, is as follows:\n\\[FV_t = PV(1+r)^t \\tag{1}\\]\n\nIf the number of compounding periods t is very large, that is, \\(t \\to \\infty\\), we compound the initial cash flow on a continuous basis as follows:\n\\[FV_t = PVe^{r t} \\tag{2}\\]\n\nIf dividend cash flows continue to grow at \\(g\\) indefinitely, then we may rewrite Equation 10 as follows:\n\\[PV_t = \\sum\\nolimits_{i=1}^{\\infty} \\frac{D_t(1+g)^i}{(1+r)^i} \\tag{13}\\]\nUnder the cash flow additivity principle, a risk-neutral investor would be indifferent between strategies 1 and 2 under the following condition:\n\\[FV_2 = PV_0 \\times (1+r_2)^2 = PV_0 \\times (1+r_1)(1+F_{1,1}) \\tag{25}\\]\n\n\n\n Back to top",
     "crumbs": [
       "Formulas",
       "Formulas Render"
