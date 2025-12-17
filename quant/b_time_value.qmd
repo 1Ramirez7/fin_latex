@@ -8,6 +8,15 @@ format:
     toc: False
 ---
 
+::: {.callout-note icon="false"}
+## Download pdf
+
+<a href="https://1ramirez7/fin_latex/output/quant/b_time_value.pdf" download="b_time_value.pdf"> b_time_value.pdf </a>
+:::
+
+
+
+
 In general, the relationship between a current or present value ($PV$) and future
 value ($FV$) of a cash flow, where $r$ is the stated discount rate per period and $t$ is the
 number of compounding periods, is as follows:
