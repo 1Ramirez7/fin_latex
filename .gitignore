@@ -22,6 +22,4 @@ files/
 # *.xlsx
 
 
-# **/*.quarto_ipynb
-
 **/*.quarto_ipynb

@@ -24,6 +24,8 @@ website:
       contents:
         - text: "Formulas Render"
           file: formulas.qmd
+        - text: "Rates and Returns"
+          file: quant_rates_returns.qmd
 
 format:  
   html:

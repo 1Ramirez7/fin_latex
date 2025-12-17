@@ -1,0 +1,413 @@
+---
+title: "Quantitative Methods"
+subtitle: "Rates and Returns"
+format:
+  html:
+    self-contained: true
+    css: styles.css
+    toc: False
+---
+
+
+# 3 RATES OF RETURN
+
+---
+
+A **holding period return**, $R$, is the return earned from holding an asset for a single specified period of time. The period may be one day, one week, one month, five years, or any specified period. If the asset (e.g., bond, stock) is purchased today, time $(t = 0)$, at a price of 100 and sold later, say at time $(t = 1)$, at a price of 105 with no dividends or other income, then the holding period return is 5 percent $[(105 - 100)/100]$. If the asset also pays income of two units at time $(t = 1)$, then the total return is 7 percent. This return can be generalized and shown as a mathematical expression in which $P$ is the price and $I$ is the income, as follows:
+
+$$
+R = \frac{(P_1 - P_0) + I_1}{P_0} \tag{1}
+$$
+
+where the subscript indicates the time of the price or income; $(t = 0)$ is the beginning of the period; and $(t = 1)$ is the end of the period. The following two observations are important.
+
+- We computed a capital gain of 5 percent and an income yield of 2 percent in this example. For ease of illustration, we assumed that the income is paid at time $t = 1$. If the income was received before $t = 1$, our holding period return may have been higher if we had reinvested the income for the remainder of the period.
+
+- Return can be expressed in decimals $(0.07)$, fractions $(7/100)$, or as a percent $(7$ percent$)$. They are all equivalent.
+
+A holding period return can be computed for a period longer than one year. For example, an analyst may need to compute a three-year holding period return from three annual returns. In that case, the three-year holding period return is computed by compounding the three annual returns:
+
+$$
+R = [(1 + R_1) \times (1 + R_2) \times (1 + R_3)] - 1,
+$$
+
+where $R_1$, $R_2$, and $R_3$ are the three annual returns.
+
+---
+
+**Arithmetic or Mean Return**
+
+Most holding period returns are reported as daily, monthly, or annual returns. When assets have returns for multiple holding periods, it is necessary to normalize returns to a common period for ease of comparison and understanding. There are different methods for aggregating returns across several holding periods. The remainder of this section presents various ways of computing average returns and discusses their applicability.
+
+The simplest way to compute a summary measure for returns across multiple periods is to take a simple arithmetic average of the holding period returns. Thus, three annual returns of −50 percent, 35 percent, and 27 percent will give us an average of 4 percent per year = $(\frac{-50\% + 35\% + 27\%}{3})$. The arithmetic average return is easy to compute and has known statistical properties.
+
+In general, the arithmetic or mean return is denoted by $\bar{R}_i$ and given by the following equation for asset $i\text{,}$ where $R_{it}$ is the return in period $t$ and $T$ is the total number of periods:
+
+$$
+\bar{R}_i = \frac{R_{i1} + R_{i2} + \cdots + R_{i,T-1} + R_{iT}}{T}
+= \frac{1}{T} \sum_{t=1}^{T} R_{it}
+\tag{2}
+$$
+
+
+
+---
+
+**Geometric Mean Return**
+
+The arithmetic mean return assumes that the amount invested at the beginning of each period is the same. In an investment portfolio, however, even if there are no cash flows into or out of the portfolio the base amount changes each year. The previous year’s earnings must be added to the beginning value of the subsequent year’s investment, these earnings will be “compounded” by the returns earned in that subsequent year. We can use the geometric mean return to account for the compounding of returns.
+
+A geometric mean return provides a more accurate representation of the growth in portfolio value over a given time period than the arithmetic mean return. In general, the geometric mean return is denoted by $\bar{R}_{Gi}$ and given by the following equation for asset $i$:
+
+$$
+\bar{R}_{Gi}
+= \sqrt[T]{(1 + R_{i1}) \times (1 + R_{i2}) \times \cdots \times (1 + R_{i,T-1}) \times (1 + R_{iT})} - 1
+\tag{3}
+$$
+
+$$
+\sqrt[T]{\prod\nolimits_{t=1}^{T} (1 + R_t)} - 1
+$$
+
+
+
+where $R_{it}$ is the return in period $t$ and $T$ is the total number of periods.
+
+In the example in the previous section, we calculated the arithmetic mean to be 4.00 percent. Using Equation 3, we can calculate the geometric mean return from the same three annual returns:
+
+$$
+\bar{R}_{Gi}
+= \sqrt[3]{(1 - 0.50) \times (1 + 0.35) \times (1 + 0.27)} - 1
+= -0.0500.
+$$
+
+
+---
+
+**The Harmonic Mean**
+
+The **harmonic mean**, $\bar{X}_H$, is another measure of central tendency. The harmonic mean is appropriate in cases in which the variable is a rate or a ratio. The terminology “harmonic” arises from its use of a type of series involving reciprocals known as a harmonic series.
+
+**Harmonic Mean Formula.** The harmonic mean of a set of observations $X_1, X_2, \ldots, X_n$ is:
+
+$$
+\bar{X}_H = \frac{n}{\sum_{i=1}^{n} (1/X_i)}
+\tag{4}
+$$
+
+with $X_i > 0$ for $i = 1, 2, \ldots, n$.
+
+The harmonic mean is the value obtained by summing the reciprocals of the observations,
+
+$$
+\sum_{i=1}^{n} (1/X_i),
+$$
+
+the terms of the form $1/X_i$, and then averaging their sum by dividing it by the number of observations, $n$, and then finally, taking the reciprocal of that average,
+
+$$
+\frac{n}{\sum_{i=1}^{n} (1/X_i)}.
+$$
+
+The harmonic mean may be viewed as a special type of weighted mean in which an observation’s weight is inversely proportional to its magnitude. For example, if there is a sample of observations of 1, 2, 3, 4, 5, 6, and 1,000, the harmonic mean is 2.8560. Compared to the arithmetic mean of 145.8571, we see the influence of the outlier (the 1,000) to be much less than in the case of the arithmetic mean. So, the harmonic mean is quite useful as a measure of central tendency in the presence of outliers.
+
+The harmonic mean is used most often when the data consist of rates and ratios, such as P/Es. Suppose three peer companies have P/Es of 45, 15, and 15. The arithmetic mean is 25, but the harmonic mean, which gives less weight to the P/E of 45, is 19.3.
+
+The harmonic mean is a relatively specialized concept of the mean that is appropriate for averaging ratios (“amount per unit”) when the ratios are repeatedly applied to a fixed quantity to yield a variable number of units. The concept is best explained through an illustration. A well-known application arises in the investment strategy known as **cost averaging**, which involves the periodic investment of a fixed amount of money. In this application, the ratios we are averaging are prices per share at different purchase dates, and we are applying those prices to a constant amount of money to yield a variable number of shares. An illustration of the harmonic mean to cost averaging is provided in Example 6.
+
+Example 6 here
+
+Because they use the same data but involve different progressions in their respective calculations, the arithmetic,geometric, and harmonic means are mathematically related to one another. We will not go into the proof of this relationship, but the basic result follows:
+
+Arithmetic mean × Harmonic mean = (Geometric mean)$^2$.
+
+Unless all the observations in a dataset are the same value, the harmonic mean is always less than the geometric mean, which, in turn, is always less than the arithmetic mean.
+
+The harmonic mean only works for non-negative numbers, so when working with returns that are expressed as positive or negative percentages, we first convert the returns into a compounding format, assuming a reinvestment, as $(1 + R)$, as was done in the geometric mean return calculation, and then calculate $(1 +$ harmonic mean$)$, and subtract 1 to arrive at the harmonic mean return.
+
+---
+
+# 4 MONEY-WEIGHTED AND TIME-WEIGHTED RETURN
+
+---
+
+The **internal rate of return** is the discount rate at which the sum of present values of cash flows will equal zero. In general, the equation may be expressed as follows:
+
+$$
+\sum_{t=0}^{T} \frac{CF_t}{(1 + \text{IRR})^t} = 0
+\tag{5}
+$$
+
+where $T$ is the number of periods, $CF_t$ is the cash flow at time $t$, and IRR is the internal rate of return or the money-weighted rate of return.
+
+A cash flow can be positive or negative; a positive cash flow is an inflow where money flows to the investor, whereas a negative cash flow is an outflow where money flows away from the investor. The cash flows are expressed as follows, where each cash inflow or outflow occurs at the end of each year. Thus, $CF_0$ refers to the cash flow at the end of Year 0 or beginning of Year 1, and $CF_3$ refers to the cash flow at end of Year 3 or beginning of Year 4. Because cash flows are being discounted to the present, that is, end of Year 0 or beginning of Year 1, the period of discounting $CF_0$ is zero.
+
+$$
+\begin{aligned}
+CF_0 &= -100 \\
+CF_1 &= -950 \\
+CF_2 &= +350 \\
+CF_3 &= +1{,}270
+\end{aligned}
+$$
+
+
+
+$$
+\frac{CF_0}{(1 + \text{IRR})^0}
++ \frac{CF_1}{(1 + \text{IRR})^1}
++ \frac{CF_2}{(1 + \text{IRR})^2}
++ \frac{CF_3}{(1 + \text{IRR})^3}
+$$
+
+$$
+= \frac{-100}{1}
++ \frac{-950}{(1 + \text{IRR})^1}
++ \frac{+350}{(1 + \text{IRR})^2}
++ \frac{+1270}{(1 + \text{IRR})^3}
+= 0
+$$
+
+$$
+\text{IRR} = 26.11\%
+$$
+
+The investor’s internal rate of return, or the money-weighted rate of return, is 26.11 percent, which tells the investor what she earned on the actual euros invested for the entire period on an annualized basis. This return is much greater than the arithmetic and geometric mean returns because only a small amount was invested when the mutual fund’s return was −50 percent.
+
+All the above calculations can be performed using Excel using the =IRR(values) function, which results in an IRR of 26.11 percent.
+
+---
+
+**Time-Weighted Returns**
+
+An investment measure that is not sensitive to the additions and withdrawals of funds is the time-weighted rate of return. The **time-weighted rate of return** measures the compound rate of growth of USD1 initially invested in the portfolio over a stated measurement period. For the evaluation of portfolios of publicly traded securities, the time-weighted rate of return is the preferred performance measure as it neutralizes the effect of cash withdrawals or additions to the portfolio, which are generally outside of the control of the portfolio manager.
+
+**Computing Time-Weighted Returns**
+
+To compute an exact time-weighted rate of return on a portfolio, take the following three steps:
+
+1. Price the portfolio immediately prior to any significant addition or withdrawal of funds. Break the overall evaluation period into subperiods based on the dates of cash inflows and outflows.
+
+2. Calculate the holding period return on the portfolio for each subperiod.
+
+3. Link or compound holding period returns to obtain an annual rate of return for the year (the time-weighted rate of return for the year). If the investment is for more than one year, take the geometric mean of the annual returns to obtain the time-weighted rate of return over that measurement period.
+
+Let us return to our dividend stock money-weighted example in the section, “Money-Weighted Return for a Dividend-Paying Stock” and calculate the time-weighted rate of return for that investor’s portfolio based on the information included in Exhibit 11. In that example, we computed the holding period returns on the portfolio, Step 2 in the procedure for finding the time-weighted rate of return. Given that the portfolio earned returns of 15 percent during the first year and 6.67 percent during the second year, what is the portfolio’s time-weighted rate of return over an evaluation period of two years?
+
+We find this time-weighted return by taking the geometric mean of the two holding period returns, Step 3 in the previous procedure. The calculation of the geometric mean exactly mirrors the calculation of a compound growth rate. Here, we take the product of 1 plus the holding period return for each period to find the terminal value at $t = 2$ of USD1 invested at $t = 0$. We then take the square root of this product and subtract 1 to get the geometric mean return. We interpret the result as the annual compound growth rate of USD1 invested in the portfolio at $t = 0$. Thus, we have:
+
+$$
+(1 + \text{Time-weighted return})^2 = (1.15)(1.0667)
+$$
+
+$$
+\text{Time-weighted return} = \sqrt{(1.15)(1.0667)} - 1 = 10.76\%
+$$
+
+The time-weighted return on the portfolio was 10.76 percent, compared with the money-weighted return of 9.39 percent, which gave larger weight to the second year’s return. We can see why investment managers find time-weighted returns more meaningful. If a client gives an investment manager more funds to invest at an unfavorable time, the manager’s money-weighted rate of return will tend to be depressed. If a client adds funds at a favorable time, the money-weighted return will tend to be elevated. The time-weighted rate of return removes these effects.
+
+In defining the steps to calculate an exact time-weighted rate of return, we said that the portfolio should be valued immediately prior to any significant addition or withdrawal of funds. With the amount of cash flow activity in many portfolios, this task can be costly. We can often obtain a reasonable approximation of the time-weighted rate of return by valuing the portfolio at frequent, regular intervals, particularly if additions and withdrawals are unrelated to market movements.
+
+The more frequent the valuation, the more accurate the approximation. Daily valuation is commonplace. Suppose that a portfolio is valued daily over the course of a year. To compute the time-weighted return for the year, we first compute each day’s holding period return. We compute 365 such daily returns, denoted $R_1$, $R_2$, …, $R_{365}$. We obtain the annual return for the year by linking the daily holding period returns in the following way: $(1 + R_1) \times (1 + R_2) \times \cdots \times (1 + R_{365}) - 1$. If withdrawals and additions to the portfolio happen only at day’s end, this annual return is a precise time-weighted rate of return for the year. Otherwise, it is an approximate time-weighted return for the year.
+
+If we have several years of data, we can calculate a time-weighted return for each year individually, as above. If $R_i$ is the time-weighted return for year $i$, we calculate an annualized time-weighted return as the geometric mean of $N$ annual returns, as follows:
+
+$$
+R_{TW} = \left[(1 + R_1) \times (1 + R_2) \times \cdots \times (1 + R_N)\right]^{1/N} - 1.
+\tag{6}
+$$
+
+Example 9 illustrates the calculation of the time-weighted rate of return.
+
+---
+
+**Annualized Return**
+
+The period during which a return is earned or computed can vary. Often, we need to annualize a return that was calculated for a period shorter or longer than one year. For example, you might buy a short-term Treasury bill with a maturity of three months, or take a position in a futures contract that expires at the end of the next quarter. How can these returns be compared?
+
+In many cases, it is most convenient to annualize all available returns to facilitate comparison. Daily, weekly, monthly, and quarterly returns are therefore converted to annualized returns. Many formulas used for calculating certain values or prices also require all returns and periods to be expressed as annualized rates of return. For example, the most common version of the Black–Scholes option-pricing model requires returns to be annualized and time to be expressed in years.
+
+---
+
+# 5 ANNUALIZED RETURN
+
+---
+
+**Non-annual Compounding**
+
+Recall that interest may be paid semiannually, quarterly, monthly, or even daily. To handle interest payments made more than once a year, we can modify the present value formula as follows. Here, $R_s$ is the quoted interest rate and equals the periodic interest rate multiplied by the number of compounding periods in each year. In general, with more than one compounding period in a year, we can express the formula for present value as follows:
+
+$$
+PV = FV_N \left(1 + \frac{R_s}{m}\right)^{-mN},
+\tag{7}
+$$
+
+where
+
+$m$ = number of compounding periods per year,
+
+$R_s$ = quoted annual interest rate, and
+
+$N$ = number of years.
+
+The formula in Equation 7 is quite similar to the simple present value formula. As we have already noted, present value and future value factors are reciprocals. Changing the frequency of compounding does not alter this result. The only difference is the use of the periodic interest rate and the corresponding number of compounding periods.
+
+Example 11 presents an application of monthly compounding.
+
+
+---
+
+**Annualizing Returns**
+
+To annualize any return for a period shorter than one year, the return for the period must be compounded by the number of periods in a year. A monthly return is compounded 12 times, a weekly return is compounded 52 times, and a quarterly return is compounded 4 times. Daily returns are normally compounded 365 times. For an uncommon number of days, we compound by the ratio of 365 to the number of days.
+
+If the weekly return is 0.2 percent, then the compound annual return is 10.95 percent (there are 52 weeks in a year):
+
+$$
+R_{annual} = (1 + R_{weekly})^{52} - 1 = (1 + 0.2\%)^{52} - 1.
+$$
+
+$$
+= (1.002)^{52} - 1 = 0.1095 = 10.95\%.
+$$
+
+If the return for 15 days is 0.4 percent, then the annualized return is 10.20 percent, assuming 365 days in a year:
+
+$$
+R_{annual} = (1 + R_{15})^{365/15} - 1 = (1 + 0.4\%)^{365/15} - 1
+$$
+
+$$
+= (1.004)^{365/15} - 1 = 0.1020 = 10.20\%.
+$$
+
+A general equation to annualize returns is given, where $c$ is the number of periods in a year. For a quarter, $c = 4$ and for a month, $c = 12$:
+
+$$
+R_{annual} = (1 + R_{period})^{c} - 1.
+\tag{8}
+$$
+
+How can we annualize a return when the holding period return is more than one year? For example, how do we annualize an 18-month holding period return? Because one year contains two-thirds of 18-month periods, $c = 2/3$ in the above equation. For example, an 18-month return of 20 percent can be annualized as follows:
+
+$$
+R_{annual} = (1 + R_{18month})^{2/3} - 1 = (1 + 0.20)^{2/3} - 1 = 0.1292 = 12.92\%.
+$$
+
+Similar expressions can be constructed when quarterly or weekly returns are needed for comparison instead of annual returns. In such cases, $c$ is equal to the number of holding periods in a quarter or in a week. For example, assume that you want to convert daily returns to weekly returns or annual returns to weekly returns for comparison between weekly returns. To convert daily returns to weekly returns, $c = 5$, assume that there are five trading days in a week. However, daily return calculations can be annualized differently. For example, five can be used for trading-day-based calculations, giving approximately 250 trading days a year; seven can be used on calendar-day-based calculations. Specific methods used conform to specific business practices, market conventions, and standards. To convert annual returns to weekly returns, $c = 1/52$. The expressions for annual returns can then be rewritten as expressions for weekly returns as follows:
+
+$$
+R_{weekly} = (1 + R_{daily})^{5} - 1; \quad
+R_{weekly} = (1 + R_{annual})^{1/52} - 1.
+\tag{9}
+$$
+
+One major limitation of annualizing returns is the implicit assumption that returns can be repeated precisely, that is, money can be reinvested repeatedly while earning a similar return. This type of return is not always possible. An investor may earn a return of 5 percent during a week because the market rose sharply that week, but it is highly unlikely that he will earn a return of 5 percent every week for the next 51 weeks, resulting in an annualized return of 1,164.3 percent $(1.05^{52} - 1)$. Therefore, it is important to annualize short-term returns with this limitation in mind.
+
+
+---
+
+**Continuously Compounded Returns**
+
+An important concept is the continuously compounded return associated with a holding period return, such as $R_1$. The **continuously compounded return** associated with a holding period return is the natural logarithm of one plus that holding period return, or equivalently, the natural logarithm of the ending price over the beginning price (the price relative). Note that here we are using $r$ to refer specifically to continuously compounded returns, but other textbooks and sources may use a different notation.
+
+If we observe a one-week holding period return of 0.04, the equivalent continuously compounded return, called the one-week continuously compounded return, is $\ln(1.04) = 0.039221$; EUR1.00 invested for one week at 0.039221 continuously compounded gives EUR1.04, equivalent to a 4 percent one-week holding period return.
+
+The continuously compounded return from $t$ to $t + 1$ is
+
+$$
+r_{t,t+1} = \ln(P_{t+1}/P_t) = \ln(1 + R_{t,t+1}).
+\tag{10}
+$$
+
+For our example, an asset purchased at time $t$ for $P_0$ of USD30 and the same asset one period later, $t + 1$, has a value of $P_1$ of USD34.50 has a continuously compounded return given by $r_{0,1} = \ln(P_1/P_0) = \ln(1 + R_{0,1}) = \ln(\text{USD34.50/USD30}) = \ln(1.15) = 0.139762$. Thus, 13.98 percent is the continuously compounded return from $t = 0$ to $t = 1$.
+
+The continuously compounded return is smaller than the associated holding period return. If our investment horizon extends from $t = 0$ to $t = T$, then the continuously compounded return to $T$ is
+
+$$
+r_{0,T} = \ln(P_T/P_0).
+\tag{11}
+$$
+
+Applying the exponential function to both sides of the equation, we have $\exp(r_{0,T}) = \exp[\ln(P_T/P_0)] = P_T/P_0$, so
+
+$$
+P_T = P_0 \exp(r_{0,T}).
+$$
+
+We can also express $P_T/P_0$ as the product of price relatives:
+
+$$
+P_T/P_0 = (P_T/P_{T-1})(P_{T-1}/P_{T-2}) \ldots (P_1/P_0).
+\tag{12}
+$$
+
+Taking logs of both sides of this equation, we find that the continuously compounded return to time $T$ is the sum of the one-period continuously compounded returns:
+
+$$
+r_{0,T} = r_{T-1,T} + r_{T-2,T-1} + \ldots + r_{0,1}.
+\tag{13}
+$$
+
+Using holding period returns to find the ending value of a USD1 investment involves the multiplication of quantities $(1 + \text{holding period return})$. Using continuously compounded returns involves addition (as shown in Equation 13), which is a desirable property of continuously compounded returns and which we will use throughout the curriculum.
+
+
+---
+
+# 6 OTHER MAJOR RETURN MEASURES AND THEIR APPLICATIONS
+
+---
+
+**Real Returns**
+
+Previously this learning module approximated the relationship between the nominal rate and the real rate by the following relationship:
+
+$$
+(1 + \text{nominal risk-free rate}) = (1 + \text{real risk-free rate})(1 + \text{inflation premium}).
+$$
+
+This relationship can be extended to link the relationship between nominal and real returns. Specifically, the nominal return consists of a real risk-free rate of return to compensate for postponed consumption; inflation as loss of purchasing power; and a risk premium for assuming risk. Frequently, the real risk-free return and the risk premium are combined to arrive at the real “risky” rate and is simply referred to as the real return, or:
+
+$$
+(1 + \text{real return}) = (1 + \text{real risk-free rate})(1 + \text{risk premium}).
+\tag{14}
+$$
+
+Real returns are particularly useful in comparing returns across time periods because inflation rates may vary over time. Real returns are also useful in comparing returns among countries when returns are expressed in local currencies instead of a constant investor currency and when inflation rates vary between countries (which are usually the case).
+
+Finally, the after-tax real return is what the investor receives as compensation for postponing consumption and assuming risk after paying taxes on investment returns. As a result, the after-tax real return becomes a reliable benchmark for making investment decisions. Although it is a measure of an investor’s benchmark return, it is not commonly calculated by asset managers because it is difficult to estimate a general tax component applicable to all investors. For example, the tax component depends on an investor’s specific taxation rate (marginal tax rate), how long the investor holds an investment (long-term versus short-term), and the type of account the asset is held in (tax-exempt, tax-deferred, or normal).
+
+---
+
+**Leveraged Return**
+
+In the previous calculations, we have assumed that the investor’s position in an asset is equal to the total investment made by an investor using his or her own money. This section differs in that the investor creates a leveraged position.
+
+There are two ways of creating a claim on asset returns that are greater than the investment of one’s own money. First, an investor may trade futures contracts in which the money required to take a position may be as little as 10 percent of the notional value of the asset. In this case, the leveraged return, the return on the investor’s own money, is 10 times the actual return of the underlying security. Both the gains and losses are amplified by a factor of 10.
+
+Investors can also invest more than their own money by borrowing money to purchase the asset. This approach is easily done in stocks and bonds, and very common when investing in real estate. If half (50 percent) of the money invested is borrowed, then the gross return to the investor is doubled, but the interest to be paid on borrowed money must be deducted to calculate the net return.
+
+Using borrowed capital, debt, the size of the leveraged position increases by the additional, borrowed capital. If the total investment return earned on the leveraged portfolio, $R_p$, exceeds the borrowing cost on debt, $r_D$, taking on leverage increases the return on the portfolio. Denoting the return on a leveraged portfolio as $R_L$, then the return can be calculated as follows:
+
+$$
+R_L
+= \frac{\text{Portfolio return}}{\text{Portfolio equity}}
+= \frac{[R_p \times (V_E + V_B) - (V_B \times r_D)]}{V_E}
+= R_p + \frac{V_B}{V_E}(R_p - r_D),
+\tag{15}
+$$
+
+where $V_E$ is the equity of the portfolio and $V_B$ is the debt or borrowed funds. If $R_p < r_D$, then leverage decreases $R_L$.
+
+For example, for a EUR10 million equity portfolio that generates an 8 percent total investment return, $R_p$, over one year and is financed 30 percent with debt at 5 percent, then the leveraged return, $R_L$, is:
+
+$$
+R_L
+= R_p + \frac{V_B}{V_E}(R_p - r_D)
+= 8\% + \frac{\text{EUR3 million}}{\text{EUR7 million}}(8\% - 5\%)
+= 8\% + 0.43 \times 3\%
+= 9.29\%
+$$
+
+
+---
