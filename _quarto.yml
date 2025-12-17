@@ -34,8 +34,9 @@ website:
       contents:
         - section: "Overview"
           contents:
-            - quant/time_value.qmd
-            - quant/rates_return.qmd
+            - quant/a_rates_returns.qmd
+            - quant/b_time_value.qmd
+            - quant/c_stat_measures.qmd
 
 format:  
   html:

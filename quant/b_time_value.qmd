@@ -1,7 +1,11 @@
 ---
 title: "Time Value of Money"
 Subtitle: "Quantitative Methods"
-format: html
+format:
+  html:
+    self-contained: true
+    css: styles.css
+    toc: False
 ---
 
 In general, the relationship between a current or present value ($PV$) and future
