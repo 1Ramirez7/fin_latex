@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Rates and Returns – Latex Finance Formulas</title>
+<title>Time Value of Money – Latex Finance Formulas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -3977,7 +3977,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar docked nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -4171,8 +4171,16 @@ window.Quarto = {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-quantitative-methods">    
         <li class="dropdown-header">Overview</li>
         <li>
-    <a class="dropdown-item" href="../quant/time_value.html">
+    <a class="dropdown-item" href="../quant/a_rates_returns.html">
+ <span class="dropdown-text">Rates and Returns</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quant/b_time_value.html">
  <span class="dropdown-text">Time Value of Money</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quant/c_stat_measures.html">
+ <span class="dropdown-text">Statistical Measures of Asset Returns</span></a>
   </li>  
     </ul>
   </li>
@@ -4183,20 +4191,65 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../quant/a_rates_returns.html">Overview</a></li><li class="breadcrumb-item"><a href="../quant/b_time_value.html">Time Value of Money</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Overview</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quant/a_rates_returns.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rates and Returns</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quant/b_time_value.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Time Value of Money</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quant/c_stat_measures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Statistical Measures of Asset Returns</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../quant/a_rates_returns.html">Overview</a></li><li class="breadcrumb-item"><a href="../quant/b_time_value.html">Time Value of Money</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Rates and Returns</h1>
-<p class="subtitle lead">Quantitative Methods</p>
+<h1 class="title">Time Value of Money</h1>
 </div>
 
 
@@ -4213,269 +4266,102 @@ window.Quarto = {
 </header>
 
 
-<section id="rates-of-return" class="level1">
-<h1>3 RATES OF RETURN</h1>
+<p>In general, the relationship between a current or present value (<span class="math inline">\(PV\)</span>) and future value (<span class="math inline">\(FV\)</span>) of a cash flow, where <span class="math inline">\(r\)</span> is the stated discount rate per period and <span class="math inline">\(t\)</span> is the number of compounding periods, is as follows:</p>
+<p><span class="math display">\[FV_t = PV(1+r)^t \tag{1}\]</span></p>
 <hr>
-<p>A <strong>holding period return</strong>, <span class="math inline">\(R\)</span>, is the return earned from holding an asset for a single specified period of time. The period may be one day, one week, one month, five years, or any specified period. If the asset (e.g., bond, stock) is purchased today, time <span class="math inline">\((t = 0)\)</span>, at a price of 100 and sold later, say at time <span class="math inline">\((t = 1)\)</span>, at a price of 105 with no dividends or other income, then the holding period return is 5 percent <span class="math inline">\([(105 - 100)/100]\)</span>. If the asset also pays income of two units at time <span class="math inline">\((t = 1)\)</span>, then the total return is 7 percent. This return can be generalized and shown as a mathematical expression in which <span class="math inline">\(P\)</span> is the price and <span class="math inline">\(I\)</span> is the income, as follows:</p>
-<p><span class="math display">\[
-R = \frac{(P_1 - P_0) + I_1}{P_0} \tag{1}
-\]</span></p>
-<p>where the subscript indicates the time of the price or income; <span class="math inline">\((t = 0)\)</span> is the beginning of the period; and <span class="math inline">\((t = 1)\)</span> is the end of the period. The following two observations are important.</p>
-<ul>
-<li><p>We computed a capital gain of 5 percent and an income yield of 2 percent in this example. For ease of illustration, we assumed that the income is paid at time <span class="math inline">\(t = 1\)</span>. If the income was received before <span class="math inline">\(t = 1\)</span>, our holding period return may have been higher if we had reinvested the income for the remainder of the period.</p></li>
-<li><p>Return can be expressed in decimals <span class="math inline">\((0.07)\)</span>, fractions <span class="math inline">\((7/100)\)</span>, or as a percent <span class="math inline">\((7\)</span> percent<span class="math inline">\()\)</span>. They are all equivalent.</p></li>
-</ul>
-<p>A holding period return can be computed for a period longer than one year. For example, an analyst may need to compute a three-year holding period return from three annual returns. In that case, the three-year holding period return is computed by compounding the three annual returns:</p>
-<p><span class="math display">\[
-R = [(1 + R_1) \times (1 + R_2) \times (1 + R_3)] - 1,
-\]</span></p>
-<p>where <span class="math inline">\(R_1\)</span>, <span class="math inline">\(R_2\)</span>, and <span class="math inline">\(R_3\)</span> are the three annual returns.</p>
+<p>If the number of compounding periods t is very large, that is, <span class="math inline">\(t \to \infty\)</span>, we compound the initial cash flow on a continuous basis as follows:</p>
+<p><span class="math display">\[FV_t = PVe^{r t} \tag{2}\]</span></p>
 <hr>
-<p><strong>Arithmetic or Mean Return</strong></p>
-<p>Most holding period returns are reported as daily, monthly, or annual returns. When assets have returns for multiple holding periods, it is necessary to normalize returns to a common period for ease of comparison and understanding. There are different methods for aggregating returns across several holding periods. The remainder of this section presents various ways of computing average returns and discusses their applicability.</p>
-<p>The simplest way to compute a summary measure for returns across multiple periods is to take a simple arithmetic average of the holding period returns. Thus, three annual returns of −50 percent, 35 percent, and 27 percent will give us an average of 4 percent per year = <span class="math inline">\((\frac{-50\% + 35\% + 27\%}{3})\)</span>. The arithmetic average return is easy to compute and has known statistical properties.</p>
-<p>In general, the arithmetic or mean return is denoted by <span class="math inline">\(\bar{R}_i\)</span> and given by the following equation for asset <span class="math inline">\(i\text{,}\)</span> where <span class="math inline">\(R_{it}\)</span> is the return in period <span class="math inline">\(t\)</span> and <span class="math inline">\(T\)</span> is the total number of periods:</p>
-<p><span class="math display">\[
-\bar{R}_i = \frac{R_{i1} + R_{i2} + \cdots + R_{i,T-1} + R_{iT}}{T}
-= \frac{1}{T} \sum_{t=1}^{T} R_{it}
-\tag{2}
-\]</span></p>
+<p>Conversely, present values can be expressed in future value terms, which requires recasting Equation 1 as follows:</p>
+<p><span class="math display">\[FV_t = PV(1+r)^t\]</span> <span class="math display">\[PV = FV_t \left[ \frac{1}{(1+r)^t} \right]\]</span> <span class="math display">\[PV = FV_t (1+r)^{-t} \tag{3}\]</span></p>
 <hr>
-<p><strong>Geometric Mean Return</strong></p>
-<p>The arithmetic mean return assumes that the amount invested at the beginning of each period is the same. In an investment portfolio, however, even if there are no cash flows into or out of the portfolio the base amount changes each year. The previous year’s earnings must be added to the beginning value of the subsequent year’s investment, these earnings will be “compounded” by the returns earned in that subsequent year. We can use the geometric mean return to account for the compounding of returns.</p>
-<p>A geometric mean return provides a more accurate representation of the growth in portfolio value over a given time period than the arithmetic mean return. In general, the geometric mean return is denoted by <span class="math inline">\(\bar{R}_{Gi}\)</span> and given by the following equation for asset <span class="math inline">\(i\)</span>:</p>
-<p><span class="math display">\[
-\bar{R}_{Gi}
-= \sqrt[T]{(1 + R_{i1}) \times (1 + R_{i2}) \times \cdots \times (1 + R_{i,T-1}) \times (1 + R_{iT})} - 1
-\tag{3}
-\]</span></p>
-<p><span class="math display">\[
-\sqrt[T]{\prod\nolimits_{t=1}^{T} (1 + R_t)} - 1
-\]</span></p>
-<p>where <span class="math inline">\(R_{it}\)</span> is the return in period <span class="math inline">\(t\)</span> and <span class="math inline">\(T\)</span> is the total number of periods.</p>
-<p>In the example in the previous section, we calculated the arithmetic mean to be 4.00 percent. Using Equation 3, we can calculate the geometric mean return from the same three annual returns:</p>
-<p><span class="math display">\[
-\bar{R}_{Gi}
-= \sqrt[3]{(1 - 0.50) \times (1 + 0.35) \times (1 + 0.27)} - 1
-= -0.0500.
-\]</span></p>
+<p>The continuous time equivalent expression of Equation 3 is as follows:</p>
+<p><span class="math display">\[PV_t = FV e^{-rt} \tag{4}\]</span></p>
 <hr>
-<p><strong>The Harmonic Mean</strong></p>
-<p>The <strong>harmonic mean</strong>, <span class="math inline">\(\bar{X}_H\)</span>, is another measure of central tendency. The harmonic mean is appropriate in cases in which the variable is a rate or a ratio. The terminology “harmonic” arises from its use of a type of series involving reciprocals known as a harmonic series.</p>
-<p><strong>Harmonic Mean Formula.</strong> The harmonic mean of a set of observations <span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> is:</p>
-<p><span class="math display">\[
-\bar{X}_H = \frac{n}{\sum_{i=1}^{n} (1/X_i)}
-\tag{4}
-\]</span></p>
-<p>with <span class="math inline">\(X_i &gt; 0\)</span> for <span class="math inline">\(i = 1, 2, \ldots, n\)</span>.</p>
-<p>The harmonic mean is the value obtained by summing the reciprocals of the observations,</p>
-<p><span class="math display">\[
-\sum_{i=1}^{n} (1/X_i),
-\]</span></p>
-<p>the terms of the form <span class="math inline">\(1/X_i\)</span>, and then averaging their sum by dividing it by the number of observations, <span class="math inline">\(n\)</span>, and then finally, taking the reciprocal of that average,</p>
-<p><span class="math display">\[
-\frac{n}{\sum_{i=1}^{n} (1/X_i)}.
-\]</span></p>
-<p>The harmonic mean may be viewed as a special type of weighted mean in which an observation’s weight is inversely proportional to its magnitude. For example, if there is a sample of observations of 1, 2, 3, 4, 5, 6, and 1,000, the harmonic mean is 2.8560. Compared to the arithmetic mean of 145.8571, we see the influence of the outlier (the 1,000) to be much less than in the case of the arithmetic mean. So, the harmonic mean is quite useful as a measure of central tendency in the presence of outliers.</p>
-<p>The harmonic mean is used most often when the data consist of rates and ratios, such as P/Es. Suppose three peer companies have P/Es of 45, 15, and 15. The arithmetic mean is 25, but the harmonic mean, which gives less weight to the P/E of 45, is 19.3.</p>
-<p>The harmonic mean is a relatively specialized concept of the mean that is appropriate for averaging ratios (“amount per unit”) when the ratios are repeatedly applied to a fixed quantity to yield a variable number of units. The concept is best explained through an illustration. A well-known application arises in the investment strategy known as <strong>cost averaging</strong>, which involves the periodic investment of a fixed amount of money. In this application, the ratios we are averaging are prices per share at different purchase dates, and we are applying those prices to a constant amount of money to yield a variable number of shares. An illustration of the harmonic mean to cost averaging is provided in Example 6.</p>
-<p>Example 6 here</p>
-<p>Because they use the same data but involve different progressions in their respective calculations, the arithmetic,geometric, and harmonic means are mathematically related to one another. We will not go into the proof of this relationship, but the basic result follows:</p>
-<p>Arithmetic mean × Harmonic mean = (Geometric mean)<span class="math inline">\(^2\)</span>.</p>
-<p>Unless all the observations in a dataset are the same value, the harmonic mean is always less than the geometric mean, which, in turn, is always less than the arithmetic mean.</p>
-<p>The harmonic mean only works for non-negative numbers, so when working with returns that are expressed as positive or negative percentages, we first convert the returns into a compounding format, assuming a reinvestment, as <span class="math inline">\((1 + R)\)</span>, as was done in the geometric mean return calculation, and then calculate <span class="math inline">\((1 +\)</span> harmonic mean<span class="math inline">\()\)</span>, and subtract 1 to arrive at the harmonic mean return.</p>
+<p>The present value <span class="math inline">\((PV)\)</span> calculation for a discount bond with principal <span class="math inline">\((FV)\)</span> paid at time <span class="math inline">\(t\)</span> with a market discount rate of <span class="math inline">\(r\)</span> per period is:</p>
+<p><span class="math display">\[PV(Discount Bond) = FV_t / (1+r)^t \tag{5}\]</span></p>
+<p>The investor’s sole source of return is the difference between the price paid (PV) and full principal (FV) received at maturity. This type of bond is often referred to as a zero-coupon bond given the lack of intermediate interest cash flows, which for bonds are generally referred to as coupons.</p>
 <hr>
-</section>
-<section id="money-weighted-and-time-weighted-return" class="level1">
-<h1>4 MONEY-WEIGHTED AND TIME-WEIGHTED RETURN</h1>
+<p>Pricing a coupon bond extends the single cash flow calculation for a discount bond to a general formula for calculating a bond’s price <span class="math inline">\((PV)\)</span> given the market discount rate on a coupon date, as follows:</p>
+<p>PV(Coupon Bond) <span class="math display">\[= \frac{PMT_1}{(1+r)^1} + \frac{PMT_2}{(1+r)^2} + \dots + \frac{PMT_N + FV_N}{(1+r)^N} \tag{6}\]</span></p>
 <hr>
-<p>The <strong>internal rate of return</strong> is the discount rate at which the sum of present values of cash flows will equal zero. In general, the equation may be expressed as follows:</p>
-<p><span class="math display">\[
-\sum_{t=0}^{T} \frac{CF_t}{(1 + \text{IRR})^t} = 0
-\tag{5}
-\]</span></p>
-<p>where <span class="math inline">\(T\)</span> is the number of periods, <span class="math inline">\(CF_t\)</span> is the cash flow at time <span class="math inline">\(t\)</span>, and IRR is the internal rate of return or the money-weighted rate of return.</p>
-<p>A cash flow can be positive or negative; a positive cash flow is an inflow where money flows to the investor, whereas a negative cash flow is an outflow where money flows away from the investor. The cash flows are expressed as follows, where each cash inflow or outflow occurs at the end of each year. Thus, <span class="math inline">\(CF_0\)</span> refers to the cash flow at the end of Year 0 or beginning of Year 1, and <span class="math inline">\(CF_3\)</span> refers to the cash flow at end of Year 3 or beginning of Year 4. Because cash flows are being discounted to the present, that is, end of Year 0 or beginning of Year 1, the period of discounting <span class="math inline">\(CF_0\)</span> is zero.</p>
-<p><span class="math display">\[
-\begin{aligned}
-CF_0 &amp;= -100 \\
-CF_1 &amp;= -950 \\
-CF_2 &amp;= +350 \\
-CF_3 &amp;= +1{,}270
-\end{aligned}
-\]</span></p>
-<p><span class="math display">\[
-\frac{CF_0}{(1 + \text{IRR})^0}
-+ \frac{CF_1}{(1 + \text{IRR})^1}
-+ \frac{CF_2}{(1 + \text{IRR})^2}
-+ \frac{CF_3}{(1 + \text{IRR})^3}
-\]</span></p>
-<p><span class="math display">\[
-= \frac{-100}{1}
-+ \frac{-950}{(1 + \text{IRR})^1}
-+ \frac{+350}{(1 + \text{IRR})^2}
-+ \frac{+1270}{(1 + \text{IRR})^3}
-= 0
-\]</span></p>
-<p><span class="math display">\[
-\text{IRR} = 26.11\%
-\]</span></p>
-<p>The investor’s internal rate of return, or the money-weighted rate of return, is 26.11 percent, which tells the investor what she earned on the actual euros invested for the entire period on an annualized basis. This return is much greater than the arithmetic and geometric mean returns because only a small amount was invested when the mutual fund’s return was −50 percent.</p>
-<p>All the above calculations can be performed using Excel using the =IRR(values) function, which results in an IRR of 26.11 percent.</p>
+<p>A perpetual bond is a less common type of coupon bond with no stated maturity date. Most perpetual bonds are issued by companies to obtain equity-like financing and often include redemption features. As <span class="math inline">\(N \to \infty\)</span> in Equation 6, we can simplify this to solve for the present value of a perpetuity (or perpetual fixed periodic cash flow without early redemption), where <span class="math inline">\(r &gt; 0\)</span>, as follows:</p>
+<p><span class="math display">\[PV_{\text{Perpetual Bond}} = \frac{PMT}{r} \tag{7}\]</span></p>
 <hr>
-<p><strong>Time-Weighted Returns</strong></p>
-<p>An investment measure that is not sensitive to the additions and withdrawals of funds is the time-weighted rate of return. The <strong>time-weighted rate of return</strong> measures the compound rate of growth of USD1 initially invested in the portfolio over a stated measurement period. For the evaluation of portfolios of publicly traded securities, the time-weighted rate of return is the preferred performance measure as it neutralizes the effect of cash withdrawals or additions to the portfolio, which are generally outside of the control of the portfolio manager.</p>
-<p><strong>Computing Time-Weighted Returns</strong></p>
-<p>To compute an exact time-weighted rate of return on a portfolio, take the following three steps:</p>
-<ol type="1">
-<li><p>Price the portfolio immediately prior to any significant addition or withdrawal of funds. Break the overall evaluation period into subperiods based on the dates of cash inflows and outflows.</p></li>
-<li><p>Calculate the holding period return on the portfolio for each subperiod.</p></li>
-<li><p>Link or compound holding period returns to obtain an annual rate of return for the year (the time-weighted rate of return for the year). If the investment is for more than one year, take the geometric mean of the annual returns to obtain the time-weighted rate of return over that measurement period.</p></li>
-</ol>
-<p>Let us return to our dividend stock money-weighted example in the section, “Money-Weighted Return for a Dividend-Paying Stock” and calculate the time-weighted rate of return for that investor’s portfolio based on the information included in Exhibit 11. In that example, we computed the holding period returns on the portfolio, Step 2 in the procedure for finding the time-weighted rate of return. Given that the portfolio earned returns of 15 percent during the first year and 6.67 percent during the second year, what is the portfolio’s time-weighted rate of return over an evaluation period of two years?</p>
-<p>We find this time-weighted return by taking the geometric mean of the two holding period returns, Step 3 in the previous procedure. The calculation of the geometric mean exactly mirrors the calculation of a compound growth rate. Here, we take the product of 1 plus the holding period return for each period to find the terminal value at <span class="math inline">\(t = 2\)</span> of USD1 invested at <span class="math inline">\(t = 0\)</span>. We then take the square root of this product and subtract 1 to get the geometric mean return. We interpret the result as the annual compound growth rate of USD1 invested in the portfolio at <span class="math inline">\(t = 0\)</span>. Thus, we have:</p>
-<p><span class="math display">\[
-(1 + \text{Time-weighted return})^2 = (1.15)(1.0667)
-\]</span></p>
-<p><span class="math display">\[
-\text{Time-weighted return} = \sqrt{(1.15)(1.0667)} - 1 = 10.76\%
-\]</span></p>
-<p>The time-weighted return on the portfolio was 10.76 percent, compared with the money-weighted return of 9.39 percent, which gave larger weight to the second year’s return. We can see why investment managers find time-weighted returns more meaningful. If a client gives an investment manager more funds to invest at an unfavorable time, the manager’s money-weighted rate of return will tend to be depressed. If a client adds funds at a favorable time, the money-weighted return will tend to be elevated. The time-weighted rate of return removes these effects.</p>
-<p>In defining the steps to calculate an exact time-weighted rate of return, we said that the portfolio should be valued immediately prior to any significant addition or withdrawal of funds. With the amount of cash flow activity in many portfolios, this task can be costly. We can often obtain a reasonable approximation of the time-weighted rate of return by valuing the portfolio at frequent, regular intervals, particularly if additions and withdrawals are unrelated to market movements.</p>
-<p>The more frequent the valuation, the more accurate the approximation. Daily valuation is commonplace. Suppose that a portfolio is valued daily over the course of a year. To compute the time-weighted return for the year, we first compute each day’s holding period return. We compute 365 such daily returns, denoted <span class="math inline">\(R_1\)</span>, <span class="math inline">\(R_2\)</span>, …, <span class="math inline">\(R_{365}\)</span>. We obtain the annual return for the year by linking the daily holding period returns in the following way: <span class="math inline">\((1 + R_1) \times (1 + R_2) \times \cdots \times (1 + R_{365}) - 1\)</span>. If withdrawals and additions to the portfolio happen only at day’s end, this annual return is a precise time-weighted rate of return for the year. Otherwise, it is an approximate time-weighted return for the year.</p>
-<p>If we have several years of data, we can calculate a time-weighted return for each year individually, as above. If <span class="math inline">\(R_i\)</span> is the time-weighted return for year <span class="math inline">\(i\)</span>, we calculate an annualized time-weighted return as the geometric mean of <span class="math inline">\(N\)</span> annual returns, as follows:</p>
-<p><span class="math display">\[
-R_{TW} = \left[(1 + R_1) \times (1 + R_2) \times \cdots \times (1 + R_N)\right]^{1/N} - 1.
-\tag{6}
-\]</span></p>
-<p>Example 9 illustrates the calculation of the time-weighted rate of return.</p>
+<p>We may calculate the periodic annuity cash flow <span class="math inline">\((A)\)</span>, which occurs at the end of each respective period, as follows:</p>
+<p><span class="math display">\[A = \frac{r(PV)}{1-(1+r)^{-t}} \tag{8}\]</span></p>
+<p>where:</p>
+<p><span class="math inline">\(A\)</span> = periodic cash flow,</p>
+<p><span class="math inline">\(r\)</span> = market interest rate per period,</p>
+<p><span class="math inline">\(PV\)</span> = present value or principal amount of loan or bond, and</p>
+<p><span class="math inline">\(t\)</span> = number of payment periods.</p>
 <hr>
-<p><strong>Annualized Return</strong></p>
-<p>The period during which a return is earned or computed can vary. Often, we need to annualize a return that was calculated for a period shorter or longer than one year. For example, you might buy a short-term Treasury bill with a maturity of three months, or take a position in a futures contract that expires at the end of the next quarter. How can these returns be compared?</p>
-<p>In many cases, it is most convenient to annualize all available returns to facilitate comparison. Daily, weekly, monthly, and quarterly returns are therefore converted to annualized returns. Many formulas used for calculating certain values or prices also require all returns and periods to be expressed as annualized rates of return. For example, the most common version of the Black–Scholes option-pricing model requires returns to be annualized and time to be expressed in years.</p>
+<p>The price of a preferred or common share expected to pay a constant periodic dividend is an infinite series that simplifies to the formula for the present value of a perpetuity shown and is similar to the valuation of a perpetual bond that we encountered earlier. Specifically, the valuation in Equation 7:</p>
+<p><span class="math display">\[
+PV_t = \sum\nolimits_{i=1}^{\infty} \frac{D_t}{(1+r)^i} \text{, and} \tag{9}
+\]</span></p>
+<p><span class="math display">\[PV_t = \frac{D_t}{r} \tag{10}\]</span></p>
 <hr>
-</section>
-<section id="annualized-return" class="level1">
-<h1>5 ANNUALIZED RETURN</h1>
+<p>If dividends grow at a rate of g per period and are paid at the end of each period, the next dividend (at time <span class="math inline">\(t+1\)</span>) may be shown as follows:</p>
+<p><span class="math display">\[D_{t+1} = D_t(1+g) \tag{11}\]</span></p>
+<p>or generally in <span class="math inline">\(i\)</span> periods as:</p>
+<p><span class="math display">\[D_{t+i} = D_t(1+g)^i \tag{12}\]</span></p>
+<p>If dividend cash flows continue to grow at <span class="math inline">\(g\)</span> indefinitely, then we may rewrite Equation 10 as follows:</p>
+<p><span class="math display">\[PV_t = \sum\nolimits_{i=1}^{\infty} \frac{D_t(1+g)^i}{(1+r)^i} \tag{13}\]</span></p>
+<p>which simplifies to:</p>
+<p><span class="math display">\[PV_t = \frac{D_t(1+g)}{r-g} = \frac{D_{t+1}}{r-g} \tag{14}\]</span></p>
+<p>where <span class="math inline">\(r-g &gt; 0\)</span>.</p>
 <hr>
-<p><strong>Non-annual Compounding</strong></p>
-<p>Recall that interest may be paid semiannually, quarterly, monthly, or even daily. To handle interest payments made more than once a year, we can modify the present value formula as follows. Here, <span class="math inline">\(R_s\)</span> is the quoted interest rate and equals the periodic interest rate multiplied by the number of compounding periods in each year. In general, with more than one compounding period in a year, we can express the formula for present value as follows:</p>
-<p><span class="math display">\[
-PV = FV_N \left(1 + \frac{R_s}{m}\right)^{-mN},
-\tag{7}
-\]</span></p>
-<p>where</p>
-<p><span class="math inline">\(m\)</span> = number of compounding periods per year,</p>
-<p><span class="math inline">\(R_s\)</span> = quoted annual interest rate, and</p>
-<p><span class="math inline">\(N\)</span> = number of years.</p>
-<p>The formula in Equation 7 is quite similar to the simple present value formula. As we have already noted, present value and future value factors are reciprocals. Changing the frequency of compounding does not alter this result. The only difference is the use of the periodic interest rate and the corresponding number of compounding periods.</p>
-<p>Example 11 presents an application of monthly compounding.</p>
+<p>The example in Exhibit 6 shows a company with an initial higher short-term dividend growth of <span class="math inline">\(g_s\)</span> for the first three years, followed by lower long-term growth <span class="math inline">\((g_l \text{, where }g_s &gt; g_l)\)</span> indefinitely thereafter. If we generalize the initial growth phase to <span class="math inline">\(n\)</span> periods followed by indefinite slower growth at <span class="math inline">\(g_l\)</span>, we obtain a modified version of Equation 14 as follows:</p>
+<p><span class="math display">\[PV_t = \sum\nolimits_{i=1}^{n} \frac{D_t(1+g_s)^i}{(1+r)^i} + \sum\nolimits_{j=n+1}^{\infty} \frac{D_{t+n}(1+g_l)^j}{(1+r)^j} \tag{15}\]</span></p>
+<p>Note that the second expression in Equation 15 involves constant growth starting in <span class="math inline">\(n\)</span> periods, for which we can substitute the geometric series simplification:</p>
+<p><span class="math display">\[PV_t = \sum\nolimits_{i=1}^{n} \frac{D_t(1+g_s)^i}{(1+r)^i} + \frac{E(S_{t+n})}{(1+r)^n} \tag{16}\]</span></p>
+<p>where the stock value of the stock in n periods <span class="math inline">\((E(S_{t+n})\)</span> is referred to as the terminal value) and is equal to the following:</p>
+<p><span class="math display">\[E(S_{t+n}) = \frac{D_{t+n+1}}{r-g_l} \tag{17}\]</span></p>
 <hr>
-<p><strong>Annualizing Returns</strong></p>
-<p>To annualize any return for a period shorter than one year, the return for the period must be compounded by the number of periods in a year. A monthly return is compounded 12 times, a weekly return is compounded 52 times, and a quarterly return is compounded 4 times. Daily returns are normally compounded 365 times. For an uncommon number of days, we compound by the ratio of 365 to the number of days.</p>
-<p>If the weekly return is 0.2 percent, then the compound annual return is 10.95 percent (there are 52 weeks in a year):</p>
-<p><span class="math display">\[
-R_{annual} = (1 + R_{weekly})^{52} - 1 = (1 + 0.2\%)^{52} - 1.
-\]</span></p>
-<p><span class="math display">\[
-= (1.002)^{52} - 1 = 0.1095 = 10.95\%.
-\]</span></p>
-<p>If the return for 15 days is 0.4 percent, then the annualized return is 10.20 percent, assuming 365 days in a year:</p>
-<p><span class="math display">\[
-R_{annual} = (1 + R_{15})^{365/15} - 1 = (1 + 0.4\%)^{365/15} - 1
-\]</span></p>
-<p><span class="math display">\[
-= (1.004)^{365/15} - 1 = 0.1020 = 10.20\%.
-\]</span></p>
-<p>A general equation to annualize returns is given, where <span class="math inline">\(c\)</span> is the number of periods in a year. For a quarter, <span class="math inline">\(c = 4\)</span> and for a month, <span class="math inline">\(c = 12\)</span>:</p>
-<p><span class="math display">\[
-R_{annual} = (1 + R_{period})^{c} - 1.
-\tag{8}
-\]</span></p>
-<p>How can we annualize a return when the holding period return is more than one year? For example, how do we annualize an 18-month holding period return? Because one year contains two-thirds of 18-month periods, <span class="math inline">\(c = 2/3\)</span> in the above equation. For example, an 18-month return of 20 percent can be annualized as follows:</p>
-<p><span class="math display">\[
-R_{annual} = (1 + R_{18month})^{2/3} - 1 = (1 + 0.20)^{2/3} - 1 = 0.1292 = 12.92\%.
-\]</span></p>
-<p>Similar expressions can be constructed when quarterly or weekly returns are needed for comparison instead of annual returns. In such cases, <span class="math inline">\(c\)</span> is equal to the number of holding periods in a quarter or in a week. For example, assume that you want to convert daily returns to weekly returns or annual returns to weekly returns for comparison between weekly returns. To convert daily returns to weekly returns, <span class="math inline">\(c = 5\)</span>, assume that there are five trading days in a week. However, daily return calculations can be annualized differently. For example, five can be used for trading-day-based calculations, giving approximately 250 trading days a year; seven can be used on calendar-day-based calculations. Specific methods used conform to specific business practices, market conventions, and standards. To convert annual returns to weekly returns, <span class="math inline">\(c = 1/52\)</span>. The expressions for annual returns can then be rewritten as expressions for weekly returns as follows:</p>
-<p><span class="math display">\[
-R_{weekly} = (1 + R_{daily})^{5} - 1; \quad
-R_{weekly} = (1 + R_{annual})^{1/52} - 1.
-\tag{9}
-\]</span></p>
-<p>One major limitation of annualizing returns is the implicit assumption that returns can be repeated precisely, that is, money can be reinvested repeatedly while earning a similar return. This type of return is not always possible. An investor may earn a return of 5 percent during a week because the market rose sharply that week, but it is highly unlikely that he will earn a return of 5 percent every week for the next 51 weeks, resulting in an annualized return of 1,164.3 percent <span class="math inline">\((1.05^{52} - 1)\)</span>. Therefore, it is important to annualize short-term returns with this limitation in mind.</p>
+<p>We may rearrange Equation 5 from earlier to solve for the implied periodic return earned over the life of the instrument (<span class="math inline">\(t\)</span> periods):</p>
+<p><span class="math display">\[r = \sqrt[t]{\frac{FV_t}{PV}} - 1 = \left( \frac{FV_t}{PV} \right)^{\frac{1}{t}} - 1 \tag{18}\]</span></p>
 <hr>
-<p><strong>Continuously Compounded Returns</strong></p>
-<p>An important concept is the continuously compounded return associated with a holding period return, such as <span class="math inline">\(R_1\)</span>. The <strong>continuously compounded return</strong> associated with a holding period return is the natural logarithm of one plus that holding period return, or equivalently, the natural logarithm of the ending price over the beginning price (the price relative). Note that here we are using <span class="math inline">\(r\)</span> to refer specifically to continuously compounded returns, but other textbooks and sources may use a different notation.</p>
-<p>If we observe a one-week holding period return of 0.04, the equivalent continuously compounded return, called the one-week continuously compounded return, is <span class="math inline">\(\ln(1.04) = 0.039221\)</span>; EUR1.00 invested for one week at 0.039221 continuously compounded gives EUR1.04, equivalent to a 4 percent one-week holding period return.</p>
-<p>The continuously compounded return from <span class="math inline">\(t\)</span> to <span class="math inline">\(t + 1\)</span> is</p>
-<p><span class="math display">\[
-r_{t,t+1} = \ln(P_{t+1}/P_t) = \ln(1 + R_{t,t+1}).
-\tag{10}
-\]</span></p>
-<p>For our example, an asset purchased at time <span class="math inline">\(t\)</span> for <span class="math inline">\(P_0\)</span> of USD30 and the same asset one period later, <span class="math inline">\(t + 1\)</span>, has a value of <span class="math inline">\(P_1\)</span> of USD34.50 has a continuously compounded return given by <span class="math inline">\(r_{0,1} = \ln(P_1/P_0) = \ln(1 + R_{0,1}) = \ln(\text{USD34.50/USD30}) = \ln(1.15) = 0.139762\)</span>. Thus, 13.98 percent is the continuously compounded return from <span class="math inline">\(t = 0\)</span> to <span class="math inline">\(t = 1\)</span>.</p>
-<p>The continuously compounded return is smaller than the associated holding period return. If our investment horizon extends from <span class="math inline">\(t = 0\)</span> to <span class="math inline">\(t = T\)</span>, then the continuously compounded return to <span class="math inline">\(T\)</span> is</p>
-<p><span class="math display">\[
-r_{0,T} = \ln(P_T/P_0).
-\tag{11}
-\]</span></p>
-<p>Applying the exponential function to both sides of the equation, we have <span class="math inline">\(\exp(r_{0,T}) = \exp[\ln(P_T/P_0)] = P_T/P_0\)</span>, so</p>
-<p><span class="math display">\[
-P_T = P_0 \exp(r_{0,T}).
-\]</span></p>
-<p>We can also express <span class="math inline">\(P_T/P_0\)</span> as the product of price relatives:</p>
-<p><span class="math display">\[
-P_T/P_0 = (P_T/P_{T-1})(P_{T-1}/P_{T-2}) \ldots (P_1/P_0).
-\tag{12}
-\]</span></p>
-<p>Taking logs of both sides of this equation, we find that the continuously compounded return to time <span class="math inline">\(T\)</span> is the sum of the one-period continuously compounded returns:</p>
-<p><span class="math display">\[
-r_{0,T} = r_{T-1,T} + r_{T-2,T-1} + \ldots + r_{0,1}.
-\tag{13}
-\]</span></p>
-<p>Using holding period returns to find the ending value of a USD1 investment involves the multiplication of quantities <span class="math inline">\((1 + \text{holding period return})\)</span>. Using continuously compounded returns involves addition (as shown in Equation 13), which is a desirable property of continuously compounded returns and which we will use throughout the curriculum.</p>
+<p>The <span class="math inline">\(YTM\)</span> assumes an investor expects to receive all promised cash flows through maturity and reinvest any cash received at the same <span class="math inline">\(YTM\)</span>. For coupon bonds, this involves periodic interest payments only, while for level payment instruments such as mortgages, the calculation assumes both interest and amortized principal may be invested at the same rate. Like other internal rates of return, the <span class="math inline">\(YTM\)</span> cannot be solved using an equation, but it may be calculated using iteration with a spreadsheet or calculator, a process that solves for <span class="math inline">\(r\)</span> in Equation 19, as follows:</p>
+<p><span class="math display">\[PV(Coupon\ Bond)
+= \frac{PMT_1}{(1+r)^1} + \frac{PMT_2}{(1+r)^2} + \dots + \frac{PMT_N + FV_N}{(1+r)^N} \tag{19}\]</span></p>
+<p>where <span class="math inline">\(FV\)</span> equals a bond’s principal and <span class="math inline">\(N\)</span> is the number of periods to maturity.</p>
+<p>The Microsoft Excel or Google Sheets <span class="math inline">\(YIELD\)</span> function can be used to calculate <span class="math inline">\(YTM\)</span> for fixed-income instruments with periodic interest and full principal payment at maturity:</p>
+<p>= YIELD (settlement, maturity, rate, pr, redemption, frequency, [basis])</p>
+<p>where:</p>
+<p>settlement = settlement date entered using the DATE function;</p>
+<p>maturity = maturity date entered using the DATE function;</p>
+<p>rate = semi-annual (or periodic) coupon;</p>
+<p>pr = price per 100 face value;</p>
+<p>redemption = future value at maturity;</p>
+<p>frequency = number of coupons per year; and</p>
+<p>[basis] = day count convention, 1 through 5 for US bonds (30/360 day count).</p>
 <hr>
-</section>
-<section id="other-major-return-measures-and-their-applications" class="level1">
-<h1>6 OTHER MAJOR RETURN MEASURES AND THEIR APPLICATIONS</h1>
+<p>Equity Instruments, Implied Return, and Implied Growth</p>
+<p>As noted in the discussion of calculating the present value of an equity investment, the price of a share of stock reflects not only the required return but also the growth of cash flows. If we begin with an assumption of constant growth of dividends from Equation 14, we can rearrange the formula as follows:</p>
+<p><span class="math display">\[r - g = \frac{D_t(1+g)}{PV_t} = \frac{D_{t+1}}{PV_t} \tag{20}\]</span></p>
+<p>The left-hand side of Equation 20 simply reflects the difference between the required return and the constant growth rate, and the right-hand side is the dividend yield of the stock based on expected dividends over the next period. Thus, the implied return on a stock given its expected dividend yield and growth is given by Equation 21, as follows:</p>
+<p><span class="math display">\[r = \frac{D_t(1+g)}{PV_t} + g = \frac{D_{t+1}}{PV_t} + g \tag{21}\]</span></p>
+<p>Simply put, if we assume that a stock’s dividend grows at a constant rate in perpetuity, the stock’s implied return is equal to its expected dividend yield plus the constant growth rate.</p>
+<p>Alternatively, we may be interested in solving for a stock’s implied growth rate, and this relation is given by Equation 22:</p>
+<p><span class="math display">\[g = \frac{r * PV_t - D_t}{PV_t + D_t} = r - \frac{D_{t+1}}{PV_t} \tag{22}\]</span></p>
 <hr>
-<p><strong>Real Returns</strong></p>
-<p>Previously this learning module approximated the relationship between the nominal rate and the real rate by the following relationship:</p>
-<p><span class="math display">\[
-(1 + \text{nominal risk-free rate}) = (1 + \text{real risk-free rate})(1 + \text{inflation premium}).
-\]</span></p>
-<p>This relationship can be extended to link the relationship between nominal and real returns. Specifically, the nominal return consists of a real risk-free rate of return to compensate for postponed consumption; inflation as loss of purchasing power; and a risk premium for assuming risk. Frequently, the real risk-free return and the risk premium are combined to arrive at the real “risky” rate and is simply referred to as the real return, or:</p>
-<p><span class="math display">\[
-(1 + \text{real return}) = (1 + \text{real risk-free rate})(1 + \text{risk premium}).
-\tag{14}
-\]</span></p>
-<p>Real returns are particularly useful in comparing returns across time periods because inflation rates may vary over time. Real returns are also useful in comparing returns among countries when returns are expressed in local currencies instead of a constant investor currency and when inflation rates vary between countries (which are usually the case).</p>
-<p>Finally, the after-tax real return is what the investor receives as compensation for postponing consumption and assuming risk after paying taxes on investment returns. As a result, the after-tax real return becomes a reliable benchmark for making investment decisions. Although it is a measure of an investor’s benchmark return, it is not commonly calculated by asset managers because it is difficult to estimate a general tax component applicable to all investors. For example, the tax component depends on an investor’s specific taxation rate (marginal tax rate), how long the investor holds an investment (long-term versus short-term), and the type of account the asset is held in (tax-exempt, tax-deferred, or normal).</p>
+<p>Implied Return and Growth</p>
+<p>Price-to-earnings ratios not only are used for individual stocks but also are a val- uation metric for stock indexes, such S&amp;P 500, FTSE 100, or Nikkei 225. Here, the stock index value is divided by a weighted sum of the index constituents’ earnings per share. This will be explored in depth later in the curriculum, but we can relate the price-to-earnings ratio to our earlier discussion of relating a stock’s price (<span class="math inline">\(PV\)</span>) to expected future cash flows to make some useful observations. First, recall Equation 14:</p>
+<p><span class="math display">\[PV_t = \frac{D_t(1+g)}{r-g}\]</span></p>
+<p>We can divide both sides by <span class="math inline">\(E_t\)</span>, earnings per share for period <span class="math inline">\(t\)</span>, to obtain:</p>
+<p><span class="math display">\[\frac{PV_t}{E_t} = \frac{ \frac{D_t}{E_t} \times (1+g) }{ r - g } \tag{23}\]</span></p>
+<p>The left-hand side of Equation 23 is the price-to-earnings ratio, whereas the first term in the numerator on the right is the proportion of earnings distributed to shareholders as dividends known as the <strong>dividend payout ratio</strong>.</p>
 <hr>
-<p><strong>Leveraged Return</strong></p>
-<p>In the previous calculations, we have assumed that the investor’s position in an asset is equal to the total investment made by an investor using his or her own money. This section differs in that the investor creates a leveraged position.</p>
-<p>There are two ways of creating a claim on asset returns that are greater than the investment of one’s own money. First, an investor may trade futures contracts in which the money required to take a position may be as little as 10 percent of the notional value of the asset. In this case, the leveraged return, the return on the investor’s own money, is 10 times the actual return of the underlying security. Both the gains and losses are amplified by a factor of 10.</p>
-<p>Investors can also invest more than their own money by borrowing money to purchase the asset. This approach is easily done in stocks and bonds, and very common when investing in real estate. If half (50 percent) of the money invested is borrowed, then the gross return to the investor is doubled, but the interest to be paid on borrowed money must be deducted to calculate the net return.</p>
-<p>Using borrowed capital, debt, the size of the leveraged position increases by the additional, borrowed capital. If the total investment return earned on the leveraged portfolio, <span class="math inline">\(R_p\)</span>, exceeds the borrowing cost on debt, <span class="math inline">\(r_D\)</span>, taking on leverage increases the return on the portfolio. Denoting the return on a leveraged portfolio as <span class="math inline">\(R_L\)</span>, then the return can be calculated as follows:</p>
-<p><span class="math display">\[
-R_L
-= \frac{\text{Portfolio return}}{\text{Portfolio equity}}
-= \frac{[R_p \times (V_E + V_B) - (V_B \times r_D)]}{V_E}
-= R_p + \frac{V_B}{V_E}(R_p - r_D),
-\tag{15}
-\]</span></p>
-<p>where <span class="math inline">\(V_E\)</span> is the equity of the portfolio and <span class="math inline">\(V_B\)</span> is the debt or borrowed funds. If <span class="math inline">\(R_p &lt; r_D\)</span>, then leverage decreases <span class="math inline">\(R_L\)</span>.</p>
-<p>For example, for a EUR10 million equity portfolio that generates an 8 percent total investment return, <span class="math inline">\(R_p\)</span>, over one year and is financed 30 percent with debt at 5 percent, then the leveraged return, <span class="math inline">\(R_L\)</span>, is:</p>
-<p><span class="math display">\[
-R_L
-= R_p + \frac{V_B}{V_E}(R_p - r_D)
-= 8\% + \frac{\text{EUR3 million}}{\text{EUR7 million}}(8\% - 5\%)
-= 8\% + 0.43 \times 3\%
-= 9.29\%
-\]</span></p>
+<p>In practice, the <strong>forward price-to-earnings ratio</strong> or ratio of its share price to an estimate of its next period (t+1) earnings per share is commonly used. With it, we can simplify the previous equation as follows:</p>
+<p><span class="math display">\[\frac{PV_t}{E_{t+1}} = \frac{ \frac{D_{t+1}}{E_{t+1}} }{ r - g }\tag{24}\]</span></p>
+<p>From Equation 24, we can see that forward price-to-earnings ratio is positively related to higher expected dividend payout ratio and higher expected growth but is negatively related to the required return.</p>
+<hr>
+<p>Under the cash flow additivity principle, a risk-neutral investor would be indifferent between strategies 1 and 2 under the following condition:</p>
+<p><span class="math display">\[FV_2 = PV_0 \times (1+r_2)^2 = PV_0 \times (1+r_1)(1+F_{1,1}) \tag{25}\]</span></p>
 <hr>
 
 
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
