@@ -1,6 +1,6 @@
 ---
-title: "Quantitative Methods"
-subtitle: "Rates and Returns"
+title: "Rates and Returns"
+subtitle: "Quantitative Methods"
 format:
   html:
     self-contained: true

@@ -11,11 +11,12 @@ website:
   navbar:
     background: primary
     search: true
-    right:
+    right: # controls if navbar is left or right side of page
       - text: "Home"
         file: index.qmd
       - text: "Formulas"
         file: formulas.qmd
+      - sidebar:quant_methods
 
   sidebar:
     - title: "Render Docs"
@@ -24,8 +25,17 @@ website:
       contents:
         - text: "Formulas Render"
           file: formulas.qmd
-        - text: "Rates and Returns"
-          file: quant_rates_returns.qmd
+
+
+    - id: quant_methods
+      title: Quantitative Methods
+      style: "docked"
+      collapse-level: 1
+      contents:
+        - section: "Overview"
+          contents:
+            - quant/time_value.qmd
+            - quant/rates_return.qmd
 
 format:  
   html:
