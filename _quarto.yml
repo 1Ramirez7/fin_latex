@@ -17,6 +17,7 @@ website:
       - text: "Formulas"
         file: formulas.qmd
       - sidebar:quant_methods
+      - sidebar:cheat_sheets
 
   sidebar:
     - title: "Render Docs"
@@ -38,6 +39,15 @@ website:
             - quant/b_time_value.qmd
             - quant/c_stat_measures.qmd
 
+    - id: cheat_sheets
+      title: Cheat Sheets
+      style: "docked"
+      collapse-level: 1
+      contents:
+        - section: "Overview"
+          contents:
+            - cheat/cheat_sheet_lv_one.qmd
+
 format:  
   html:
     theme:
@@ -45,6 +55,3 @@ format:
       dark: darkly
     css: styles.css
     toc: true
-
-
-

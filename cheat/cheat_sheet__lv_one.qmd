@@ -1,0 +1,3314 @@
+---
+title: CFA Program Level 1"
+Subtitle: "Formula Sheet (2025)"
+format:
+  html:
+    self-contained: true
+    css: ../styles.css
+    toc: False
+---
+
+
+
+## CFA ${ }^{\text {® }}$ Program Level I
+
+FORMULA SHEET (2025) 
+
+
+## Table of Contents
+
+- [Setting Up the Texas BA II Plus Financial Calculator](#setting-up-the-texas-ba-ii-plus-financial-calculator)
+- [VOLUME 1: QUANTITATIVE METHODS](#volume-1-quantitative-methods)
+  - [Learning Module 1: Rates and Returns](#learning-module-1-rates-and-returns)
+  - [Learning Module 2: Time Value of Money in Finance](#learning-module-2-time-value-of-money-in-finance)
+  - [Learning Module 3: Statistical Measures of Asset Returns](#learning-module-3-statistical-measures-of-asset-returns)
+  - [Learning Module 4: Probability Trees and Conditional Expectations](#learning-module-4-probability-trees-and-conditional-expectations)
+  - [Learning Module 5: Portfolio Mathematics](#learning-module-5-portfolio-mathematics)
+  - [Learning Module 6: Simulation Methods](#learning-module-6-simulation-methods)
+  - [Learning Module 7: Estimation and Inference](#learning-module-7-estimation-and-inference)
+  - [Learning Module 8: Hypothesis Testing](#learning-module-8-hypothesis-testing)
+  - [Learning Module 9: Parametric and Non-Parametric Tests of Independence](#learning-module-9-parametric-and-non-parametric-tests-of-independence)
+  - [Learning Module 10: Simple Linear Regression](#learning-module-10-simple-linear-regression)
+  - [Learning Module 11: Introduction to Big Data Techniques](#learning-module-11-introduction-to-big-data-techniques)
+- [VOLUME 2: ECONOMICS](#volume-2-economics)
+  - [Learning Module 1: The Firm and Market Structures](#learning-module-1-the-firm-and-market-structures)
+  - [Learning Module 2: Understanding Business Cycles](#learning-module-2-understanding-business-cycles)
+  - [Learning Module 3: Fiscal Policy](#learning-module-3-fiscal-policy)
+  - [Learning Module 4: Monetary Policy](#learning-module-4-monetary-policy)
+  - [Learning Module 5: Introduction to Geopolitics](#learning-module-5-introduction-to-geopolitics)
+  - [Learning Module 6: International Trade](#learning-module-6-international-trade)
+  - [Learning Module 7: Capital Flows and the FX Market](#learning-module-7-capital-flows-and-the-fx-market)
+  - [Learning Module 8: Exchange Rate Calculations](#learning-module-8-exchange-rate-calculations)
+- [VOLUME 3: CORPORATE ISSUERS](#volume-3-corporate-issuers)
+  - [Learning Module 1: Organizational Forms, Corporate Issuer Features, and Ownership](#learning-module-1-organizational-forms-corporate-issuer-features-and-ownership)
+  - [Learning Module 2: Investors and Other Stakeholders](#learning-module-2-investors-and-other-stakeholders)
+  - [Learning Module 3: Working Capital and Liquidity](#learning-module-3-working-capital-and-liquidity)
+  - [Learning Module 4: Corporate Governance: Conflicts, Mechanisms, Risks, and Benefits](#learning-module-4-corporate-governance-conflicts-mechanisms-risks-and-benefits)
+  - [Learning Module 5: Capital Investments and Capital Allocation](#learning-module-5-capital-investments-and-capital-allocation)
+  - [Learning Module 6: Capital Structure](#learning-module-6-capital-structure)
+  - [Learning Module 7: Business Models](#learning-module-7-business-models)
+- [VOLUME 4: FINANCIAL STATEMENT ANALYSIS](#volume-4-financial-statement-analysis)
+  - [Learning Module 1: Introduction to Financial Statement Analysis](#learning-module-1-introduction-to-financial-statement-analysis)
+  - [Learning Module 2: Analyzing Income Statements](#learning-module-2-analyzing-income-statements)
+  - [Learning Module 3: Analyzing Balance Sheets](#learning-module-3-analyzing-balance-sheets)
+  - [Learning Module 4: Analyzing Statements of Cash Flows I](#learning-module-4-analyzing-statements-of-cash-flows-i)
+  - [Learning Module 5: Analyzing Statements of Cash Flows II](#learning-module-5-analyzing-statements-of-cash-flows-ii)
+  - [Learning Module 6: Analysis of Inventories](#learning-module-6-analysis-of-inventories)
+  - [Learning Module 7: Analysis of Long-Term Assets](#learning-module-7-analysis-of-long-term-assets)
+  - [Learning Module 8: Topics in Long-Term Liabilities and Equity](#learning-module-8-topics-in-long-term-liabilities-and-equity)
+  - [Learning Module 9: Analysis of Income Taxes](#learning-module-9-analysis-of-income-taxes)
+  - [Learning Module 10: Financial Reporting Quality](#learning-module-10-financial-reporting-quality)
+  - [Learning Module 11: Financial Analysis Techniques](#learning-module-11-financial-analysis-techniques)
+  - [Learning Module 12: Introduction to Financial Statement Modeling](#learning-module-12-introduction-to-financial-statement-modeling)
+- [VOLUME 5: EQUITY INVESTMENTS](#volume-5-equity-investments)
+  - [Learning Module 1: Market Organization and Structure](#learning-module-1-market-organization-and-structure)
+  - [Learning Module 2: Security Market Indexes](#learning-module-2-security-market-indexes)
+  - [Learning Module 3: Market Efficiency](#learning-module-3-market-efficiency)
+  - [Learning Module 4: Overview of Equity Securities](#learning-module-4-overview-of-equity-securities)
+  - [Learning Module 5: Company Analysis: Past and Present](#learning-module-5-company-analysis-past-and-present)
+  - [Learning Module 6: Industry and Company Analysis](#learning-module-6-industry-and-company-analysis)
+  - [Learning Module 7: Company Analysis: Forecasting](#learning-module-7-company-analysis-forecasting)
+  - [Learning Module 8: Equity Valuation: Concepts and Basic Tools](#learning-module-8-equity-valuation-concepts-and-basic-tools)
+- [VOLUME 6: FIXED INCOME](#volume-6-fixed-income)
+  - [Learning Module 1: Fixed-Income Instrument Features](#learning-module-1-fixed-income-instrument-features)
+  - [Learning Module 2: Fixed-Income Cash Flows and Types](#learning-module-2-fixed-income-cash-flows-and-types)
+  - [Learning Module 3: Fixed-Income Issuance and Trading](#learning-module-3-fixed-income-issuance-and-trading)
+  - [Learning Module 4: Fixed-Income Markets for Corporate Issuers](#learning-module-4-fixed-income-markets-for-corporate-issuers)
+  - [Learning Module 5: Fixed-Income Markets for Government Issuers](#learning-module-5-fixed-income-markets-for-government-issuers)
+  - [Learning Module 6: Fixed-Income Bond Valuation: Prices and Yields](#learning-module-6-fixed-income-bond-valuation-prices-and-yields)
+  - [Learning Module 7: Yield and Yield Spread Measures for Fixed Rate Bonds](#learning-module-7-yield-and-yield-spread-measures-for-fixed-rate-bonds)
+  - [Learning Module 8: Yield and Yield Spread Measures for Floating-Rate Instruments](#learning-module-8-yield-and-yield-spread-measures-for-floating-rate-instruments)
+  - [Learning Module 9: The Term Structure of Interest Rates: Spot, Par, and Forward Curves](#learning-module-9-the-term-structure-of-interest-rates-spot-par-and-forward-curves)
+  - [Learning Module 10: Interest Rate Risk and Return](#learning-module-10-interest-rate-risk-and-return)
+  - [Learning Module 11: Yield-Based Bond Duration Measures and Properties](#learning-module-11-yield-based-bond-duration-measures-and-properties)
+  - [Learning Module 12: Yield-Based Bond Convexity and Portfolio Properties](#learning-module-12-yield-based-bond-convexity-and-portfolio-properties)
+  - [Learning Module 13: Curve-Based and Empirical Fixed-Income Risk Measures](#learning-module-13-curve-based-and-empirical-fixed-income-risk-measures)
+  - [Learning Module 14: Credit Risk](#learning-module-14-credit-risk)
+  - [Learning Module 15: Credit Analysis for Government Issuers](#learning-module-15-credit-analysis-for-government-issuers)
+  - [Learning Module 16: Credit Analysis for Corporate Issuers](#learning-module-16-credit-analysis-for-corporate-issuers)
+  - [Learning Module 17: Fixed-Income Securitization](#learning-module-17-fixed-income-securitization)
+  - [Learning Module 18: Asset-Backed Security (ABS) Instrument and Market Features](#learning-module-18-asset-backed-security-abs-instrument-and-market-features)
+  - [Learning Module 19: Mortgage-Backed Security (MBS) Instrument and Market Features](#learning-module-19-mortgage-backed-security-mbs-instrument-and-market-features)
+- [VOLUME 7: DERIVATIVES](#volume-7-derivatives)
+  - [Learning Module 1: Derivative Instrument and Derivatives Market Features](#learning-module-1-derivative-instrument-and-derivatives-market-features)
+  - [Learning Module 2: Forward Commitments and Contingent Claim Features and Instruments](#learning-module-2-forward-commitments-and-contingent-claim-features-and-instruments)
+  - [Learning Module 3: Derivative Benefits, Risks, and Issuer and Investor Uses](#learning-module-3-derivative-benefits-risks-and-issuer-and-investor-uses)
+  - [Learning Module 4: Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives](#learning-module-4-arbitrage-replication-and-the-cost-of-carry-in-pricing-derivatives)
+  - [Learning Module 5: Pricing and Valuation of Forward Contracts and for an Underlying with Varying Maturities](#learning-module-5-pricing-and-valuation-of-forward-contracts-and-for-an-underlying-with-varying-maturities)
+  - [Learning Module 6: Pricing and Valuation of Futures Contracts](#learning-module-6-pricing-and-valuation-of-futures-contracts)
+  - [Learning Module 7: Pricing and Valuation of Interest Rates and Other Swaps](#learning-module-7-pricing-and-valuation-of-interest-rates-and-other-swaps)
+  - [Learning Module 8: Pricing and Valuation of Options](#learning-module-8-pricing-and-valuation-of-options)
+  - [Learning Module 9: Option Replication Using Put-Call Parity](#learning-module-9-option-replication-using-put-call-parity)
+  - [Learning Module 10: Valuing a Derivative Using a One-Period Binomial Model](#learning-module-10-valuing-a-derivative-using-a-one-period-binomial-model)
+- [VOLUME 8: ALTERNATIVE INVESTMENTS](#volume-8-alternative-investments)
+  - [Learning Module 1: Alternative Investment Features, Methods, and Structures](#learning-module-1-alternative-investment-features-methods-and-structures)
+  - [Learning Module 2: Alternative Investment Performance and Returns](#learning-module-2-alternative-investment-performance-and-returns)
+  - [Learning Module 3: Investments in Private Capital: Equity and Debt](#learning-module-3-investments-in-private-capital-equity-and-debt)
+  - [Learning Module 4: Real Estate and Infrastructure](#learning-module-4-real-estate-and-infrastructure)
+  - [Learning Module 5: Natural Resources](#learning-module-5-natural-resources)
+  - [Learning Module 6: Hedge Funds](#learning-module-6-hedge-funds)
+  - [Learning Module 7: Introduction to Digital Assets](#learning-module-7-introduction-to-digital-assets)
+- [VOLUME 9: PORTFOLIO MANAGEMENT](#volume-9-portfolio-management)
+  - [Learning Module 1: Portfolio Risk and Return: Part I](#learning-module-1-portfolio-risk-and-return-part-i)
+  - [Learning Module 2: Portfolio Risk and Return: Part II](#learning-module-2-portfolio-risk-and-return-part-ii)
+  - [Learning Module 3: Portfolio Management: An Overview](#learning-module-3-portfolio-management-an-overview)
+  - [Learning Module 4: Basics of Portfolio Planning and Construction](#learning-module-4-basics-of-portfolio-planning-and-construction)
+  - [Learning Module 5: The Behavioral Biases of Individuals](#learning-module-5-the-behavioral-biases-of-individuals)
+  - [Learning Module 6: Introduction to Risk Management](#learning-module-6-introduction-to-risk-management)
+
+## CFA Level 1 - Formula Sheet (2025)
+
+## Setting Up the Texas BA II Plus Financial Calculator
+
+Video: https://youtu.be/OMS8d8QOFmc
+
+## Using Texas BA II Plus Financial Calculator
+
+Video: https://youtu.be/LWmTTiZz8BU
+
+Video (Requires Login to Facebook): https://fb.watch/nci5V7Dwtj/
+
+## VOLUME 1: QUANTITATIVE METHODS
+
+## Learning Module 1: Rates and Returns
+
+## Determinants of Interest Rates
+
+Interest rate, $r=$ Real risk-free rate + Inflation premium + Default risk premium
+
++ Liquidity premium + Maturity premium
+$(1+$ Nominal risk-free rate $)=(1+$ Real risk-free rate $) \times(1+$ Inflation premium $)$
+
+Nominal risk-free rate $=$ Real risk-free rate + Inflation premium
+
+Maturity premium = Interest rate on longer-maturity, liquid Treasury debt
+
+- Interest rate on short-term Treasury debt
+
+
+## Holding Period Return
+
+$$
+R=\frac{P_{1}-P_{0}+I_{1}}{P_{0}}
+$$
+
+where:
+
+- $P_{0}=$ Price at the beginning of the period
+- $P_{1}=$ Price at the end of the period
+- $I_{1}=$ Income
+
+If given holding period returns $R_{1}, R_{2}, \ldots, R_{T}$ over the holding period:
+
+$$
+R=\left(1+R_{1}\right) \times\left(1+R_{2}\right) \times \ldots \times\left(1+R_{T}\right)-1
+$$
+
+## Arithmetic Return
+
+$$
+\bar{R}_{i}=\frac{1}{T} \sum_{t=1}^{T} R_{i t}=\frac{1}{T}\left(R_{i 1}+R_{i 2}+\cdots+R_{i T}\right)
+$$
+
+## Geometric Mean Return
+
+$$
+\bar{R}_{G i}=\sqrt[T]{\prod_{t=1}^{T}\left(1+R_{t}\right)-1}=\sqrt[T]{\left(1+R_{i 1}\right) \times\left(1+R_{i 2}\right) \times \ldots \times\left(1+R_{i T}\right)}-1
+$$
+
+## Harmonic Mean
+
+$$
+\bar{X}_{H i}=\frac{n}{\sum_{i=1}^{n}\left(1 / X_{i}\right)} \quad \text { for } X_{i}>0
+$$
+
+## Relationship between Arithmetic Mean, Geometric Mean, and Harmonic Mean
+
+$$
+(\text { Geometric mean })^{2}=\text { Arithmetic mean } \text { × } \text { Harmonic mean }
+$$
+
+## Money-Weighted Return (MWR)
+
+$$
+\sum_{t=0}^{T} \frac{C F_{t}}{(1+M W R)^{t}}=0
+$$
+
+## Time-Weighted Return (TWR)
+
+Given the holding period returns for each sub-period, $R_{1}, R_{2}, \ldots, R_{T}$
+
+If $\mathrm{T}>1$ year, then
+
+$$
+\text { Annualized TWR }=\left[\left(1+R_{1}\right) \times\left(1+R_{2}\right) \times \ldots \times\left(1+R_{T}\right)\right]^{1 / T}-1
+$$
+
+If $T=1$ year, then
+
+$$
+\text { Annualized } T W R=\left(1+R_{1}\right) \times\left(1+R_{2}\right) \times \ldots \times\left(1+R_{T}\right)-1
+$$
+
+If $T<1$ year, then
+
+$$
+\text { TWR for holding period }=\left(1+R_{1}\right) \times\left(1+R_{2}\right) \times \ldots \times\left(1+R_{T}\right)-1
+$$
+
+## Non-Annual Compounding
+
+$$
+P V=F V_{N}\left(1+\frac{R_{S}}{m}\right)^{-m N}
+$$
+
+where:
+
+- $m=$ Number of compounding periods per year
+- $R_{s}=$ Quoted annual interest rate
+- $N=$ Number of years
+
+## Annualizing Returns
+
+$R_{\text {annual }}=\left(1+R_{\text {weekly }}\right)^{52}-1$
+$R_{\text {annual }}=\left(1+R_{\text {monthly }}\right)^{12}-1$
+$R_{\text {annual }}=\left(1+R_{\text {daily }}\right)^{252}-1 \quad$ assuming 252 trading days per year
+$R_{\text {weekly }}=\left(1+R_{\text {daily }}\right)^{5}-1 \quad$ assuming 5 trading days per week
+
+## Continuously Compounded Returns
+
+$$
+\begin{gathered}
+P_{t}=P_{0} e^{r_{0, T}} \\
+r_{0, T}=\ln \left(\frac{P_{t}}{P_{0}}\right) \\
+r_{0, T}=r_{0,1}+r_{1,2}+\cdots+r_{T-2, T-1}+r_{T-1, T}
+\end{gathered}
+$$
+
+## Real Returns
+
+$(1+$ real return $)=(1+$ real risk-free rate $) \times(1+$ risk premium $)$
+
+## Pre-Tax and After-Tax Nominal Return
+
+After-tax nominal return $=$ Pre-tax nominal return × ( 1 - Tax rate)
+After-tax real return $=\frac{[1+\text { Pre-Tax nominal return } \times(1-\text { Tax rate })]}{1+\text { Inflation premium }}-1$
+
+## Leveraged Return
+
+Return on a leveraged portfolio
+
+$$
+R_{L}=R_{P}+\frac{V_{B}}{V_{E}}\left(R_{P}-r_{D}\right)
+$$
+
+where:
+
+- $R_{P}=$ Return on the investment portfolio (unleveraged)
+- $r_{D}=$ Cost of debt
+- $V_{B}=$ Debt/borrowed funds
+- $V_{E}=$ Equity of the portfolio
+
+## Learning Module 2: Time Value of Money in Finance
+
+$$
+F V_{t}=P V(1+r)^{t} \quad P V=\frac{F V_{t}}{(1+r)^{t}}
+$$
+
+where:
+
+- $F V_{t}=$ Future value at time $t$
+- $P V=$ Present value
+- $r=$ Discount rate per period
+- $t=$ Number of compounding periods
+
+As compounding frequency becomes very large (i.e., continuous compounding)
+
+$$
+F V_{t}=P V e^{r t} \quad P V=F V_{t} e^{-r t}
+$$
+
+## Present Value of Zero-Coupon Bond
+
+$$
+P V(\text { Discount Bond })=\frac{F V}{(1+r)^{t}}
+$$
+
+where:
+
+- $F V=$ Principal (or Face Value)
+- $r=$ Market discount rate per period
+- $t=$ Maturity of bond
+
+$$
+r=\left(\frac{F V_{t}}{P V}\right)^{1 / T}-1
+$$
+
+## Present Value of Coupon Bond
+
+$$
+P V(\text { Coupon Bond })=\frac{P M T}{(1+r)^{1}}+\frac{P M T}{(1+r)^{2}}+\cdots+\frac{P M T+F V}{(1+r)^{N}}
+$$
+
+where:
+
+- $P V=$ Bond's price
+- PMT = Periodic coupon payment
+- $F V=$ Face value
+- $N=$ Number of periods
+- $r=$ Market discount rate per period
+
+## Present Value of a Perpetual Bond (Perpetuity)
+
+$$
+P V(\text { Perpetual Bond })=\frac{P M T}{r}
+$$
+
+## Annuity Instruments (e.g., Mortgage)
+
+$$
+A=\frac{r P V}{1-(1+r)^{-t}}
+$$
+
+where:
+
+- $A=$ Periodic cash flow
+- $r=$ Market interest rate per period
+- $P V=$ Present value or principal amount of loan/bond
+- $t=$ Number of payment periods
+
+## Price of a Preferred Share
+
+$$
+P V_{t}=\frac{D_{t}}{r}
+$$
+
+where:
+
+- $D_{t}=$ Fixed periodic dividend
+- $r=$ Expected rate of return
+
+## Price of a Common Share
+
+## Constant Dividend Growth Rate into Perpetuity
+
+$$
+P V_{t}=\frac{D_{t}(1+g)}{r-g}=\frac{D_{t+1}}{r-g} \quad r>g
+$$
+
+where:
+
+- $D_{t}=$ Common dividend at time $t$
+- $g=$ Constant growth rate
+- $r=$ Expected rate of return
+
+$$
+\begin{gathered}
+r=\frac{D_{t+1}}{P V_{t}}+g \\
+\frac{P V_{t}}{E_{t}}=\frac{\frac{D_{t}}{E_{t}} \times(1+g)}{r-g} \\
+\frac{P V_{t}}{E_{t+1}}=\frac{\frac{D_{t+1}}{E_{t+1}}}{r-g}
+\end{gathered}
+$$
+
+where:
+
+- $E_{t}=$ Earnings per share for period $t$
+- $\frac{P V_{t}}{E_{t}}=$ Trailing price-to-earnings ratio
+- $\frac{P V_{t}}{E_{t+1}}=$ Forward price-to-earnings ratio
+
+## Two-stage Dividend Discount Model
+
+$$
+P V_{t}=\sum_{i=1}^{n} \frac{D_{t}\left(1+g_{s}\right)^{i}}{(1+r)^{i}}+\frac{E\left(S_{t+n}\right)}{(1+r)^{n}}
+$$
+
+where:
+
+- $g_{s}=$ Higher short-term dividend growth rate
+- $g_{L}=$ Lower long-term dividend growth rate
+- $n=$ Initial growth phase
+- $E\left(S_{t+n}\right)=$ Stock value in $n$ periods (Terminal value)
+
+$$
+=\frac{D_{t+n+1}}{r-g_{L}}
+$$
+
+## Forward Rate
+
+$$
+F_{1,1}=\frac{\left(1+r_{2}\right)^{2}}{\left(1+r_{1}\right)}-1
+$$
+
+where:
+
+- $F_{1,1}=$ One-year forward rate one year from now
+- $r_{1}=$ Discount rate on one-year risk-free discount bond
+- $r_{2}=$ Discount rate on two-year risk-free discount bond
+
+## Learning Module 3: Statistical Measures of Asset Returns
+
+## Measures of Central Tendency
+
+$$
+\text { Sample Mean, } \quad \bar{X}=\frac{1}{n} \sum_{i=1}^{n} X_{i}
+$$
+
+where:
+
+- $X_{i}=$ Observation $i(i=1,2,3, \ldots, n)$
+
+## Median
+
+$$
+\text { Position of median }=\frac{\text { Number of observations }+1}{2}
+$$
+
+## Quantiles
+
+$$
+\text { Interquartile range }=Q_{3}-Q_{1}
+$$
+
+where:
+
+- $Q_{1}=$ First quartile
+- $Q_{3}=$ Third quartile
+
+## Box and Whisker Plot
+
+$$
+\begin{aligned}
+& \text { Upper fence }=Q_{3}+1.5 \times I Q R \\
+& \text { Lower fence }=Q_{1}-1.5 \times I Q R
+\end{aligned}
+$$
+
+## Measures of Dispersion
+
+$$
+\text { Range }=\text { Maximum value }- \text { Minimum value }
+$$
+
+## Mean Absolute Deviation (MAD)
+
+$$
+M A D=\frac{\sum_{i=1}^{n}\left|X_{i}-\bar{X}\right|}{n}
+$$
+
+## Sample Variance
+
+$$
+s^{2}=\frac{\sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)^{2}}{n-1}
+$$
+
+## Sample Standard Deviation
+
+$$
+s=\sqrt{\frac{\sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)^{2}}{n-1}}
+$$
+
+## Sample Target Semideviation
+
+$$
+s_{\text {Target }}=\sqrt{\frac{\sum_{X_{i} \leq B}^{n}\left(X_{i}-B\right)^{2}}{n-1}}
+$$
+
+where:
+
+- $B=$ target
+- n = total number of sample observations
+
+## Coefficient of Variation
+
+$$
+C V=\frac{s}{\bar{X}}
+$$
+
+## Sample Skewness
+
+$$
+\text { Skewness } \approx\left(\frac{1}{n}\right) \frac{\sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)^{3}}{s^{3}}
+$$
+
+## Sample Excess Kurtosis
+
+$$
+K_{E} \approx\left(\frac{1}{n}\right) \frac{\sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)^{4}}{s^{4}}-3
+$$
+
+## Sample Covariance
+
+$$
+s_{X Y}=\frac{1}{n-1} \sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)
+$$
+
+## Sample Correlation Coefficient
+
+$$
+r_{X Y}=\frac{s_{X Y}}{s_{X} s_{Y}}
+$$
+
+## Learning Module 4: Probability Trees and Conditional Expectations
+
+## Expected Value of a Discrete Random Variable
+
+$$
+E(X)=\sum_{i=1}^{n} P\left(X_{i}\right) X_{i}
+$$
+
+## Variance of a Random Variable
+
+$$
+\begin{aligned}
+\sigma^{2}(X) & =E[X-E(X)]^{2} \\
+& =\sum_{i=1}^{n} P\left(X_{i}\right)[X-E(X)]^{2}
+\end{aligned}
+$$
+
+## Conditional Expected Value of a Random Variable
+
+$$
+E(X \mid S)=P\left(X_{1} \mid S\right) X_{1}+P\left(X_{2} \mid S\right) X_{2}+\cdots+P\left(X_{n} \mid S\right) X_{n}
+$$
+
+## Conditional Variance of a Random Variable
+
+$$
+\begin{gathered}
+\sigma^{2}(X \mid S)=P\left(X_{1} \mid S\right)\left[X_{1}-E\left(X_{1} \mid S\right)\right]^{2}+P\left(X_{2} \mid S\right)\left[X_{2}-E\left(X_{2} \mid S\right)\right]^{2}+\cdots \\
++P\left(X_{n} \mid S\right)\left[X_{n}-E\left(X_{n} \mid S\right)\right]^{2}
+\end{gathered}
+$$
+
+## Total Probability Rule for Expected Value
+
+$$
+E(X)=E\left(X \mid S_{1}\right) P\left(S_{1}\right)+E\left(X \mid S_{2}\right) P\left(S_{2}\right)+\cdots+E\left(X \mid S_{n}\right) P\left(S_{n}\right)
+$$
+
+where:
+
+- $S_{1}, S_{2}, \ldots, S_{n}$ are mutually exclusive and exhaustive events.
+
+## Bayes' Formula
+
+$$
+\begin{gathered}
+P(A \mid B)=\frac{P(B \mid A)}{P(B)} \times P(A) \\
+P(\text { Event } \mid \text { Information })=\frac{P(\text { Information } \mid \text { Event })}{P(\text { Information })} \times P(\text { Event })
+\end{gathered}
+$$
+
+## Learning Module 5: Portfolio Mathematics
+
+For $n$ assets in a portfolio
+
+## Expected return on portfolio
+
+$$
+E\left(R_{P}\right)=w_{1} E\left(R_{1}\right)+w_{2} E\left(R_{2}\right)+\cdots+w_{n} E\left(R_{n}\right)
+$$
+
+## Variance on portfolio
+
+$$
+\sigma^{2}\left(R_{P}\right)=\sum_{i=1}^{n} \sum_{j=1}^{n} w_{i} w_{j} \operatorname{Cov}\left(R_{i}, R_{j}\right)
+$$
+
+Requires $n$ variances and $\frac{n(n-1)}{2}$ distinct covariances to estimate portfolio variance.
+
+## Covariance
+
+$$
+\begin{aligned}
+\operatorname{Cov}\left(R_{i}, R_{j}\right) & =E\left[\left(R_{i}-E\left(R_{i}\right)\right)\left(R_{j}-E\left(R_{j}\right)\right)\right] \\
+& =\frac{1}{n-1} \sum_{t=1}^{n}\left(R_{i, t}-\bar{R}_{i}\right)\left(R_{j, t}-\bar{R}_{j}\right)
+\end{aligned}
+$$
+
+For a two-asset $(n=2)$ portfolio:
+
+$$
+\sigma^{2}\left(R_{P}\right)=w_{1}^{2} \sigma_{1}^{2}+w_{2}^{2} \sigma_{2}^{2}+2 w_{1} w_{2} \operatorname{Cov}\left(R_{1}, R_{2}\right)
+$$
+
+where:
+
+- $\operatorname{Cov}\left(R_{1}, R_{2}\right)=\rho\left(R_{1}, R_{2}\right) \times \sigma\left(R_{1}\right) \times \sigma\left(R_{2}\right)$
+
+## Video: https://youtu.be/IUwulZ9ONCO
+
+For a three-asset ( $n=3$ ) portfolio:
+
+$$
+\begin{aligned}
+\sigma^{2}\left(R_{P}\right)=w_{1}^{2} \sigma_{1}^{2}+ & w_{2}^{2} \sigma_{2}^{2}+w_{3}^{2} \sigma_{3}^{2}+2 w_{1} w_{2} \operatorname{Cov}\left(R_{1}, R_{2}\right) \\
+& +2 w_{1} w_{3} \operatorname{Cov}\left(R_{1}, R_{3}\right)+2 w_{2} w_{3} \operatorname{Cov}\left(R_{2}, R_{3}\right)
+\end{aligned}
+$$
+
+## Covariance Given a Joint Probability Function
+
+$$
+\operatorname{Cov}\left(R_{A}, R_{B}\right)=\sum_{i=1} \sum_{j=1} P\left(R_{A, i}, R_{B, j}\right) \times\left[R_{A, i}-E\left(R_{A}\right)\right] \times\left[R_{B, j}-E\left(R_{B}\right)\right]
+$$
+
+If $X$ and $Y$ are uncorrelated, then $E(X Y)=E(X) E(Y)$
+
+If $X$ and $Y$ are independent, then $P(X, Y)=P(X) P(Y)$
+
+## Safety-First Optimal Portfolio
+
+## Safety-First Ratio
+
+$$
+\text { SFRatio }=\frac{E\left(R_{P}\right)-R_{L}}{\sigma_{P}}
+$$
+
+$$
+\text { Shortfall risk }=\operatorname{Pr}\left[E\left(R_{P}\right)<R_{L}\right]=\operatorname{Normal}(- \text { SFRatio })
+$$
+
+where:
+
+- $R_{L}=$ Investor's threshold level
+- $E\left(R_{P}\right)=$ Expected portfolio return
+- $\sigma_{P}=$ Portfolio standard deviation
+
+## Video: https://youtu.be/S3x5JrGIOUA
+
+## Learning Module 6: Simulation Methods
+
+## Lognormal Distribution
+
+## Mean of a lognormal random variable
+
+$$
+\mu_{L}=\exp \left(\mu+0.50 \sigma^{2}\right)
+$$
+
+## Variance of a lognormal random variable
+
+$$
+\sigma_{L}^{2}=\exp \left(2 \mu+\sigma^{2}\right) \times\left[\exp \left(\sigma^{2}\right)-1\right]
+$$
+
+where:
+
+- $\mu=$ Mean of the normal random variable
+- $\sigma^{2}=$ Variance of the normal random variable
+
+## Continuously Compounded Rates of Return
+
+$$
+P_{T}=P_{0} \exp \left(r_{0, T}\right)
+$$
+
+where:
+
+- $P_{0}=$ Current asset price
+- $P_{T}=$ Asset price at time $T$
+- $r_{0, T}=$ Continuously compounded return from 0 to $T$
+
+If returns are independently and identically distributed (i.i.d.), then
+
+$$
+r_{0, T}=r_{0,1}+r_{1,2}+\cdots+r_{T-2, T-1}+r_{T-1, T}
+$$
+
+If the one-period continuously compounded returns are i.i.d. random variables with mean $\mu$ and $\sigma^{2}$, then
+
+$$
+\begin{aligned}
+E\left(r_{0, T}\right) & =\mu T \\
+\sigma^{2}\left(r_{0, T}\right) & =\sigma^{2} T \\
+\sigma\left(r_{0, T}\right) & =\sigma \sqrt{T}
+\end{aligned}
+$$
+
+## Learning Module 7: Estimation and Inference
+
+$$
+\text { Sharpe ratio }=\frac{R_{P}-R_{F}}{\sigma_{P}}
+$$
+
+where:
+
+- $R_{P}=$ Portfolio return
+- $R_{F}=$ Risk-free rate
+- $\sigma_{P}=$ Portfolio standard deviation of return
+
+$$
+\begin{aligned}
+& \text { Variance of the sampling distribution }=\frac{\sigma^{2}}{n} \\
+& \text { of the sample means } \\
+& \text { Standard error of }=\frac{\sigma}{\sqrt{n}}
+\end{aligned}
+$$
+
+where:
+
+- $\sigma=$ Population standard deviation
+- $n=$ Sample size
+
+Note: If $\sigma$ is not known, use $s$, the sample standard deviation.
+
+## Bootstrap Resampling
+
+$$
+s_{\bar{X}}=\sqrt{\frac{1}{B-1} \sum_{b=1}^{B}\left(\hat{\theta}_{b}-\bar{\theta}\right)^{2}}
+$$
+
+where:
+
+- $s_{\bar{X}}=$ Estimate of the standard error of the sample mean
+- $B=$ Number of resamples drawn from the original sample
+- $\hat{\theta}_{b}=$ Mean of a resample
+- $\bar{\theta}=$ Mean across all the resample means
+
+## Learning Module 8: Hypothesis Testing
+
+$$
+\begin{aligned}
+& \text { Confidence level }=1-\alpha \\
+& \text { Power of the test }=1-\beta
+\end{aligned}
+$$
+
+where:
+
+- $\alpha=$ Significance level (Probability of Type I error)
+- $\beta=$ Probability of Type II error
+
+## Test of a Single Mean
+
+Test statistic
+
+$$
+t=\frac{\bar{X}-\mu_{0}}{s / \sqrt{n}}
+$$
+
+Degrees of freedom $=n-1$
+$(1-\alpha) \%$ Confidence Interval $=\bar{X}+$ Critical value $\times\left(\frac{s}{\sqrt{n}}\right)$
+
+## Test of the Difference in Means
+
+Test statistic
+
+$$
+t=\frac{\left(\bar{X}_{d 1}-\bar{X}_{d 2}\right)-\left(\mu_{d 1}-\mu_{d 2}\right)}{\sqrt{\frac{s_{p}^{2}}{n_{d 1}}+\frac{s_{p}^{2}}{n_{d 2}}}}
+$$
+
+Degrees of freedom $=n_{d 1}+n_{d 2}-2$
+
+$$
+s_{p}^{2}=\frac{\left(n_{d 1}-1\right) s_{d 1}^{2}+\left(n_{d 2}-1\right) s_{d 2}^{2}}{n_{d 1}+n_{d 2}-2}
+$$
+
+## Test of the Mean of Differences
+
+Test statistic
+
+$$
+t=\frac{\bar{d}-\mu_{d 0}}{s_{\bar{d}}}
+$$
+
+Degrees of freedom $=n-1$
+
+## Test of a Single Variance
+
+Test statistic
+
+$$
+\chi^{2}=\frac{(n-1) s^{2}}{\sigma_{0}^{2}}
+$$
+
+Degrees of freedom $=n-1$
+
+## Test of the Difference in Variances
+
+Test statistic
+
+$$
+F=\frac{s_{\text {Before }}^{2}}{s_{\text {After }}^{2}}
+$$
+
+Degrees of freedom $=n_{1}-1, n_{2}-1$
+
+## Test of a Correlation
+
+Test statistic
+
+$$
+t=\frac{r \sqrt{n-2}}{\sqrt{1-r^{2}}}
+$$
+
+Degrees of freedom $=n-2$
+
+## Test of Independence (Categorical Data)
+
+Test statistic
+
+$$
+\chi^{2}=\sum_{i=1}^{m} \frac{\left(O_{i j}-E_{i j}\right)^{2}}{E_{i j}}
+$$
+
+Degrees of freedom $=(r-1)(c-1)$
+
+where:
+
+- $m=$ Number of cells in the table
+- $O_{i j}=$ Number of observations in each cell of row $i$ and column $j$
+- $E_{i j}=$ Expected number of observations in each cell of row $i$ and column $j$
+
+## Learning Module 9: Parametric and Non-Parametric Tests of Independence
+
+## Test of a Correlation
+
+Test statistic
+
+$$
+t=\frac{r \sqrt{n-2}}{\sqrt{1-r^{2}}}
+$$
+
+Degrees of freedom $=n-2$
+
+## Pearson Correlation (or Bivariate Correlation)
+
+$$
+r_{X Y}=\frac{s_{X Y}}{s_{X} s_{Y}}
+$$
+
+## Spearman Rank Correlation Coefficient
+
+$$
+r_{S}=1-\frac{6 \sum_{i=1}^{n} d_{i}^{2}}{n\left(n^{2}-1\right)}
+$$
+
+where:
+
+- $d=$ Difference in ranks
+
+## Test of Independence (Categorical Data)
+
+Test statistic
+
+$$
+\chi^{2}=\sum_{i=1}^{m} \frac{\left(O_{i j}-E_{i j}\right)^{2}}{E_{i j}}
+$$
+
+Degrees of freedom $=(r-1)(c-1)$
+
+where:
+
+- $m=$ Number of cells in the table
+- $O_{i j}=$ Number of observations in each cell of row $i$ and column $j$
+- $E_{i j}=$ Expected number of observations in each cell of row $i$ and column $j$
+
+$$
+=\frac{(\text { Total row } i) \times(\text { Total column } j)}{\text { Overall total }}
+$$
+
+## Standardized Residual (or Pearson Residual)
+
+$$
+\text { Standardized Residual }=\frac{O_{i j}-E_{i j}}{\sqrt{E_{i j}}}
+$$
+
+## Learning Module 10: Simple Linear Regression
+
+$$
+Y_{i}=b_{0}+b_{1} X_{1}+\cdots+b_{n} X_{n}+\varepsilon_{i}, \quad i=1,2, \ldots, n
+$$
+
+where:
+
+- $Y=$ Dependent variable
+- $X=$ Independent variable
+- $b_{0}=$ Intercept
+- $b_{i}=$ Slope coefficient, $i=1,2, \ldots, n$
+- $\varepsilon_{i}=$ Error term
+- $b_{0}, b_{1}, \ldots, b_{n}=$ Regression coefficients
+
+$$
+\hat{Y}_{i}=\hat{b}_{0}+\hat{b}_{1} X_{i}+e_{i}
+$$
+
+where:
+
+- $\widehat{Y}_{i}=$ Estimated value on the regression line for the $i$ th observation
+- $\hat{b}_{0}=$ Intercept
+- $\hat{b}_{1}=$ Slope
+- $e_{i}=$ Residual for the $i$ th observation
+$\hat{b}_{1}=\frac{\text { Covariance of } X \text { and } Y}{\text { Variance of } X}=\frac{\sum_{i=1}^{n}\left(Y_{i}-\bar{Y}\right)\left(X_{i}-\bar{X}\right)}{\sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)^{2}}$
+$\hat{b}_{0}=\bar{Y}-\hat{b}_{1} \bar{X}$
+Sum of Squares Total, $S S T=\sum_{i=1}^{n}\left(Y_{i}-\bar{Y}\right)^{2}=S S R+S S E$
+Sum of Squares Regression, $S S R=\sum_{i=1}^{n}\left(\hat{Y}_{i}-\bar{Y}\right)^{2}$
+Sum of Squares Error, $S S E=\sum_{i=1}^{n}\left(Y_{i}-\widehat{Y}_{i}\right)^{2}=\sum_{i=1}^{n} e_{i}^{2}$
+Coefficient of Determination
+
+$$
+R^{2}=\frac{S S R}{S S T}=1-\frac{S S E}{S S T}
+$$
+
+Correlation coefficient
+
+$$
+r=\frac{\text { Covariance of } X \text { and } Y}{(\text { Standard deviation of } X)(\text { Standard deviation of } Y)}
+$$
+
+Note: (Correlation coefficient) ${ }^{2}=$ Coefficient of determination
+
+Sample standard deviation of X
+
+$$
+S_{X}=\sqrt{\frac{\sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)^{2}}{n-1}}
+$$
+
+Sample standard deviation of Y
+
+$$
+S_{Y}=\sqrt{\frac{\sum_{i=1}^{n}\left(Y_{i}-\bar{Y}\right)^{2}}{n-1}}
+$$
+
+Homoskedasticity
+
+$$
+E\left(\varepsilon_{i}^{2}\right)=\sigma_{\varepsilon}^{2}, \quad i=1,2, \ldots, n
+$$
+
+## ANOVA F-Test
+
+Mean square regression (MSR)
+
+$$
+M S R=\frac{S S R}{k}
+$$
+
+Mean square error (MSE)
+
+$$
+M S E=\frac{S S E}{n-k-1}
+$$
+
+F-distributed test statistic
+
+$$
+F=\frac{M S R}{M S E}
+$$
+
+where:
+
+- $n=$ Number of observations
+- $k=$ Number of independent variables
+
+Standard error of estimate
+
+$$
+s_{e}=\sqrt{M S E}=\sqrt{\frac{\sum_{i=1}^{n}\left(Y_{i}-\widehat{Y}_{i}\right)^{2}}{n-k-1}}
+$$
+
+Hypothesis Test of the Slope Coefficient
+
+$$
+t=\frac{\hat{b}_{1}-B_{1}}{s_{\hat{b}_{1}}}
+$$
+
+Degrees of freedom, $d f=n-k-1$
+
+where:
+
+- $B_{1}=$ Hypothesized population slope
+- $s_{\hat{b}_{1}}=$ Standard error of the slope coefficient
+
+$$
+=\frac{s_{e}}{\sqrt{\sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)^{2}}}
+$$
+
+Hypothesis Test of the Intercept
+
+$$
+t_{\text {intercept }}=\frac{\hat{b}_{0}-B_{0}}{s_{\hat{b}_{0}}}
+$$
+
+Standard error of the intercept, $s_{\hat{b}_{0}}$
+
+$$
+s_{\hat{b}_{0}}=\sqrt{\frac{1}{n}+\frac{\bar{X}^{2}}{\sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)^{2}}}
+$$
+
+Prediction Intervals
+
+$$
+\hat{Y}_{f} \pm t_{\alpha / 2} \times s_{f}
+$$
+
+where: $\widehat{Y}_{f}=\widehat{b}_{0}+\widehat{b}_{1} X_{f}$
+
+Variance of the prediction error of Y, given X
+
+$$
+s_{f}^{2}=s_{e}^{2}\left[1+\frac{1}{n}+\frac{\left(X_{f}-\bar{X}\right)^{2}}{(n-1) s_{X}^{2}}\right]
+$$
+
+Standard error of the forecast
+
+$$
+s_{f}=s_{e} \sqrt{1+\frac{1}{n}+\frac{\left(X_{f}-\bar{X}\right)^{2}}{(n-1) s_{X}^{2}}}
+$$
+
+## The Log-Lin Model
+
+$$
+\ln Y_{i}=b_{0}+b_{1} X_{i}
+$$
+
+## The Lin-Log Model
+
+$$
+Y_{i}=b_{0}+b_{1} \ln X_{i}
+$$
+
+## The Log-Log Model
+
+$$
+\ln Y_{i}=b_{0}+b_{1} \ln X_{i}
+$$
+
+## Learning Module 11: Introduction to Big Data Techniques
+
+No formula.
+
+## VOLUME 2: ECONOMICS
+
+## Learning Module 1: The Firm and Market Structures
+
+Total profit $=$ Total revenue - Total cost
+
+Economic profit $=$ Total revenue - Total economic costs
+
+Accounting profit $=$ Total revenue - Total accounting costs
+
+Total revenue $=$ Price × Quantity $=P \times Q$
+
+Average revenue $=\frac{\text { Total revenue }}{\text { Quantity }}$
+
+Marginal cost $=\frac{\Delta T C}{\Delta Q}$
+
+Average variable cost $=\frac{\text { Total variable cost }}{\text { Quantity }}$
+
+Average fixed cost $=\frac{\text { Total fixed cost }}{\text { Quantity }}$
+
+Total cost = Total fixed cost + Total variable cost
+
+Average total cost $=$ Average fixed cost + Average variable cost
+
+## Concentration Ratio
+
+$$
+\text { Concentration ratio }=\sum_{i=1}^{n}(\text { Market share })_{i}
+$$
+
+## Herfindahl-Hirschman Index (HHI)
+
+$$
+H H I=\sum_{i=1}^{n}(\text { Market share })_{i}^{2}
+$$
+
+## Learning Module 2: Understanding Business Cycles
+
+## No formula
+
+## Learning Module 3: Fiscal Policy
+
+$$
+\text { Budget surplus/(deficit) }=G-T+B
+$$
+
+where:
+
+- $G=$ Government spending
+- $T=$ Taxes
+- $B=$ Payments of transfer benefits
+
+## Disposable Income
+
+$$
+Y D=Y-N T=(1-t) Y
+$$
+
+where:
+
+- $t=$ Net tax rate
+- $N T=$ Net taxes $=$ Taxes - Transfers
+- $t Y=$ Total tax revenue
+
+## The Fiscal Multiplier
+
+$$
+\text { Fiscal multiplier }=\frac{1}{1-c(1-t)}
+$$
+
+where:
+
+- $c=$ Marginal propensity to consume
+- $t=$ Tax rate
+
+## Learning Module 4: Monetary Policy
+
+Neutral rate $=$ Trend growth + Inflation target
+
+## Learning Module 5: Introduction to Geopolitics
+
+No formula
+
+## Learning Module 6: International Trade
+
+No formula
+
+## Learning Module 7: Capital Flows and the FX Market
+
+Real exchange rate $_{d / f}=S_{d / f} \times \frac{P_{f}}{P_{d}}$
+$\%$ Change in real exchange rate $=\left(1+\% \Delta S_{d / f}\right) \times \frac{\left(1+\% \Delta P_{f}\right)}{\left(1+\% \Delta P_{d}\right)}-1$
+
+$$
+\approx \% \Delta S_{d / f}+\% \Delta P_{f}-\% \Delta P_{d}
+$$
+
+Percentage change in base currency $f$ (vs currency $d$ )
+
+$$
+\frac{E\left(S_{d / f}\right)-S_{d / f}}{S_{d / f}}
+$$
+
+where:
+
+- $S_{d / f}=$ Spot exchange rate
+- $P_{f}=$ General price level of goods indexed in currency $f$
+- $P_{d}=$ General price level of goods indexed in currency $d$
+
+## Learning Module 8: Exchange Rate Calculations
+
+## Cross-Rate
+
+$$
+\frac{A}{B}=\frac{A}{C} \times \frac{C}{D}
+$$
+
+## Forward Rate
+
+$$
+F_{A / B}=S_{A / B} \times\left[\frac{1+r_{A} \times T}{1+r_{B} \times T}\right]
+$$
+
+$$
+\begin{aligned}
+\text { Forward points } & =F_{A / B}-S_{A / B} \\
+& =S_{A / B}\left(\frac{r_{A}-r_{B}}{1+r_{B}}\right) T
+\end{aligned}
+$$
+
+where:
+
+- $S_{A / B}=$ Spot exchange rate
+- $F_{A / B}=$ Forward exchange rate
+- $T=$ Time to maturity
+
+Learning Module 1: Organizational Forms, Corporate Issuer Features, and Ownership
+
+No formula
+
+## Learning Module 2: Investors and Other Stakeholders
+
+## No formula
+
+Learning Module 3: Working Capital and Liquidity
+
+$$
+\begin{aligned}
+& \qquad \begin{array}{c}
+\text { Cash conversion } \\
+\text { cycle }
+\end{array}=\begin{array}{c}
+\text { Days of inventory } \\
+\text { on hand }
+\end{array}+\begin{array}{c}
+\text { Days sales } \\
+\text { outstanding }
+\end{array}-\begin{array}{c}
+\text { Days payables } \\
+\text { outstanding }
+\end{array} \\
+& \quad \text { EAR of Supplier }_{\text {Financing }}^{\text {Days in Year }}=\left(1+\frac{\text { Discount } \%}{100 \%-\text { Discount } \%}\right)^{\frac{\text { Dayment Period-Discount Period }}{\text { Total working capital }}=\text { Current assets }- \text { Current Liabilities }}-1 \\
+& \begin{array}{c}
+\text { Net working } \\
+\text { capital }=\text { Current assets }(\text { excluding cash and marketable securities }) \\
+- \text { Current Liabilities }(\text { excluding short-term and current debt })
+\end{array}
+\end{aligned}
+$$
+
+Cash flow from operations
+= Cash received from customers
+
++ Interest and dividends received on financial investments
+- Cash paid to employees and suppliers
+- Taxes paid to governments
+- Interest paid to lenders
+
+Free cash flow $=$ Cash flow from operations - Investments in long-term assets
+
+$$
+\text { Current ratio }=\frac{\text { Current assets }}{\text { Current liabilities }}
+$$
+
+$$
+\text { Quick ratio }=\frac{\text { Cash }+ \text { Short-term marketable instruments }+ \text { Receivables }}{\text { Current liabilities }}
+$$
+
+$$
+\text { Cash ratio }=\frac{\text { Cash }+ \text { Short-term marketable instruments }}{\text { Current liabilities }}
+$$
+
+## Learning Module 4: Corporate Governance: Conflicts, Mechanisms, Risks, and Benefits
+
+## No formula
+
+## Learning Module 5: Capital Investments and Capital Allocation
+
+## Net Present Value
+
+$$
+N P V=C F_{0}+\frac{C F_{1}}{(1+r)^{1}}+\frac{C F_{2}}{(1+r)^{2}}+\cdots+\frac{C F_{T}}{(1+r)^{T}}=\sum_{t=0}^{T} \frac{C F_{t}}{(1+r)^{t}}
+$$
+
+where:
+
+- $C F_{t}=$ After-tax cash flow at time $t$
+- $r=$ Required rate of return
+- $C F_{0}=$ Initial outlay
+
+## Internal Rate of Return
+
+$$
+\sum_{t=0}^{T} \frac{C F_{t}}{(1+I R R)^{t}}=0
+$$
+
+## Video: https://youtu.be/bzck7QLhICw
+
+## Return on Invested Capital
+
+$$
+\begin{aligned}
+\text { ROIC } & =\frac{\text { After-tax operating profit }}{\text { Average invested capital }} \\
+& =\frac{\text { Operating profit } t_{t} \times(1-\text { Tax rate })}{\text { Average total long-term liabilities and equity }_{t-1, t}}
+\end{aligned}
+$$
+
+$$
+\text { ROIC }=\frac{\text { After-tax operating profit }}{\text { Sales }} \times \frac{\text { Sales }}{\text { Average invested capital }}
+$$
+
+## Real Options in Capital Budgeting
+
+$$
+\begin{aligned}
+& \text { Project NPV } \\
+& (\text { with option })
+\end{aligned}=\begin{gathered}
+\text { Project NPV } \\
+(\text { without option })
+\end{gathered}-\text { Option cost }+ \text { Option value }
+$$
+
+## Learning Module 6: Capital Structure
+
+## Weighted Average Cost of Capital
+
+$$
+W A C C=w_{d} r_{d}(1-t)+w_{e} r_{e}
+$$
+
+where:
+
+- $w_{d}=$ Target weight of debt in capital structure $=\frac{D}{D+E}$
+- $w_{e}=$ Target weight of common stock in capital structure $=\frac{E}{D+E}$
+- $r_{d}=$ Before-tax marginal cost of debt
+- $t=$ Marginal tax rate
+- $r_{d}(1-t)=$ After-tax marginal cost of debt
+- $r_{e}=$ Marginal cost of common stock
+
+## Operating Leverage
+
+$$
+\text { Operating leverage }=\frac{\text { Fixed costs }}{\text { Total costs }}
+$$
+
+## Interest Coverage
+
+$$
+\text { Interest coverage }=\frac{\text { Profit before interest and taxes }}{\text { Interest expense }}
+$$
+
+## Modigliani-Miller Capital Structure Propositions
+
+$$
+\begin{gathered}
+V_{L}=V_{U}+t D \\
+r_{e}=r_{0}+\left(r_{0}-r_{d}\right)(1-t) \frac{D}{E} \\
+E=\frac{\left(C F_{e}-r_{d} D\right)(1-t)}{r_{e}} \\
+V_{L}=\frac{C F_{e}(1-t)}{r_{\text {WACC }}}
+\end{gathered}
+$$
+
+where:
+
+- $V_{L}=$ Value of levered firm
+- $V_{U}=$ Value of unlevered firm
+- $t=$ Marginal tax rate
+- $r_{e}=$ Cost of equity
+- $r_{d}=$ Cost of debt
+- $r_{0}=$ Cost of capital (for a $100 \%$ equity-financed company)
+- $D=$ Market value of debt
+- $E=$ Market value of equity
+- $C F_{e}=$ After-tax cash flows to shareholders
+- $r_{d} D=$ Interest expense on debt
+
+## Static Trade-off Theory of Capital Structure
+
+$$
+V_{L}=V_{U}+t D-P V(\text { Costs of Financial Distress })
+$$
+
+## Learning Module 7: Business Models
+
+No formula
+
+## VOLUME 4: FINANCIAL STATEMENT ANALYSIS
+
+## Learning Module 1: Introduction to Financial Statement Analysis
+
+No formula
+
+## Learning Module 2: Analyzing Income Statements
+
+Gross profit $=$ Revenue - Cost of Goods Sold
+
+Operating income $=$ Gross margin - Selling, General, and Administrative Expense
+
+Taxable income $=$ Operating income - Interest expense
+
+Net income $=$ Taxable income - Taxes
+
+Ending shareholders' equity $=$ Beginning shareholders' equity + Net income
+
++ Other comprehensive income
+- Dividends
++ Net capital contributions from shareholders
+
+Ending retained earnings $=$ Beginning retained earnings + Net income - Dividends
+
+## Return on Equity
+
+$$
+R O E=\frac{\text { Net income }}{\text { Average shareholders' equity }}
+$$
+
+## Net Profit Margin
+
+$$
+\text { Net profit margin }=\frac{\text { Net income }}{\text { Revenue }}
+$$
+
+## Basic EPS
+
+$$
+\text { Basic EPS }=\frac{\text { Net income }- \text { Preferred dividends }}{\text { Weighted average number of shares outstanding }}
+$$
+
+## Diluted EPS (for convertible preferred stock)
+
+$$
+\text { Diluted EPS }=\frac{\text { Net income }}{\begin{array}{c}
+\text { Weighted average number } \\
+\text { of shares outstanding }
+\end{array}+\begin{array}{c}
+\text { New common shares that would } \\
+\text { have been issued at conversion }
+\end{array}}
+$$
+
+## Diluted EPS (for convertible debt)
+
+$$
+\text { Diluted EPS }=\frac{\begin{array}{c}
+\text { Net income }- \text { Preferred dividends }+ \\
+\text { After tax interest expense } \\
+\text { on convertible debt }
+\end{array}}{\begin{array}{c}
+\text { Weighted average number } \\
+\text { of shares outstanding }
+\end{array}+\begin{array}{c}
+\text { New common shares that would } \\
+\text { have been issued at conversion }
+\end{array}}
+$$
+
+## Diluted EPS (for options)
+
+$$
+\text { Diluted EPS }=\frac{\text { Net income }- \text { Preferred dividends }}{\begin{array}{c}
+\text { Weighted average number } \\
+\text { of shares outstanding }
+\end{array} \begin{array}{c}
+\text { Additional common } \\
+\text { shares issued upon } \\
+\text { conversion }
+\end{array}}
+$$
+
+## Treasury stock method
+
+$$
+\begin{gathered}
+\text { Additional common } \\
+\text { shares issued upon } \\
+\text { conversion }
+\end{gathered}=\left(\begin{array}{ccc}
+\text { New shares } & \text { Shares repurchased } \\
+\text { issued at } & - & \text { with cash received } \\
+\text { option exercise } & \text { from option exercised }
+\end{array}\right) \times \begin{gathered}
+\text { Proportion of year } \\
+\text { during which options } \\
+\text { were outstanding }
+\end{gathered}
+$$
+
+Video (Basic \& Diluted EPS): https://youtu.be/2C-mwVqO2SQ
+
+## Learning Module 3: Analyzing Balance Sheets
+
+Working capital $=$ Current assets - Current liabilities
+
+## Liquidity Ratios
+
+$$
+\begin{gathered}
+\text { Current ratio }=\frac{\text { Current assets }}{\text { Current liabilities }} \\
+\text { Quick }(\text { acid test }) \text { ratio }=\frac{\text { Cash }+ \text { Marketable securities }+ \text { Receivables }}{\text { Current liabilities }} \\
+\text { Cash ratio }=\frac{\text { Cash }+ \text { Marketable securities }}{\text { Current liabilities }}
+\end{gathered}
+$$
+
+## Solvency Ratios
+
+$$
+\begin{gathered}
+\text { Long-term debt-to-equity }=\frac{\text { Long-term debt }}{\text { Total equity }} \\
+\text { Debt-to-equity }=\frac{\text { Total debt }}{\text { Total equity }} \\
+\text { Total debt }=\frac{\text { Total debt }}{\text { Total assets }} \\
+\text { Financial leverage }=\frac{\text { Total assets }}{\text { Total equity }}
+\end{gathered}
+$$
+
+## Learning Module 4: Analyzing Statements of Cash Flows I
+
+| Cash flow Cash flow Cash flow $\underset{\text { cash }}{\text { Ending }}=\underset{\text { cash }}{\text { Beginning }}+\underset{\text { activities }}{\text { from operating }}+\underset{\text { activities }}{\text { from investing }}+\underset{\text { activities }}{\text { from financing }}$ |  |  |  |  |
+| :--- | :--- | :--- | :--- | :--- |
+| Ending accounts $=$ Beginning accounts receivable receivable | + Revenue - | ![](https://cdn.mathpix.com/cropped/9638f452-bd96-45dc-b06c-679ec810cb6c-32.jpg?height=44&width=311&top_left_y=620&top_left_x=1253) |  |  |
+| Ending inventory $=$ inventory | Cost of goods sold |  |  |  |
+| Ending accounts <br> = Beginning accounts payable | +Purchases - | Cash paid to suppliers |  |  |
+| Ending wages payable |  | Cash paid to employees |  |  |
+| + payable | Interest Cash paid expense ${ }^{-}$for interest |  |  |  |
+| $\_\_\_\_$ taxpaple + | $\_\_\_\_$ |  |  |  |
+| Ending $P P \& E=$ Beginning $P P \& E+$ $\_\_\_\_$ |  | Equipment sold |  |  |
+| Ending accumulated Beginning accumulated Depreciation depreciation depreciation $\_\_\_\_$ expense expense |  |  | ![](https://cdn.mathpix.com/cropped/9638f452-bd96-45dc-b06c-679ec810cb6c-32.jpg?height=52&width=300&top_left_y=1795&top_left_x=1491) |  |
+
+Note:
+![](https://cdn.mathpix.com/cropped/9638f452-bd96-45dc-b06c-679ec810cb6c-32.jpg?height=264&width=1171&top_left_y=1964&top_left_x=244)
+
+## Learning Module 5: Analyzing Statements of Cash Flows II
+
+## Free Cash Flow To Firm (FCFF)
+
+$$
+\begin{aligned}
+F C F F & =N I+N C C+\operatorname{Int}(1-\operatorname{Tax} \text { rate })-F C \operatorname{Inv}-W C \operatorname{Inv} \\
+& =C F O+\operatorname{Int}(1-\text { Tax rate })-F C \operatorname{Inv}
+\end{aligned}
+$$
+
+where:
+
+- NI = Net income
+- $N C C=$ Non-cash charges (e.g., depreciation and amortization)
+- Int = Interest expense
+- FCInv = Capital expenditures
+- WCInv = Working capital expenditures
+- CFO = Cash flow from operating activities = NI + NCC - WCInv
+
+## Free Cash Flow to Equity (FCFE)
+
+$F C F E=C F O-F C I n v+N e t B o r r o w i n g$
+
+where:
+
+- Net Borrowing $=$ Debt issued - Debt repaid
+
+## Performance Ratios
+
+Cash flow to revenue $=\frac{C F O}{\text { Revenue }}$
+
+Cash return on assets $=\frac{C F O}{\text { Average total assets }}$
+
+Cash return on equity $=\frac{\text { CFO }}{\text { Average shareholders equity }}$
+
+Cash to income $=\frac{C F O}{\text { Operating income }}$
+
+Cash flow per share $=\frac{\text { CFO }- \text { Preferred dividends }}{\text { Number of common shares outstanding }}$
+
+## Coverage Ratios
+
+Debt coverage ratio $=\frac{C F O}{\text { Total debt }}$
+
+Interest coverage ratio $=\frac{\text { CFO }+ \text { Interest paid }+ \text { Taxes paid }}{\text { Interest paid }}$
+Reinvestment ratio $=\frac{\text { CFO }}{\text { Cash paid for long term assets }}$
+Debt payment ratio $=\frac{C F O}{\text { Cash paid for long term debt repayment }}$
+Dividend payment ratio $=\frac{\text { CFO }}{\text { Dividends paid }}$
+Investing and financing ratio $=\frac{\text { CFO }}{\begin{array}{c}\text { Cash flow for investing and } \\ \text { financing activities }\end{array}}$
+
+## Learning Module 6: Analysis of Inventories
+
+## IFRS
+
+Inventories $=$ Lower of Cost and Net Realizable Value (NRV)
+$N R V=$ Estimated selling price less estimated costs of completion and costs necessary to complete the sale
+
+## US GAAP
+
+Inventories $=$ Lower of Cost and NRV
+For last-in, first-out (LIFO) method or retail inventory methods Inventories $=$ Lower of Cost and Market Value
+
+Market value $=$ Current replacement cost (subject to lower and upper limits)
+Lower limit $=N R V-$ Normal profit margin
+Upper limit $=N R V$
+Video: https://youtu.be/V8C31msIBzs
+Inventory turnover ratio $=\frac{\text { Cost of sales }}{\text { Average inventory }}$
+Days of inventory on hand $=\frac{\text { Number of days in period }}{\text { Inventory turnover ratio }}$
+
+Ending inventory $($ FIFO $)=$ Ending inventory $($ LIFO $)+$ LIFO reserve
+
+COGS $(F I F O)=$ COGS $($ LIFO $)$ - Change in LIFO reserve
+
+## Learning Module 7: Analysis of Long-Term Assets
+
+Net book value $=$ Historical cost - Accumulated depreciation
+
+Gain on sale of asset $=$ Sale proceeds - Net book value
+$\begin{gathered}\text { Estimated total } \\ \text { useful life }\end{gathered}=\begin{gathered}\text { Estimated age } \\ \text { of equipment }\end{gathered}+\begin{gathered}\text { Estimated } \\ \text { remaining life }\end{gathered}$
+$\begin{gathered}\text { Estimated total } \\ \text { useful life }\end{gathered}=\frac{\text { Gross PP\&E }}{\text { Annual depreciation expense }}$
+$\begin{gathered}\text { Estimated age } \\ \text { of equipment }\end{gathered}=\frac{\text { Accumulated depreciation }}{\text { Annual depreciation expense }}$
+$\underset{\text { remaining life }}{\text { Estimated }}=\frac{\text { Net PP\&E }}{\text { Annual depreciation expense }}$
+
+## Straight-line Depreciation
+
+$$
+\text { Annual depreciation expense }=\frac{\text { Historical cost }- \text { Salvage value }}{\text { Estimated useful life }}
+$$
+
+## Fixed Asset Turnover
+
+$$
+\text { Fixed asset turnover }=\frac{\text { Revenue }}{\text { Average net PP\&E }}
+$$
+
+## Impairment of Long-Lived Assets
+
+## IFRS
+
+Impairment = Carrying amount - Recoverable amount
+
+where:
+
+- Recoverable amount $=$ max(Fair value less costs to sell, Value in use)
+
+## US GAAP
+
+If asset's carrying amount > undiscounted expected future cash flows:
+Impairment = Carrying amount - Fair value
+
+## Learning Module 8: Topics in Long-Term Liabilities and Equity
+
+## Lessee Accounting - Finance Lease (IFRS)
+
+$$
+\begin{aligned}
+& \text { Interest expense }=\text { Implied interest rate × Beginning lease liability } \\
+& \qquad \text { on lease } \\
+& \text { Principal repayment }=\text { Lease payment }- \text { Interest expense } \\
+& \begin{array}{l}
+\text { Ending lease } \\
+\text { liability }
+\end{array}=\begin{array}{c}
+\text { Beginning lease } \\
+\text { liability }
+\end{array}+\text { Interest expense }- \text { Lease payment }
+\end{aligned}
+$$
+
+If ROU asset is amortized on a straight-line basis:
+
+$$
+\begin{gathered}
+\text { Amortization } \\
+\text { expense }
+\end{gathered}=\frac{\text { Initial ROU asset value - Salvage value }}{\text { Lease term }}
+$$
+
+$\underset{\text { asset }}{\text { Ending } \text { ROU }}=\underset{\text { asset }}{\text { Beginning } \text { ROU }}-\underset{\text { expense }}{\text { Amortization }}$
+
+## Lessee Accounting - Operating Lease (US GAAP)
+
+```
+$\underset{\text { expense }}{\text { Amortization }}=$ Lease payment - Interest expense
+
+$\underset{\text { asset }}{\text { Ending } R O U}=\underset{\text { asset }}{\text { Beginning } R O U}-\underset{\text { expense }}{\text { Amortization }}$
+
+$\underset{\text { liability }}{\text { Ending lease }}=\underset{\text { liability }}{\text { Beginning lease }}-\underset{\text { expense }}{\text { Amortization }}$
+```
+
+
+## Stock Options
+
+$$
+\text { Compensation expense }=\frac{\text { Fair value of options granted }}{\text { Vesting period }}
+$$
+
+## Learning Module 9: Analysis of Income Taxes
+
+## Deferred Tax Asset/Liability
+
+For Assets:
+
+$$
+\begin{gathered}
+\text { Deferred tax } \\
+\text { liability } /(\text { asset })
+\end{gathered}=\text { Tax rate } \times\left(\begin{array}{c}
+\text { Carrying amount } \\
+\text { of asset }
+\end{array}-\begin{array}{c}
+\text { Tax base } \\
+\text { of asset }
+\end{array}\right)
+$$
+
+## For Liabilities:
+
+$$
+\begin{gathered}
+\text { Deferred tax } \\
+\text { liability } /(\text { asset })
+\end{gathered}=\text { Tax rate } \times\left(\begin{array}{cc}
+\text { Tax base } & \text { Carrying amount } \\
+\text { of liability } & \text { of liability }
+\end{array}\right)
+$$
+
+Income tax expense $=$ Income tax payable $+\begin{gathered}\text { Changes in deferred tax } \\ \text { assets and liabilities }\end{gathered}$
+
+Effective tax rate $=\frac{\text { Income tax expense }}{\text { Pre-tax income }}$
+
+Cash tax rate $=\frac{\text { Cash tax }}{\text { Pre-tax income }}$
+
+## Learning Module 10: Financial Reporting Quality
+
+## Adjusted EBITDA
+
+$$
+\underset{\text { EBITDA }}{\text { Adjusted }}=\underset{\text { EBIT }}{\text { Adjusted }}+\underset{\substack{\text { Software } \\ \text { and R\&D } \\ \text { amortization }}}{\text { Post-IPO }}+\underset{\substack{\text { Share-based } \\ \text { amortization }}}{\text { Depreciation }+\underset{\text { shartion }}{\text { amortion }}}
+$$
+
+Straight-line method of depreciation
+
+$$
+\text { Depreciation expense }=\frac{\text { Cost }- \text { Salvage value }}{\text { Useful life }}
+$$
+
+## Double-Declining Balance method
+
+$$
+\text { Depreciaton expense }=\frac{2}{\text { Useful life }} \times(\text { Cost }- \text { Accumulated depreciation })
+$$
+
+## Video: https://youtu.be/6RskYAxdAFk
+
+## Units-of-Production method
+
+$$
+\text { Depreciation expense }=\frac{\text { Units produced }}{\text { Total units over useful life }} \times(\text { Cost }- \text { Salvage value })
+$$
+
+## Learning Module 11: Financial Analysis Techniques
+
+## Activity Ratios
+
+$$
+\begin{aligned}
+& \text { Inventory turnover }=\frac{\text { Cost of sales }}{\text { Average inventory }} \\
+& \text { Days of inventory on hand }=\frac{\text { Number of days in the period }}{\text { Inventory turnover }} \\
+& \text { Receivables turnover }=\frac{\text { Revenue }}{\text { Average receivables }} \\
+& \text { Days of sales outstanding }=\frac{\text { Number of days in the period }}{\text { Receivables turnover }} \\
+& \text { Payables turnover }=\frac{\text { Purchases }}{\text { Average payables }} \\
+& \text { Number of days of payables }=\frac{\text { Number of days in the period }}{\text { Payables turnover }} \\
+& \text { Working capital turnover }=\frac{\text { Revenue }}{\text { Average working capital }} \\
+& \text { Fixed asset turnover }=\frac{\text { Revenue }}{\text { Average net fixed assets }} \\
+& \text { Total asset turnover }=\frac{\text { Revenue }}{\text { Average total assets }} \\
+& \text { Liquidity Ratios } \\
+& \text { Current ratio }=\frac{\text { Current assets }}{\text { Current liabilities }} \\
+& \text { Quick ratio }=\frac{\text { Cash }+ \text { Short term marketable investments }+ \text { Receivables }}{\text { Current liabilities }} \\
+& \text { Cash ratio }=\frac{\text { Cash }+ \text { Short term marketable investments }}{\text { Current liabilities }} \\
+& \text { Defensive interval }=\frac{\text { Cash }+ \text { Short term marketable investments }+ \text { Receivables }}{\text { Daily cash expenditures }}
+\end{aligned}
+$$
+
+$\begin{aligned} & \text { Cash conversion } \\ & \text { cycle }\end{aligned}=\begin{gathered}\text { Days of inventory } \\ \text { on hand }\end{gathered}+\begin{gathered}\text { Days of sales } \\ \text { outstanding }\end{gathered}-\begin{gathered}\text { Number of days } \\ \text { of payables }\end{gathered}$
+
+## Solvency Ratios
+
+$\underset{(\text { "Total debt ratio" })}{\text { Debt-to-assets ratio }}=\frac{\text { Total debt }}{\text { Total assets }}$
+
+Debt-to-capital ratio $=\frac{\text { Total debt }}{\text { Total debt }+ \text { Total equity }}$
+
+Debt-to-equity ratio $=\frac{\text { Total debt }}{\text { Total equity }}$
+
+Financial leverage ratio $=\frac{\text { Average total assets }}{\text { Average total equity }}$
+
+Debt-to-EBITDA ratio $=\frac{\text { Total or net debt }}{\text { EBITDA }}$
+
+## Coverage Ratios
+
+Interest coverage ratio $=\frac{\text { EBIT }}{\text { Interest payments }}$
+Fixed charge coverage ratio $=\frac{\text { EBIT }+ \text { Lease payments }}{\text { Interest payments }+ \text { Lease payments }}$
+
+## Profitability Ratios
+
+Gross profit margin $=\frac{\text { Gross profit }}{\text { Revenue }}$
+Operating profit margin $=\frac{\text { Operating income }}{\text { Revenue }}$
+Pretax margin $=\frac{E B T}{\text { Revenue }}$
+Net profit margin $=\frac{\text { Net income }}{\text { Revenue }}$
+
+Operating ROA $=\frac{\text { Operating income }}{\text { Average total assets }}$
+ROA $=\frac{\text { Net income }}{\text { Average total assets }}$
+Return on invested capital $=\frac{E B I T \times(1-E f f \text { ective tax rate })}{\text { Average total debt and equity }}$
+ROE $=\frac{\text { Net income }}{\text { Average total equity }}$
+Return on common equity $=\frac{\text { Net income }- \text { Preferred dividends }}{\text { Average common equity }}$
+
+## DuPont Analysis
+
+ROE $=$ ROA × Financial Leverage
+
+ROE $=$ Net profit margin × Total asset turnover × Financial leverage
+ROE $=\underset{\text { burden }}{\text { Tax }} \times \underset{\text { burden }}{\text { Interest }} \times \underset{\text { margin }}{\text { EBIT }} \times \underset{\text { turnover }}{\text { Total asset }} \times \underset{\text { leverage }}{\text { Financial }}$
+
+where:
+
+- Tax burden $=\frac{\text { Net income }}{\text { EBT }}$
+- Interest burden $=\frac{E B T}{E B I T}$
+
+## Business Risk
+
+$\begin{gathered}\text { Coefficient of variation } \\ \text { of operating income }\end{gathered}=\frac{\text { Standard deviation of operating income }}{\text { Average operating income }}$
+$\begin{gathered}\text { Coefficient of variation } \\ \text { of net income }\end{gathered}=\frac{\text { Standard deviation of net income }}{\text { Average net income }}$
+$\begin{gathered}\text { Coefficient of variation } \\ \text { of revenue }\end{gathered}=\frac{\text { Standard deviation of revenue }}{\text { Average revenue }}$
+
+## Financial Sector Ratios
+
+$\begin{gathered}\text { Monetary reserve requirement } \\ (\text { Cash reserve ratio })\end{gathered}=\frac{\text { Reserves held at central bank }}{\text { Specified deposit liabilities }}$
+Net interest margin $=\frac{\text { Net interest income }}{\text { Total interest earning assets }}$
+Liquid asset requirement $=\frac{\text { Approved readily marketable securities }}{\text { Specified deposit liabilities }}$
+Net interest margin $=\frac{\text { Net interest income }}{\text { Total interest earning assets }}$
+
+## Learning Module 12: Introduction to Financial Statement Modeling
+
+Nothing new.
+
+## VOLUME 5: EQUITY INVESTMENTS
+
+## Learning Module 1: Market Organization and Structure
+
+Maximum leverage ratio $=\frac{1}{\text { Minimum margin requirement }}$
+Total return on leveraged stock investment:
+
+$$
+\text { Total Return }=\frac{\begin{array}{c}
+\text { Sales } \\
+\text { proceeds }
+\end{array}+\text { Dividends }- \text { Loan }-\frac{\text { Margin }}{\text { interest }}-\begin{array}{c}
+\text { Sales } \\
+\text { commission }
+\end{array}}{\begin{array}{l}
+\text { Initial } \\
+\text { equity }
+\end{array}+\begin{array}{c}
+\text { Purchase } \\
+\text { commission }
+\end{array}}-1
+$$
+
+Initial equity $=\begin{gathered}\text { Minimum margin } \\ \text { requirement }\end{gathered} \times$ Total purchase price
+Video (Return on Leveraged Stock Position): https://youtu.be/tZd4Xtvjill
+Margin Call Price $=\frac{P_{0}(1-\text { Initial Margin })}{(1-\text { Maintenance Margin })}$
+
+## Learning Module 2: Security Market Indexes
+
+$$
+\text { Price Return Index, } \quad V_{P R I}=\frac{\sum_{i=1}^{N} n_{i} P_{i}}{D}
+$$
+
+where:
+
+- $n_{i}=$ the number of units of constituent security $i$ held in the index portfolio
+- $N=$ the number of constituent securities in the index
+- $P_{i}=$ the unit price of constituent security $i$
+- $D=$ value of the divisor
+
+$$
+\begin{aligned}
+& \text { Price return of an index, } \quad P R_{I}=\frac{V_{P R I 1}-V_{P R I 0}}{V_{P R I 0}} \\
+& \text { Total Return Index, } \quad T R_{I}=\frac{V_{P R I 1}-V_{P R I 0}+I n c_{I}}{V_{P R I 0}}
+\end{aligned}
+$$
+
+where:
+
+- $V_{P R I 1}=$ value of the price return index at the end of the period
+- $V_{P R I 0}=$ value of the price return index at the beginning of the period
+- $I n c_{I}=$ total income (dividends and/or interest) from all securities in the index held over the period
+
+## Weighting Methods
+
+$$
+\text { Price weighting, } \quad w_{i}^{P}=\frac{P_{i}}{\sum_{j=1}^{N} P_{j}}
+$$
+
+Video (Recalculating the divisor of a price weighted index): https://youtu.be/eYiZNK-ETrg
+
+$$
+\begin{aligned}
+& \qquad \text { Equal weighting, } \quad w_{i}^{E}=\frac{1}{N} \\
+& \text { Market-capitalization weighting, } \quad w_{i}^{M}=\frac{Q_{i} P_{i}}{\sum_{j=1}^{N} Q_{j} P_{j}} \\
+& \text { Float-adjusted market capitalization weighting, } \quad w_{i}^{M}=\frac{f_{i} Q_{i} P_{i}}{\sum_{j=1}^{N} f_{j} Q_{j} P_{j}}
+\end{aligned}
+$$
+
+where:
+
+- $f_{i}=$ fraction of shares outstanding in the market float
+- $Q_{i}=$ number of shares outstanding of security $i$
+- $P_{i}=$ share price of security $i$
+- $N=$ number of securities in the index
+
+$$
+\text { Fundamental weighting, } \quad w_{i}^{F}=\frac{F_{i}}{\sum_{j=1}^{N} F_{j}}
+$$
+
+where $F_{\mathrm{i}}$ denotes a fundamental size measure of company $i$
+
+## Learning Module 3: Market Efficiency
+
+## No formula
+
+## Learning Module 4: Overview of Equity Securities
+
+Return on Equity (using average total book value of equity)
+
+$$
+R O E_{t}=\frac{N I_{t}}{\left(B V E_{t}+B V E_{t-1}\right) / 2}
+$$
+
+Return on Equity (using beginning book value of equity)
+
+$$
+R O E_{t}=\frac{N I_{t}}{B V E_{t-1}}
+$$
+
+where BVE = book value (Assets - Liabilities)
+
+## Learning Module 5: Company Analysis: Past and Present
+
+Market share $=\frac{\text { Revenue }}{\text { Market size }}$
+
+Sales potential $=100 \%-$ Market share $\%$
+
+Net sales $=$ Average selling price × Quantity sold
+
+Take rate $=\frac{\text { Revenue earned from transactions }}{\text { Total transaction volume }} \times 100 \%$
+
+Operating income $=Q \times(P-V C)-F C$
+
+where:
+
+- $Q=$ Units sold in a period
+- $P=$ Price per unit
+- $V C=$ Variable operating cost per unit
+- $F C=$ Fixed operating costs
+- $P-V C=$ Contribution margin per unit
+
+Degree of operating leverage $(D O L)=\frac{\% \Delta \text { Operating income }}{\% \Delta \text { Sales }}$
+Degree of financial leverage $(D F L)=\frac{\% \Delta \text { Net income }}{\% \Delta \text { Operating income }}$
+
+WACC $=\begin{aligned} & \text { Weight } \\ & \text { of debt }\end{aligned} \times \begin{gathered}\text { Gross cost } \\ \text { of debt }\end{gathered} \times(1-$ tax rate $)+\underset{\text { of equity }}{\text { Weight }} \times \begin{gathered}\text { Cost of } \\ \text { equity }\end{gathered}$
+
+## Learning Module 6: Industry and Company Analysis
+
+## Herfindahl-Hirschman Index (HHI)
+
+$$
+H H I=\sum_{i=1}^{\infty} s_{i}^{2}
+$$
+
+where:
+
+- $s_{i}=$ Market share of participant $i$ (stated as a whole number)
+
+Learning Module 7: Company Analysis: Forecasting
+$\%$ Variable cost $\approx \frac{\% \Delta(\text { Cost of revenue }+ \text { Operating expense })}{\% \Delta \text { Revenue }}$
+$\%$ Fixed cost $\approx 1-\%$ Variable cost
+$\begin{gathered}\text { Number of units sold } \\ \text { post-cannibalization }\end{gathered}=\begin{gathered}\text { Number of units sold } \\ \text { pre-cannibalization }\end{gathered}-\begin{gathered}\text { Expected } \\ \text { cannibalization }\end{gathered}$
+$\underset{\text { cannibalization }}{\text { Expected }}=\underset{\text { pre-cannibalization }}{\text { Number of units sold }} \times \underset{\text { factor }}{\text { Cannibalization }}$
+
+## Learning Module 8: Equity Valuation: Concepts and Basic Tools
+
+## Dividend Discount Model (DDM)
+
+$$
+V_{0}=\sum_{t=1}^{n} \frac{D_{t}}{(1+r)^{t}}+\frac{P_{n}}{(1+r)^{n}}
+$$
+
+where:
+
+- $V_{0}=$ Intrinsic value of a share at $t=0$
+- $D_{t}=$ expected dividend in year $t$
+- $r=$ required rate of return on stock
+- $P_{n}=$ expected price per share at $t=n$ (terminal value)
+
+## Free-cash-flow-to-equity (FCFE) Valuation Model
+
+$$
+V_{0}=\sum_{t=1}^{\infty} \frac{F C F E_{t}}{(1+r)^{t}}
+$$
+
+where:
+
+- $F C F E=C F O-F C I n v+N e t B o r r o w i n g$
+- FCInv $=$ Fixed capital investment
+- Net Borrowing $=$ Borrowings minus repayments
+Value of preferred stock (non-callable, non-convertible, perpetual)
+
+$$
+V_{0}=\frac{D_{0}}{r}
+$$
+
+Value of preferred stock (non-callable, non-convertible, maturity at time $n$ )
+
+$$
+V_{0}=\sum_{t=1}^{n} \frac{D_{t}}{(1+r)^{t}}+\frac{\text { Par value }}{(1+r)^{n}}
+$$
+
+## Gordon Growth Model
+
+$$
+P_{0}=\frac{D_{1}}{r-g}=\frac{D_{0}(1+g)}{r-g}
+$$
+
+where:
+
+- $D_{0}=$ Most recent annual dividend
+- $D_{1}=$ Expected dividend in the next period
+- $g$ = Constant growth rate
+- $r=$ Required return on equity
+
+## Sustainable growth rate
+
+$$
+g=b \times R O E
+$$
+
+where:
+
+- $b=$ earnings retention rate (= 1 - Dividend payout ratio)
+- $R O E=$ Return on equity
+
+## Video: https://youtu.be/MnfRRRhuGpA
+
+## Two-Stage Dividend Discount Model
+
+$$
+V_{0}=\sum_{t=1}^{n} \frac{D_{0}\left(1+g_{s}\right)^{t}}{(1+r)^{t}}+\frac{V_{n}}{(1+r)^{t}}
+$$
+
+where:
+
+- $g_{L}=$ Long-term stable growth rate
+- $g_{s}=$ Short-term growth rate
+- $V_{n}=\frac{D_{n+1}}{r-g_{L}}=\frac{D_{0}\left(1+g_{s}\right)^{t}\left(1+g_{L}\right)}{r-g_{L}}$
+
+## Justified forward P/E
+
+$$
+\frac{P_{0}}{E_{1}}=\frac{\text { Dividend payout ratio }}{r-g}
+$$
+
+## Enterprise Value
+
+$$
+E V=\begin{gathered}
+\text { Market value } \\
+\text { of equity }
+\end{gathered}+\begin{gathered}
+\text { Market value } \\
+\text { of preferred stock }
+\end{gathered}+\begin{gathered}
+\text { Market value } \\
+\text { of debt }
+\end{gathered}-\begin{gathered}
+\text { Cash and } \\
+\text { short term } \\
+\text { investments }
+\end{gathered}
+$$
+
+## Asset-based Valuation
+
+$$
+\begin{gathered}
+\text { Adjusted } \\
+\text { book value }
+\end{gathered}=\begin{gathered}
+\text { Market value } \\
+\text { of assets }
+\end{gathered}-\begin{gathered}
+\text { Market value } \\
+\text { of liabilities }
+\end{gathered}
+$$
+
+## VOLUME 6: FIXED INCOME
+
+Learning Module 1: Fixed-Income Instrument Features
+Current yield $=\frac{\text { Annual coupon }}{\text { Bond price }}$
+Bond price $=\frac{\text { Coupon }}{(1+r)^{1}}+\frac{\text { Coupon }}{(1+r)^{2}}+\cdots+\frac{\text { Coupon }+ \text { Face value }}{(1+r)^{n}}$
+
+where:
+
+- Coupon per period $=$ Coupon rate per period × Face value
+- $r=$ Yield to maturity per period
+- $n=$ Number of payments
+
+Floating-rate Note (FRN) coupon rate $=$ MRR + Spread
+
+## Learning Module 2: Fixed-Income Cash Flows and Types
+
+## Fully Amortizing Loan with Level Payment
+
+$$
+A=\frac{r \times \text { Principal }}{1-(1+r)^{-N}}
+$$
+
+where:
+
+- $A=$ Periodic payment
+- $r=$ Market interest rate per period
+- $N=$ Number of payment periods
+
+If the periodic payment is monthly:
+
+$$
+\begin{aligned}
+& \text { Monthly interest payment }=\text { Interest rate per month × Beginning principal of loan } \\
+& \text { Monthly principal payment }=\text { Total monthly payment }- \text { Monthly interest payment } \\
+& \text { Ending principal of loan }=\text { Beginning principal of loan }- \text { Monthly principal payment }
+\end{aligned}
+$$
+
+## Capital-Index Bond (e.g., TIPS)
+
+Inflation-adjusted principal $=$ Principal amount × $(1+$ Inflation adjustment $)$
+
+Coupon per period $=$ Coupon rate per period × Inflation-adjusted principal
+
+## Deferred Coupon Bond
+
+Video: https://youtu.be/erRbAUOGIyM
+
+## Convertible Bonds
+
+$\begin{gathered}\begin{array}{c}\text { Conversion } \\ \text { ratio }\end{array}=\frac{\text { Convertible bond par value }}{\text { Conversion price }} \\ \begin{array}{c}\text { Conversion } \\ \text { value }\end{array}\end{gathered}=\begin{gathered}\text { Conversion } \\ \text { ratio }\end{gathered} \times \begin{gathered}\text { Current share } \\ \text { price }\end{gathered}$
+
+## Zero-Coupon Bond
+
+Original issue discount = Bond par value - Issuance price
+
+## Learning Module 3: Fixed-Income Issuance and Trading
+
+No formula
+
+Learning Module 4: Fixed-Income Markets for Corporate Issuers
+
+## Repurchase Agreements
+
+$$
+\begin{gathered}
+\text { Repurchase price }=\text { Price of bond } \times\left[1+\text { Repo rate } \times \frac{\text { Repo term (in days) }}{\text { Number of days in a year }^{\text {Initial margin }}=\frac{\text { Security price }_{0}}{\text { Purchase price }_{0}}}\right. \\
+\text { Haircut }=\frac{\text { Security price }_{0}-\text { Purchase price }_{0}}{\text { Security price }_{0}}
+\end{gathered}
+$$
+
+$$
+\text { Variation margin }=\left(\text { Initial margin } \times \text { Purchase price }_{t}\right)-\text { Security price }_{t}
+$$
+
+## Learning Module 5: Fixed-Income Markets for Government Issuers
+
+## No formula.
+
+## Learning Module 6: Fixed-Income Bond Valuation: Prices and Yields
+
+$$
+P V=\frac{P M T_{1}}{(1+r)^{1}}+\frac{P M T_{2}}{(1+r)^{2}}+\cdots+\frac{P M T_{N}+F V_{N}}{(1+r)^{N}}
+$$
+
+where:
+
+- $P M T_{t}=$ Coupon that occurs in $t$ periods
+- $r=$ Market discount rate per period
+- $N=$ Number of periods to maturity
+- $F V=$ Face value of bond
+
+Full Price, Flat Price, and Accrued Interest
+(Video: https://youtu.be/I7G075JAu5w)
+
+$$
+\begin{aligned}
+\mathrm{PV}^{\text {Full }} & =\mathrm{PV}^{\text {Flat }}+\text { Accrued Interest } \\
+& =P V_{B O P} \times(1+r)^{t / T}
+\end{aligned}
+$$
+
+where:
+
+- Accrued Interest $=\frac{t}{T} \times P M T$
+- $t=$ number of days from the last coupon payment to the settlement date
+- $T=$ number of days in the coupon period
+- $t / T=$ fraction of the coupon period that has gone by since the last payment
+- $P V_{B O P}=$ price on the previous coupon date (before the settlement date)
+
+## Matrix Pricing
+
+$$
+\text { Interpolated yield }=\text { Yield }_{S}+\left(\frac{\text { Tenor }_{\text {Target }}-\text { Tenor }_{S}}{\text { Tenor }_{L}-\text { Tenor }_{S}}\right) \times\left(\text { Yield }_{L}-\text { Yield }_{S}\right)
+$$
+
+where:
+
+- Yield $_{S}=$ Yield of shorter-term bond
+- Yield $_{L}=$ Yield of longer-term bond
+- Tenor $_{S}$ = Tenor of shorter-term bond
+- Tenor $_{L}=$ Tenor of longer-term bond
+- Tenor $_{\text {Target }}=$ Tenor of the subject bond
+- Tenor $_{S}<$ Tenor $_{\text {Target }}<$ Tenor $_{L}$
+Required yield spread $=$ Bond YTM - Government Bond YTM (Similar maturity)
+
+## Learning Module 7: Yield and Yield Spread Measures for Fixed Rate Bonds
+
+## Periodicity Conversion
+
+$$
+\left(1+\frac{A P R_{m}}{m}\right)^{m}=\left(1+\frac{A P R_{n}}{n}\right)^{n}
+$$
+
+where:
+
+- $A P R_{m}=$ Annual percentage rate for $m$ periods per year
+- $A P R_{n}=$ Annual percentage rate for $n$ periods per year
+Current yield $_{t}=\frac{\text { Annual coupon }_{t}}{\text { Bond price }_{t}}$
+Government equivalent yield, $\quad$ Yield $_{\text {ACT } / \text { ACT }}=\frac{365}{360} \times$ Yield $_{30 / 360}$
+Simple yield $=\frac{\text { Coupon }+\left(\frac{F V-P V}{N}\right)}{\text { Flat price }}$
+
+## Callable Bonds
+
+$$
+P V=\frac{P M T}{(1+Y T C)^{1}}+\frac{P M T}{(1+Y T C)^{2}}+\cdots+\frac{P M T+\text { Call price }}{(1+Y T C)^{N}}
+$$
+
+where:
+
+- $P V=$ Price of the callable bond
+- PMT = Coupon payment per period
+- YTC = Yield to call per period
+- $N=$ Number of periods to when the bond can be called at the call price
+
+Option-adjusted price = Flat price of bond + Value of embedded call option
+
+Value of call option = Price of option-free bond - Price of callable bond
+
+G-spread $=$ Bond YTM - Interpolated sovereign bond YTM
+
+I-spread = Bond YTM - Swap rate
+
+## Z-Spread
+
+$$
+P V=\frac{P M T}{\left(1+z_{1}+Z\right)^{1}}+\frac{P M T}{\left(1+z_{2}+Z\right)^{2}}+\cdots+\frac{P M T+F V}{\left(1+z_{N}+Z\right)^{N}}
+$$
+
+where:
+
+- $Z=Z$-spread
+- $z_{N}=$ Spot rate for $N$ periods
+
+OAS $=$ Z-spread - Option value (in basis points per year)
+
+## Learning Module 8: Yield and Yield Spread Measures for Floating-Rate Instruments
+
+## Value of Floating Rate Note (FRN)
+
+$$
+P V=\frac{\left(\frac{M R R+Q M}{m}\right) \times F V}{\left(1+\frac{M R R+D M}{m}\right)^{1}}+\frac{\left(\frac{M R R+Q M}{m}\right) \times F V}{\left(1+\frac{M R R+D M}{m}\right)^{2}}+\cdots+\frac{\left(\frac{M R R+Q M}{m}\right) \times F V+F V}{\left(1+\frac{M R R+D M}{m}\right)^{n}}
+$$
+
+where:
+
+- $Q M=$ Quoted Margin
+- DM = Discount Margin
+- $M R R=$ Market reference rate
+- $m=$ Periodicity (i.e., number of payment periods per year)
+- FV = Face Value of FRN
+- $N=$ Number of evenly spaced periods to maturity
+
+## Video: https://youtu.be/zqYOtVLkYR8
+
+## Yield Measures for Money Market Instruments
+
+## Discount Rate Basis
+
+$$
+\begin{gathered}
+P V=F V \times\left(1-\frac{D a y s}{Y e a r} \times D R\right) \\
+D R=\frac{Y e a r}{D a y s} \times\left(\frac{F V-P V}{F V}\right)
+\end{gathered}
+$$
+
+where:
+
+- $P V=$ present value of money market instrument
+- $F V=$ future value paid at maturity
+- Days = number of days between settlement and maturity
+- Year $=$ number of days in the year
+- $D R=$ discount rate (stated as annual percentage rate)
+
+## Add-on Rate Basis
+
+$$
+\begin{gathered}
+P V=\frac{F V}{\left(1+\frac{\text { Days }}{\text { Year }} \times A O R\right)} \\
+A O R=\frac{Y e a r}{\text { Days }} \times\left(\frac{F V-P V}{P V}\right) \\
+\text { Bond equivalent yield }=\frac{365}{D a y s} \times\left(\frac{F V-P V}{P V}\right)
+\end{gathered}
+$$
+
+## Learning Module 9: The Term Structure of Interest Rates: Spot, Par, and Forward Curves
+
+## Calculation of Bond Price Using Spot Rates
+
+$$
+P V=\frac{P M T}{\left(1+Z_{1}\right)^{1}}+\frac{P M T}{\left(1+Z_{2}\right)^{2}}+\cdots+\frac{P M T+F V}{\left(1+Z_{N}\right)^{N}}
+$$
+
+where:
+
+- $P V=$ Price of bond
+- PMT = Bond coupon payment
+- $Z_{N}=$ Spot rate (or zero-coupon yield or zero rate) for period $N$
+- $F V=$ Face value of bond
+
+Given a Par Rate, $F V=P V$ and $P M T=\operatorname{Par}$ Rate (\%) $\times F V$
+
+$$
+100=\frac{P M T}{\left(1+Z_{1}\right)^{1}}+\frac{P M T}{\left(1+Z_{2}\right)^{2}}+\cdots+\frac{P M T+100}{\left(1+Z_{N}\right)^{N}}
+$$
+
+## Forward Rates, IFR
+
+$$
+\left(1+z_{A}\right)^{A} \times\left(1+I F R_{A, B-A}\right)^{B-A}=\left(1+z_{B}\right)^{B}
+$$
+
+where:
+
+- $I F R_{A, B-A}=$ Forward rate for ( $B-A$ ) periods that starts in period $A$
+![](https://cdn.mathpix.com/cropped/9638f452-bd96-45dc-b06c-679ec810cb6c-52.jpg?height=214&width=549&top_left_y=1667&top_left_x=683)
+
+## Learning Module 10: Interest Rate Risk and Return
+
+## Duration Gap
+
+Duration gap = Macaulay duration - Investment horizon
+
+## Macaulay Duration
+
+Macaulay duration $=\left(1-\frac{t}{T}\right)\left[\frac{\frac{P M T}{(1+r)^{1-t / T}}}{P V^{\text {Full }}}\right]+\left(2-\frac{t}{T}\right)\left[\frac{P M T}{\frac{(1+r)^{2-t / T}}{P V^{\text {Full }}}}\right]+\cdots$
+
+$$
++\left(N-\frac{t}{T}\right)\left[\frac{\frac{P M T+F V}{(1+r)^{N-t / T}}}{P V^{F u l l}}\right]
+$$
+
+Macaulay duration $=\left\{\frac{1+r}{r}-\frac{1+r+[N \times(c-r)]}{c \times\left[(1+r)^{N}-1\right]+r}\right\}-\frac{t}{T}$
+
+where:
+
+- $r=$ Yield per period
+- $c=$ Coupon rate per period
+- $N=$ Number of evenly spaced periods to maturity as of the beginning of the current period
+- $t=$ Number of days from the last coupon payment to the settlement date
+- $T=$ Number of days in the coupon period
+
+## Video: https://youtu.be/USgjcdCk7Fs
+
+## Learning Module 11: Yield-Based Bond Duration Measures and Properties
+
+## Modified Duration
+
+$$
+\text { Modified Duration }=\frac{\text { Macaulay Duration }}{1+r}
+$$
+
+## Approximate Modified Duration
+
+$$
+\begin{aligned}
+& \text { AnnModDur } \approx \frac{\left(P V_{-}\right)-\left(P V_{+}\right)}{2 \times(\Delta \text { Yield }) \times\left(P V_{0}\right)} \\
+& \% \Delta P V^{\text {Full }} \approx-\text { AnnModDur } \times \Delta \text { Yield }
+\end{aligned}
+$$
+
+## Money Duration
+
+Money duration $=$ AnnModDur × $P V^{\text {full }}$
+
+$$
+\Delta P V^{\text {Full }} \approx-\text { MoneyDur } \times \Delta \text { Yield }
+$$
+
+## Duration of Zero-Coupon Bond
+
+$$
+\begin{aligned}
+& \text { MacDur }=\text { Time to maturity } \\
+& \text { ModDur }=\frac{\text { Time to maturity }}{1+r}
+\end{aligned}
+$$
+
+## Duration of Perpetual Bond
+
+$$
+\begin{gathered}
+\text { MacDur }=\frac{1+r}{r} \\
+\text { ModDur }=\frac{1}{r}
+\end{gathered}
+$$
+
+## Duration of Floating-Rate Notes
+
+$$
+\text { MacDur }=\frac{T-t}{T}=\begin{gathered}
+\text { Fraction of period remaining until } \\
+\text { the next reset date }
+\end{gathered}
+$$
+
+## Learning Module 12: Yield-Based Bond Convexity and Portfolio Properties
+
+## Convexity
+
+$$
+\text { Convexity }=\sum_{t=1}^{N} \frac{t(t+1) \times \frac{P V_{t}}{P V^{F u l l}}}{(1+Y T M)^{2}}
+$$
+
+## Approximate Annualized Convexity
+
+$$
+\begin{gathered}
+\text { ApproxConv } \approx \frac{\left(P V_{-}\right)+\left(P V_{+}\right)-2\left(P V_{0}\right)}{(\Delta \text { Yield })^{2} \times\left(P V_{0}\right)} \\
+\% \Delta P V^{\text {Full }} \approx-\text { AnnModDur } \times \Delta \text { Yield }+\frac{1}{2} \times \text { AnnConvexity } \times(\Delta \text { Yield })^{2}
+\end{gathered}
+$$
+
+## Money Convexity
+
+$$
+\begin{gathered}
+\text { MoneyCon }=\text { AnnConvexity } \times P V^{\text {Full }} \\
+\Delta P V^{\text {Full }} \approx-(\text { MoneyDur } \times \Delta \text { Yield })+\left[\frac{1}{2} \times \text { MoneyCon } \times(\Delta \text { Yield })^{2}\right]
+\end{gathered}
+$$
+
+## Portfolio Duration and Convexity
+
+$$
+\begin{gathered}
+\text { Portfolio Modified Duration }=\sum_{i=1}^{N} w_{i} \times \text { ModDur }_{i} \\
+\text { Portfolio Convexity }=\sum_{i=1}^{N} w_{i} \times \text { Convexity }_{i}
+\end{gathered}
+$$
+
+where:
+
+- $w_{i}=$ Weight of bond $i$, measured in market value
+
+## Learning Module 13: Curve-Based and Empirical Fixed-Income Risk Measures
+
+## Effective Duration
+
+$$
+\text { EffDur }=\frac{\left(P V_{-}\right)-\left(P V_{+}\right)}{2 \times(\Delta \text { Curve }) \times P V_{0}}
+$$
+
+## Effective Convexity
+
+$$
+\begin{gathered}
+\text { EffCon }=\frac{\left(P V_{-}\right)+\left(P V_{+}\right)-2 \times P V_{0}}{(\Delta \text { Curve })^{2} \times P V_{0}} \\
+\% \Delta P V^{\text {Full }} \approx-\text { EffDur } \times \Delta \text { Curve }+\frac{1}{2} \times \text { EffCon } \times(\Delta \text { Curve })^{2}
+\end{gathered}
+$$
+
+## Key Rate Duration
+
+$$
+\begin{gathered}
+\operatorname{KeyRateDur}_{k}=-\frac{1}{P V} \times \frac{\Delta P V}{\Delta r_{k}} \\
+\% \Delta P V=-\operatorname{KeyRateDur}_{k} \times \Delta r_{k} \\
+\sum_{k=1}^{n} \operatorname{KeyRateDur}_{k}=\text { EffDur }
+\end{gathered}
+$$
+
+where:
+
+- $r_{k}=k$ th key rate
+
+## Learning Module 14: Credit Risk
+
+## Expected Loss
+
+$$
+\begin{gathered}
+E L=L G D \times P O D \\
+L G D=E E \times(1-R R)
+\end{gathered}
+$$
+
+where:
+
+- POD = Probability of default
+- LGD = Loss given default
+- $E E=$ Expected exposure
+- $R R=$ Recovery rate
+- $1-R R=$ Loss severity
+
+Credit spread $\approx$ POD × LGD
+
+## Decomposing Bond Yields
+
+Yield spread $=$ Bond YTM - Government bond YTM (Similar maturity)
+
+Liquidity spread $=$ Bond YTM $($ Bid $)-$ Bond YTM $($ Offer $)$
+
+Credit spread $=$ Yield spread - Liquidity spread
+
+## Price Impact Given a Change in Yield Spread
+
+$$
+\% \Delta P V^{\text {Full }} \approx-\text { AnnModDur } \times \Delta \text { Spread }+\frac{1}{2} \times \text { AnnConvexity } \times(\Delta \text { Spread })^{2}
+$$
+
+where:
+
+- AnnModDur $\approx \frac{\left(P V_{-}\right)-\left(P V_{+}\right)}{2 \times(\Delta \text { Yield }) \times\left(P V_{0}\right)}$
+- AnnConvexity $\approx \frac{\left(P V_{-}\right)+\left(P V_{+}\right)-2\left(P V_{0}\right)}{(\Delta \text { Yield })^{2} \times\left(P V_{0}\right)}$
+
+## Learning Module 15: Credit Analysis for Government Issuers
+
+No formula.
+
+Learning Module 16: Credit Analysis for Corporate Issuers
+
+$$
+\begin{gathered}
+\text { EBIT margin }=\frac{\text { Operating income }}{\text { Revenue }} \\
+\text { EBIT to interest expense }=\frac{\text { Operating income }}{\text { Interest expense }} \\
+\text { Debt to EBITDA }=\frac{\text { Debt }}{\text { EBITDA }} \\
+\text { RCF to net debt }=\frac{\text { Retained cash flow }}{\text { Debt - Cash and marketable securities }} \\
+\text { FFO to debt }=\frac{F F O}{\text { Debt }}
+\end{gathered}
+$$
+
+where:
+
+- FFO = Net income from continuing operations + Depreciation \& amortization
+
++ Deferred income taxes + Other non-cash items
+
+
+## Learning Module 17: Fixed-Income Securitization
+
+No formula.
+
+## Learning Module 18: Asset-Backed Security (ABS) Instrument and Market Features
+
+No formula.
+
+Learning Module 19: Mortgage-Backed Security (MBS) Instrument and Market Features
+
+## Loan-to-value (LTV) ratio
+
+$$
+L T V=\frac{\text { Loan amount }}{\text { House price }}
+$$
+
+## Debt-to-income (DTI) ratio
+
+$$
+D T I=\frac{\text { Monthly debt payment }}{\text { Monthly pre-tax gross income }}
+$$
+
+## Mortgage Pass-Through Securities
+
+$$
+\begin{aligned}
+W A C & =\sum_{i=1}^{N} c_{i}\left(\frac{C B_{i}}{C B}\right) \\
+W A M & =\sum_{i=1}^{N} M M_{i}\left(\frac{C B_{i}}{C B}\right)
+\end{aligned}
+$$
+
+where:
+
+- WAC = Weighted average coupon
+- $W A M=$ Weighted average maturity
+- $c_{i}=$ Coupon rate on mortgage $i$
+- $M M_{i}=$ Number of months to maturity for mortgage $i$
+- $N=$ Number of mortgages in MBS
+- $C B_{i}=$ Current balance on mortgage $i$
+- $C B=$ Total current balance of mortgages in MBS
+
+## Commercial Mortgage-Backed Securities (CMBS)
+
+## Debt Service Coverage Ratio (DSCR)
+
+$$
+\text { DSCR }=\frac{\text { Net operating income }}{\text { Debt service }}
+$$
+
+## Net Operating Income (NOI)
+
+NOI $=($ Rental income - Cash operating expenses $)-$ Replacement reserves
+
+## VOLUME 7: DERIVATIVES
+
+## Learning Module 1: Derivative Instrument and Derivatives Market Features
+
+No formula.
+
+## Learning Module 2: Forward Commitments and Contingent Claim Features and Instruments
+
+## Forward Contract
+
+$$
+\begin{gathered}
+\text { Buyer (Long) payoff }=S_{T}-F_{0}(T) \\
+\text { Seller (Short) payoff }=-\left[S_{T}-F_{0}(T)\right]
+\end{gathered}
+$$
+
+where:
+
+- $S_{T}=$ Spot price on contract's maturity
+- $F_{0}(T)=$ Forward price with maturity of $T$
+
+## Futures Contract
+
+For one futures contract:
+
+> Long Futures daily mark-to-market $=f_{t}(T)-f_{t-1}(T)$ Short Futures daily mark-to-market $=-\left[f_{t}(T)-f_{t-1}(T)\right]$
+
+where:
+
+- $f_{t}(T)=$ Closing price of futures contract on day $t$
+- $f_{t-1}(T)=$ Closing price of futures contract on day $t-1$
+$T=$ Maturity of futures contract
+
+If margin balance < maintenance margin:
+
+> Variation Margin $=$ Initial margin - Margin balance
+
+## Options Contract
+
+## LONG Call option
+
+Payoff or Value at expiration, $c_{T}=\max \left(0, S_{T}-X\right)$
+
+Profit at expiration, $\Pi=\max \left(0, S_{T}-X\right)-c_{0}$
+
+where:
+
+- $c_{0}=$ Call premium
+- $X=$ Exercise/Strike price
+$S_{T}=$ Spot price at expiration
+
+## SHORT Call option
+
+Payoff or Value at expiration, $c_{T}=-\max \left(0, S_{T}-X\right)$
+
+Profit at expiration, $\Pi=-\left[\max \left(0, S_{T}-X\right)-c_{0}\right]$
+
+## LONG Put option
+
+Payoff or Value at expiration, $p_{T}=\max \left(0, X-S_{T}\right)$
+
+Profit at expiration, $\Pi=\max \left(0, X-S_{T}\right)-p_{0}$
+
+## SHORT Put option
+
+Payoff or Value at expiration, $p_{T}=-\max \left(0, X-S_{T}\right)$
+
+Profit at expiration, $\Pi=-\left[\max \left(0, X-S_{T}\right)-p_{0}\right]$
+
+## Credit Default Swap (CDS)
+
+CDS MTM Change $=\triangle$ CDS Spread × CDS Notional × EffDur $_{\text {CDS }}$
+
+In a credit event, payment from CDS seller to CDS buyer $\approx L G D(\%) \times$ Notional
+
+## Learning Module 3: Derivative Benefits, Risks, and Issuer and Investor Uses
+
+No formula.
+
+## Learning Module 4: Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives
+
+If there are no underlying costs or benefits:
+
+$$
+\text { Forward price, } F_{0}(T)=S_{0}(1+r)^{T}
+$$
+
+If there are underlying costs or benefits in present value terms:
+
+$$
+\text { Forward price, } F_{0}(T)=\left[S_{0}-P V_{0}(\text { Income })+P V_{0}(\text { Cost })\right](1+r)^{T}
+$$
+
+where:
+
+- $S_{0}=$ Current spot price
+- $r=$ Risk-free rate
+- $T=$ Tenor of forward contract
+
+Under continuous compounding, $F_{0}(T)=S_{0} e^{r T}$
+Under continuous compounding, with income (i) and cost (c) expressed in \%:
+
+$$
+F_{0}(T)=S_{0} e^{(r+c-i) T}
+$$
+
+## Foreign Exchange Forward Contract
+
+$$
+F_{0, f / d}(T)=S_{0, f / d}(T) e^{\left(r_{f}-r_{d}\right) T}
+$$
+
+where:
+
+- $F_{0, f / d}=$ Forward exchange rate
+- $S_{0, f / d}=$ Spot exchange rate
+- $r_{f}=$ Continuously compounded risk-free rate (for price/quote currency)
+- $r_{d}=$ Continuously compounded risk-free rate (for base currency)
+- T = Maturity of forward contract
+
+## Learning Module 5: Pricing and Valuation of Forward Contracts and for an Underlying with Varying Maturities
+
+## Value of LONG Forward Prior to Expiration
+
+$$
+\begin{gathered}
+V_{0}(T)=0 \\
+V_{t}(T)=S_{t}-\frac{F_{0}(T)}{(1+r)^{T-t}}=S_{t}-F_{0}(T) \times(1+r)^{-(T-t)} \\
+V_{T}(T)=S_{0}-F_{0}(T)
+\end{gathered}
+$$
+
+If the asset incurs cost or generates income from time $t$ through maturity,
+
+$$
+V_{t}(T)=\left[S_{t}-P V_{t}(\text { Income })+P V_{t}(\text { Cost })\right]-F_{0}(T) \times(1+r)^{-(T-t)}
+$$
+
+For foreign exchange forward contract,
+
+$$
+V_{t}(T)=S_{t, f / d}-F_{0, f / d}(T) \times e^{-\left(r_{f}-r_{d}\right)(T-t)}
+$$
+
+## Value of SHORT Forward Prior to Expiration
+
+$$
+\begin{gathered}
+V_{0}(T)=0 \\
+V_{t}(T)=-\left[S_{t}-\frac{F_{0}(T)}{(1+r)^{T-t}}\right] \\
+V_{T}(T)=-\left[S_{0}-F_{0}(T)\right]
+\end{gathered}
+$$
+
+## Interest Rate Forward Contracts (Forward Rate Agreements (FRA))
+
+$$
+\left(1+z_{A}\right)^{A} \times\left(1+I F R_{A, B-A}\right)^{B-A}=\left(1+z_{B}\right)^{B}
+$$
+
+where:
+
+- $z_{A}=$ Spot rate for $A$ periods
+- $z_{B}=$ Spot rate for $B$ periods
+- $I F R_{A, B-A}=$ Implied forward rate for $(B-A)$ periods, starting in $A$ periods
+
+Payoff for a Long FRA $=\left(M R R_{B-A}-I F R_{A, B-A}\right) \times$ Notional principal × Period
+
+Payoff for a Short FRA $=-\left(M R R_{B-A}-I F R_{A, B-A}\right) \times$ Notional principal × Period
+
+## Learning Module 6: Pricing and Valuation of Futures Contracts
+
+If there are no underlying costs or benefits:
+
+$$
+\text { Futures price, } f_{0}(T)=S_{0}(1+r)^{T}
+$$
+
+If there are underlying costs or benefits in present value terms:
+
+$$
+f_{0}(T)=\left[S_{0}-P V_{0}(\text { Income })+P V_{0}(\text { Cost })\right](1+r)^{T}
+$$
+
+Under continuous compounding, $f_{0}(T)=S_{0} e^{r T}$
+
+Under continuous compounding, with income ( $i$ ) and cost ( $c$ ) expressed in \%:
+
+$$
+f_{0}(T)=S_{0} e^{(r+c-i) T}
+$$
+
+## Foreign Exchange Forward Contract
+
+$$
+f_{0, f / d}(T)=S_{0, f / d}(T) e^{\left(r_{f}-r_{d}\right) T}
+$$
+
+## Interest Rate Futures Contract
+
+$$
+f_{A, B-A}=100-\left(100 \times M R R_{A, B-A}\right)
+$$
+
+where:
+
+- $f_{A, B-A}=$ Futures price for a market reference rate for ( $B-A$ ) periods
+that begins in $A$ periods
+
+Futures contract basis point value, $B P V=$ Notional principal $\times 0.01 \% \times$ Period
+
+## Learning Module 7: Pricing and Valuation of Interest Rates and Other Swaps
+
+For a fixed-rate payer in an interest rate swap:
+
+$$
+\text { Periodic settlement value }=\left(M R R-s_{N}\right) \times \text { Swap Notional × Period }
+$$
+
+For a fixed-rate receiver in an interest rate swap:
+
+$$
+\text { Periodic settlement value }=\left(s_{N}-M R R\right) \times \text { Swap Notional × Period }
+$$
+
+where:
+
+- $s_{N}=$ Fixed swap rate
+- $M R R=$ Market reference rate
+
+## Calculating Par Swap Rate
+
+$$
+\sum_{i=1}^{N} \frac{I F R}{\left(1+z_{i}\right)^{i}}=\sum_{i=1}^{N} \frac{s_{N}}{\left(1+z_{i}\right)^{i}}
+$$
+
+where:
+
+- $I F R=$ Implied forward rates
+- $s_{N}=$ Fixed swap rate
+- $N=$ Tenor of swap contract
+
+## Valuation of Interest Rate Swap
+
+Value of a pay-fixed interest rate swap on a settlement date after inception
+$=\begin{gathered}\text { Current settlement } \\ \text { value }\end{gathered}+\Sigma($ Floating payments $)-\Sigma($ Fixed payments $)$
+
+Value of a receive-fixed interest rate swap on a settlement date after inception
+$=\begin{gathered}\text { Current settlement } \\ \text { value }\end{gathered}+\Sigma($ Fixed payments $)-\Sigma($ Floating payments $)$
+
+## Learning Module 8: Pricing and Valuation of Options
+
+Option value = Exercise value + Time value
+
+At time $t$ (prior to option expiration):
+
+Call option exercise value $=\operatorname{Max}\left[0, S_{t}-X(1+r)^{-(T-t)}\right]$
+
+Call option time value $=c_{t}-\operatorname{Max}\left[0, S_{t}-X(1+r)^{-(T-t)}\right]$
+
+Put option exercise value $=\operatorname{Max}\left[0, X(1+r)^{-(T-t)}-S_{t}\right]$
+
+Put option time value $=p_{t}-\operatorname{Max}\left[0, X(1+r)^{-(T-t)}-S_{t}\right]$
+
+$$
+\begin{aligned}
+& \text { Lower bound of call option value }=\operatorname{Max}\left[0, S_{t}-X(1+r)^{-(T-t)}\right] \\
+& \text { Upper bound of call option value }=S_{t} \\
+& \text { Lower bound of put option value }=\operatorname{Max}\left[0, X(1+r)^{-(T-t)}-S_{t}\right] \\
+& \text { Upper bound of put option value }=X
+\end{aligned}
+$$
+
+where:
+
+- $S_{t}=$ Spot price at time $t$
+- $X=$ Exercise price (or strike price)
+- $T=$ Maturity of option
+- $r=$ Risk-free rate
+
+## Learning Module 9: Option Replication Using Put-Call Parity
+
+## Put-Call Parity
+
+$$
+S_{0}+p_{0}=c_{0}+X(1+r)^{-T}
+$$
+
+## Put-Call Forward Parity
+
+$$
+F_{0}(T)(1+r)^{-T}+p_{0}=c_{0}+X(1+r)^{-T}
+$$
+
+## Value of the Firm
+
+$$
+V_{0}=c_{0}+P V(\text { Debt })-p_{0}
+$$
+
+Value of debt $=P V($ Debt $)-p_{0}$
+Value of equity $=c_{0}$
+
+## Learning Module 10: Valuing a Derivative Using a One-Period Binomial Model
+
+Risk-neutral probability of a price increase in underlying
+
+$$
+\pi=\frac{1+r-R^{d}}{R^{u}-R^{d}}
+$$
+
+where:
+
+- $R^{u}=U p$ factor $=\frac{S_{1}^{u}}{S_{0}}>1$
+- $R^{d}=$ Down factor $=\frac{S_{1}^{d}}{S_{0}}<1$
+- $S_{0}=$ Current asset price
+- $S_{1}^{u}=$ One-period asset price when price moves up
+- $S_{1}^{d}=$ One-period asset price when price moves down
+
+## Video: https://youtu.be/ymUIKgz-rAw
+
+## Hedge ratio
+
+$$
+h^{*}=\frac{c_{1}^{u}-c_{1}^{d}}{S_{1}^{u}-S_{1}^{d}}
+$$
+
+where:
+
+- $c_{1}^{u}=\max \left(0, S_{1}^{u}-X\right)$
+- $c_{1}^{d}=\max \left(0, S_{1}^{d}-X\right)$
+
+Riskless portfolio with a Call: $\boldsymbol{h}$ of the underlying, $\boldsymbol{S}$, and short call position, $\boldsymbol{c}$
+$V_{0}=h S_{0}-c_{0}$
+$V_{1}^{u}=h S_{1}^{u}-c_{1}^{u}$
+$V_{1}^{d}=h S_{1}^{d}-c_{1}^{d}$
+
+## Riskless portfolio with a Put: $\boldsymbol{h}$ of the underlying, $\boldsymbol{S}$, and long put position, $\boldsymbol{p}$
+
+$V_{0}=h S_{0}+p_{0}$
+$V_{1}^{u}=h S_{1}^{u}+p_{1}^{u}$
+$V_{1}^{d}=h S_{1}^{d}+p_{1}^{d}$
+
+Value of a one-period call option
+
+$$
+c_{0}=\frac{\pi c_{1}^{u}+(1-\pi) c_{1}^{d}}{1+r}
+$$
+
+Value of a one-period put option
+
+$$
+p_{0}=\frac{\pi p_{1}^{u}+(1-\pi) p_{1}^{d}}{1+r}
+$$
+
+where:
+
+- $p_{1}^{u}=\max \left(0, X-S_{1}^{u}\right)$
+- $p_{1}^{d}=\max \left(0, X-S_{1}^{d}\right)$
+Video: https://youtu.be/bXEC-78y AU
+
+Learning Module 1: Alternative Investment Features, Methods, and Structures
+
+## GP Compensation Structure
+
+Ignoring management fee; no catch-up clause
+
+$$
+r_{G P}=\max \left[0, p\left(r-r_{h}\right)\right]
+$$
+
+Ignoring management fee; with catch-up clause
+
+$$
+r_{G P}=\max \left[0, r_{c u}+p\left(r-r_{h}-r_{c u}\right)\right]
+$$
+
+where:
+
+- $r_{G P}=\mathrm{GP}^{\prime}$ s rate of return
+- $p=$ Performance fee as a percentage of total return
+- $r=$ Single-period rate of return
+- $r_{h}=$ Hard hurdle rate
+- $r_{c u}=$ Catch-up clause
+
+## Learning Module 2: Alternative Investment Performance and Returns
+
+## Multiple on Invested Capital
+
+$$
+M O I C=\frac{\text { Realized value of investment }+ \text { Unrealized value of investment }}{\text { Total amount of invested capital }}
+$$
+
+## Leveraged Portfolio Return
+
+$$
+r_{L}=r+\frac{V_{b}}{V_{c}}\left(r-r_{b}\right)
+$$
+
+where:
+
+- $r=$ Periodic rate of return on invested funds
+- $r_{b}=$ Periodic cost of borrowing
+- $V_{b}=$ Amount of borrowed funds
+- $V_{c}=$ Amount of cash (investor's own capital)
+
+## Investor's Return Net of Fees
+
+$$
+\begin{gathered}
+r_{i}=\frac{P_{1}-P_{0}-R_{G P}}{P_{0}} \\
+R_{G P}=\left(P_{1} \times r_{m}\right)+\max \left[0,\left(P_{1}-P_{0}\right) \times p\right]
+\end{gathered}
+$$
+
+where:
+
+- $P_{0}=$ Beginning-of-period asset value
+- $P_{1}=$ End-of-period asset value
+- $p=\mathrm{GP}$ performance fee
+- $R_{G P}=\mathrm{GP}^{\prime}$ s return in current terms
+- $r_{m}=$ GP's management fees as a percentage of assets under management
+
+## Calculating Hedge Fund Fees and Returns
+
+Management Fee Based on Beginning Market Value
+
+$$
+\underset{\text { Fee }}{\text { Management }}=\underset{\text { Fee }}{\%}=\stackrel{\text { Management }}{\text { Beginning Market }}
+$$
+
+Management Fee Based on Ending Market Value
+
+$$
+\underset{\text { Fee }}{\text { Management }}=\underset{\text { Fee }}{\% \text { Management }} \times \stackrel{\text { Ending Market }}{\text { Value }}
+$$
+
+Incentive Fee Calculated Independent of Management Fee
+
+$$
+\begin{gathered}
+\text { Incentive } \\
+\text { Fee }
+\end{gathered}=\begin{gathered}
+\text { \%Incentive } \\
+\text { Fee }
+\end{gathered} \times \text { Gain }
+$$
+
+Incentive Fee Calculated Net of Management Fee
+
+$$
+\begin{gathered}
+\text { Incentive } \\
+\text { Fee }
+\end{gathered}=\begin{gathered}
+\% \text { Incentive } \\
+\text { Fee }
+\end{gathered} \times(\text { Gain }- \text { Management Fee })
+$$
+
+Incentive Fee with Hard Hurdle (Independent of Management Fee)
+
+$$
+\begin{gathered}
+\text { Incentive } \\
+\text { Fee }
+\end{gathered}=\begin{gathered}
+\% \text { Incentive } \\
+\text { Fee }
+\end{gathered} \times(\text { Gain }- \text { Hurdle })
+$$
+
+Incentive Fee with Hard Hurdle (Net of Management Fee)
+
+$$
+\begin{gathered}
+\begin{array}{c}
+\text { Incentive } \\
+\text { Fee }
+\end{array}=\begin{array}{c}
+\% \text { Incentive } \\
+\text { Fee }
+\end{array} \times(\text { Gain }- \text { Management Fee }- \text { Hurdle }) \\
+\text { Hurdle }=\text { Hurdle Rate } \text { × } \text { Beginning market value }
+\end{gathered}
+$$
+
+Note: 1) No incentive is paid if hedge fund incurs loss for the year.
+2) Gain may be subject to high watermark.
+
+[^0]
+## Learning Module 3: Investments in Private Capital: Equity and Debt
+
+No formula.
+
+## Learning Module 4: Real Estate and Infrastructure
+
+## Loan-to-Value (LTV) Ratio
+
+$$
+L T V=\frac{\text { Mortgage liability }}{\text { Portfolio value }}
+$$
+
+Required reduction in mortgage liability = Mortgage liability - Required mortgage liability
+
+## Learning Module 5: Natural Resources
+
+No formula.
+
+## Learning Module 6: Hedge Funds
+
+No formula.
+
+## Learning Module 7: Introduction to Digital Assets
+
+No formula.
+
+## VOLUME 9: PORTFOLIO MANAGEMENT
+
+## Learning Module 1: Portfolio Risk and Return: Part I
+
+## Expected Return on Asset
+
+$$
+1+E(R)=\left(1+r_{r F}\right) \times[1+E(\pi)] \times[1+E(R P)]
+$$
+
+where:
+
+- $r_{r F}=$ Real risk-free rate
+- $E(\pi)=$ Expected inflation
+- $E(R P)=$ Expected risk premium for the asset
+
+## Utility on Investment
+
+$$
+U=E(R)-\frac{1}{2} A \sigma^{2}
+$$
+
+where:
+
+- $U=$ Utility of investment
+- $E(R)=$ Expected return of investment
+- $A=$ Risk aversion coefficient
+- $\sigma^{2}=$ Variance of investment (Note: Substitute $\sigma$ in decimals)
+
+## Capital Allocation Line (CAL)
+
+For a portfolio of risky assets (Weight: $w_{i}$ ) and risk-free asset:
+
+$$
+E\left(R_{p}\right)=R_{f}+\left[\frac{E\left(R_{i}\right)-R_{f}}{\sigma_{i}}\right] \sigma_{p}
+$$
+
+where:
+
+- $R_{f}=$ Rate of return on risk-free asset
+- $E\left(R_{i}\right)=$ Expected return of risky asset
+- $E\left(R_{p}\right)=$ Expected return of portfolio
+- $\sigma_{i}=$ Standard deviation of risky asset's returns
+- $\sigma_{p}=$ Standard deviation of portfolio's returns $=w_{i} \times \sigma_{i}$
+- $\frac{E\left(R_{i}\right)-R_{f}}{\sigma_{i}}=$ Market price of risk
+
+## Two-asset portfolio
+
+Portfolio expected return, $E\left(R_{p}\right)=w_{1} R_{1}+w_{2} R_{2}$
+
+Portfolio variance, $\sigma_{p}^{2}=w_{1}^{2} \sigma_{1}^{2}+w_{2}^{2} \sigma_{2}^{2}+2 w_{1} w_{2} \operatorname{Cov}\left(R_{1}, R_{2}\right)$
+
+Portfolio standard deviation, $\sigma_{p}=\sqrt{w_{1}^{2} \sigma_{1}^{2}+w_{2}^{2} \sigma_{2}^{2}+2 w_{1} w_{2} \operatorname{Cov}\left(R_{1}, R_{2}\right)}$
+
+Note: 1) $\operatorname{Cov}\left(R_{1}, R_{2}\right)=\rho_{12} \sigma_{1} \sigma_{2}$
+2) $n$ securities requires $n$ variances and $\frac{n(n-1)}{2}$ covariances
+
+Video: https://youtu.be/IUwulZ9ONCO
+
+## Foreign Asset
+
+Return of a foreign asset in domestic currency
+
+$$
+R_{D}=\left(1+R_{l c}\right) \times\left(1+R_{F X}\right)-1
+$$
+
+Standard deviation of return of a foreign asset in domestic currency
+
+$$
+\sigma_{D}=\sqrt{\sigma_{l c}^{2}+\sigma_{F X}^{2}+2 \times \rho \times \sigma_{l c} \times \sigma_{F X}}
+$$
+
+where:
+
+- $R_{l c}=$ Return of foreign asset (in local currency)
+- $R_{F X}=$ Change in exchange rate (FX rate quoted as domestic currency/foreign currency)
+- $\sigma_{l c}=$ Standard deviation of foreign asset's returns
+- $\sigma_{F X}=$ Standard deviation of the exchange rate (DC/FC)
+- $\rho=$ Correlation coefficient between returns on foreign asset and exchange rate
+
+## Portfolio of Many Risky Assets
+
+$$
+\sigma_{p}^{2}=\frac{\bar{\sigma}^{2}}{N}+\frac{N-1}{N} \overline{\operatorname{Cov}}=\frac{\bar{\sigma}^{2}}{N}+\frac{N-1}{N} \rho \bar{\sigma}^{2}
+$$
+
+where:
+
+- $N=$ Number of assets in portfolio
+- $\bar{\sigma}^{2}=$ Average variance
+- $\overline{\operatorname{Cov}}=$ Average covariance
+
+## Learning Module 2: Portfolio Risk and Return: Part II
+
+## Capital Market Line (CML)
+
+$E\left(R_{p}\right)=w_{f} R_{f}+\left(1-w_{f}\right) E\left(R_{m}\right)=R_{f}+\left[\frac{E\left(R_{m}\right)-R_{f}}{\sigma_{m}}\right] \sigma_{p}$
+$\sigma_{p}=\left(1-w_{f}\right) \sigma_{m}$
+
+## Return-Generating Models
+
+$$
+E\left(R_{i}\right)-R_{f}=\beta_{i 1}\left[E\left(R_{m}\right)-R_{f}\right]+\sum_{j=2}^{k} \beta_{i j} E\left(F_{j}\right)
+$$
+
+where:
+
+- $E\left(R_{i}\right)-R_{f}=$ Expected excess return on asset $i$
+- $k=$ Number of factors
+$\beta_{i j}=$ Factor weights (also called factor loadings)
+$E\left(R_{m}\right)=$ Expected return on market
+
+## The Single-Index Model
+
+$$
+E\left(R_{i}\right)-R_{f}=\left(\frac{\sigma_{i}}{\sigma_{m}}\right)\left[E\left(R_{m}\right)-R_{f}\right]
+$$
+
+where:
+
+- $\frac{\sigma_{i}}{\sigma_{m}}=$ Factor loading (or factor weight)
+
+## Capital Asset Pricing Model
+
+$$
+E\left(R_{i}\right)=R_{f}+\beta_{i}\left[E\left(R_{m}\right)-R_{f}\right]
+$$
+
+## The Market Model
+
+$$
+R_{i}=\alpha_{i}+\beta_{i} R_{m}+e_{i}
+$$
+
+## Beta of security $\boldsymbol{i}$
+
+$\beta_{i}=\frac{\operatorname{Cov}\left(R_{i}, R_{m}\right)}{\sigma_{m}^{2}}=\frac{\rho_{i, m} \sigma_{i}}{\sigma_{m}}$
+Portfolio beta, $\beta_{p}=\sum_{i=1}^{n} w_{i} \beta_{i}$
+Total variance $=$ Systematic variance + Nonsystematic variance
+
+$$
+\sigma_{i}^{2}=\beta_{i}^{2} \sigma_{m}^{2}+\sigma_{e}^{2}
+$$
+
+Total risk, $\sigma_{i}=\sqrt{\beta_{i}^{2} \sigma_{m}^{2}+\sigma_{e}^{2}}$
+
+## Arbitrage Pricing Theory (APT) Model
+
+$$
+E\left(R_{P}\right)=R_{F}+\lambda_{1} \beta_{P, 1}+\cdots+\lambda_{K} \beta_{P, K}
+$$
+
+where:
+
+- $E\left(R_{P}\right)=$ Expected return on portfolio
+- $R_{F}=$ Risk-free rate
+- $\lambda_{j}=$ Risk premium for factor $j$
+- $\beta_{P, 1}=$ Sensitivity of the portfolio to factor $j$
+- $K=$ Number of risk factors
+
+## Fama-French Model
+
+$$
+E\left(R_{i t}\right)=\alpha_{i}+\beta_{i, M K T} M K T_{t}+\beta_{i, S M B} S M B_{t}+\beta_{i, H M L} H M L_{t}
+$$
+
+## Carhart Model
+
+$$
+E\left(R_{i t}\right)=\alpha_{i}+\beta_{i, M K T} M K T_{t}+\beta_{i, S M B} S M B_{t}+\beta_{i, H M L} H M L_{t}+\beta_{i, U M D} U M D_{t}
+$$
+
+where:
+
+- $E\left(R_{i}\right)=$ Return on an asset in excess of the one-month T-bill return
+- $M K T=$ Excess return on the market portfolio
+- $S M B=$ Difference in returns between small-capitalization stocks and large-capitalization stocks (Size)
+- $H M L=$ Difference in returns between high-book-to-market stocks and low-book-to-market stocks (Value versus growth)
+- $U M D=$ Difference in returns of the prior year's winners versus losers (Momentum)
+
+## Portfolio Performance Appraisal Measures
+
+Sharpe ratio $=\frac{R_{p}-R_{f}}{\sigma_{p}}$
+
+Treynor ratio $=\frac{R_{p}-R_{f}}{\beta_{p}}$
+$M^{2}=\left(R_{p}-R_{f}\right) \frac{\sigma_{m}}{\sigma_{p}}+R_{f}=$ Sharpe ratio $\times \sigma_{m}+R_{f}$
+$M^{2}$ alpha $=M^{2}-R_{m}$
+
+Jensen's Alpha, $\quad \alpha_{p}=R_{p}-\left[R_{f}+\beta_{p}\left(R_{m}-R_{f}\right)\right]$
+
+Security Characteristic Line (SCL)
+
+$$
+R_{i}-R_{f}=\alpha_{i}+\beta_{i}\left(R_{m}-R_{f}\right)
+$$
+
+Information ratio $=\frac{\alpha_{i}}{\sigma_{e i}}$
+
+## Learning Module 3: Portfolio Management: An Overview
+
+No formula.
+
+Learning Module 4: Basics of Portfolio Planning and Construction
+
+No formula.
+
+Learning Module 5: The Behavioral Biases of Individuals
+
+No formula.
+
+Learning Module 6: Introduction to Risk Management
+
+No formula.
+
+
+[^0]:    Video: https://youtu.be/ODKmCgsAAdc
+

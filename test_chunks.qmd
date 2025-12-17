@@ -3,12 +3,6 @@ title: "Untitled"
 format: html
 ---
 
-yml code 
-
-      - name: Install Pandoc
-        uses: pandoc/actions/setup@v1
-
-
 ```{python}
 # Create formulas_tag.qmd with tags moved outside formulas
 import re
@@ -54,9 +48,104 @@ print("PowerPoint 'formulas.pptx' created and copied to _site/")
 ```
 
 
-testing 
+
+# pdf codes
+
+
+## quant folder 
 
 ```{python}
+# Convert to PDF, simple as pdf keeps tag
+import subprocess
+
+output_path = "../output/quant"
+file_path = "quant/a_rates_returns.qmd"
+
+# Render to PDF using Quarto
+subprocess.run([
+    'quarto', 'render', file_path, 
+    '--to', 'pdf',
+    '--output-dir', output_path
+])
+
+print("PDF document '{output_path}' created.")
+```
+
+
+
+
+```{python}
+# Convert to PDF, simple as pdf keeps tag
+import subprocess
+
+output_path = "../output/quant"
+file_path = "quant/b_time_value.qmd"
+
+# Render to PDF using Quarto
+subprocess.run([
+    'quarto', 'render', file_path, 
+    '--to', 'pdf',
+    '--output-dir', output_path
+])
+
+print("PDF document '{output_path}' created.")
+```
+
+
+
+```{python}
+# Convert to PDF, simple as pdf keeps tag
+import subprocess
+
+output_path = "../output/quant"
+file_path = "quant/c_stat_measures.qmd"
+
+# Render to PDF using Quarto
+subprocess.run([
+    'quarto', 'render', file_path, 
+    '--to', 'pdf',
+    '--output-dir', output_path
+])
+
+print("PDF document '{output_path}' created.")
+```
+
+
+## cheat folder
+
+
+
+```{python}
+# Convert to PDF, simple as pdf keeps tag
+import subprocess
+
+output_path = "../output/cheat"
+file_path = "cheat/cheat_sheet__lv_one.qmd"
+
+# Render to PDF using Quarto
+subprocess.run([
+    'quarto', 'render', file_path, 
+    '--to', 'pdf',
+    '--output-dir', output_path
+])
+
+print("PDF document '{output_path}' created.")
+```
+
+
+
+
+
+
+
+
+
+
+# older code 
+
+
+```{python}
+#| eval: false
 # Convert to PDF, simple as pdf keeps tag
 import subprocess
 
@@ -65,8 +154,5 @@ subprocess.run(['quarto', 'render', 'formulas.qmd', '--to', 'pdf'])
 
 print("PDF document 'formulas.pdf' created.")
 ```
-
-
-
 
 
