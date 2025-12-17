@@ -294,6 +294,18 @@ window.Quarto = {
     <a class="nav-link" href="./formulas.html"> 
 <span class="menu-text">Formulas</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-quantitative-methods" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Quantitative Methods</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-quantitative-methods">    
+        <li class="dropdown-header">Overview</li>
+        <li>
+    <a class="dropdown-item" href="./quant/time_value.html">
+ <span class="dropdown-text">Time Value of Money</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -340,8 +352,12 @@ window.Quarto = {
 <hr>
 <p>If dividend cash flows continue to grow at <span class="math inline">\(g\)</span> indefinitely, then we may rewrite Equation 10 as follows:</p>
 <p><span class="math display">\[PV_t = \sum\nolimits_{i=1}^{\infty} \frac{D_t(1+g)^i}{(1+r)^i} \]</span> (13)</p>
-<p>Under the cash flow additivity principle, a risk-neutral investor would be indifferent between strategies 1 and 2 under the following condition:</p>
-<p><span class="math display">\[FV_2 = PV_0 \times (1+r_2)^2 = PV_0 \times (1+r_1)(1+F_{1,1}) \]</span> (25)</p>
+<p>The example in Exhibit 6 shows a company with an initial higher short-term dividend growth of <span class="math inline">\(g_s\)</span> for the first three years, followed by lower long-term growth <span class="math inline">\((g_l \text{, where }g_s &gt; g_l)\)</span> indefinitely thereafter. If we generalize the initial growth phase to <span class="math inline">\(n\)</span> periods followed by indefinite slower growth at <span class="math inline">\(g_l\)</span>, we obtain a modified version of Equation 14 as follows:</p>
+<p><span class="math display">\[PV_t = \sum\nolimits_{i=1}^{n} \frac{D_t(1+g_s)^i}{(1+r)^i} + \sum\nolimits_{j=n+1}^{\infty} \frac{D_{t+n}(1+g_l)^j}{(1+r)^j} \]</span> (15)</p>
+<p>Note that the second expression in Equation 15 involves constant growth starting in <span class="math inline">\(n\)</span> periods, for which we can substitute the geometric series simplification:</p>
+<p><span class="math display">\[PV_t = \sum\nolimits_{i=1}^{n} \frac{D_t(1+g_s)^i}{(1+r)^i} + \frac{E(S_{t+n})}{(1+r)^n} \]</span> (16)</p>
+<p>where the stock value of the stock in n periods <span class="math inline">\((E(S_{t+n})\)</span> is referred to as the terminal value) and is equal to the following:</p>
+<p><span class="math display">\[E(S_{t+n}) = \frac{D_{t+n+1}}{r-g_l} \]</span> (17)</p>
 
 
 
