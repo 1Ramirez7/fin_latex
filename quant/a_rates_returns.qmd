@@ -8,12 +8,6 @@ format:
     toc: False
 ---
 
-::: {.callout-note icon="false"}
-## Download pdf
-
-<a href="https://1ramirez7/fin_latex/output/quant/a_rates_returns.pdf" download="a_rates_returns.pdf"> a_rates_returns.pdf </a>
-:::
-
 
 # 3 RATES OF RETURN
 
