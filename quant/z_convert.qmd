@@ -1,0 +1,75 @@
+---
+title: "Converting to PDF, WORD, PPP"
+format:
+  html:
+    self-contained: true
+    css: styles.css
+    toc: False
+---
+
+
+# pdf codes
+
+
+## quant folder 
+
+```{python}
+# Convert to PDF, simple as pdf keeps tag
+import subprocess
+
+# Render to PDF using Quarto
+subprocess.run(['quarto', 'render', 'a_rates_returns.qmd', '--to', 'pdf'])
+
+print("PDF document 'a_rates_returns.pdf' created.")
+```
+
+
+
+```{python}
+# Convert to PDF, simple as pdf keeps tag
+import subprocess
+
+# Render to PDF using Quarto
+subprocess.run(['quarto', 'render', 'b_time_value.qmd', '--to', 'pdf'])
+
+print("PDF document 'b_time_value.pdf' created.")
+```
+
+
+
+
+```{python}
+# Convert to PDF, simple as pdf keeps tag
+import subprocess
+
+# Render to PDF using Quarto
+subprocess.run(['quarto', 'render', 'c_stat_measures.qmd', '--to', 'pdf'])
+
+print("PDF document 'c_stat_measures.pdf' created.")
+```
+
+
+
+
+
+
+# older code 
+
+
+```{python}
+#| eval: false
+# Convert to PDF, simple as pdf keeps tag
+import subprocess
+
+output_path = "output"  # Changed from "output/quant" to just "output"
+file_path = "quant/a_rates_returns.qmd"
+
+# Render to PDF using Quarto
+subprocess.run([
+    'quarto', 'render', file_path, 
+    '--to', 'pdf',
+    '--output-dir', output_path
+])
+
+print(f"PDF created at output/quant/a_rates_returns.pdf")
+```

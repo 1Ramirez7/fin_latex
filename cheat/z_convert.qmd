@@ -1,0 +1,24 @@
+---
+title: "Converting to PDF, WORD, PPP"
+format:
+  html:
+    self-contained: true
+    css: styles.css
+    toc: False
+---
+
+
+# pdf codes
+
+
+## cheat folder 
+
+```{python}
+# Convert to PDF, simple as pdf keeps tag
+import subprocess
+
+# Render to PDF using Quarto
+subprocess.run(['quarto', 'render', 'cheat_sheet_lv_one.qmd', '--to', 'pdf'])
+
+print("PDF document 'cheat_sheet_lv_one.pdf' created.")
+```

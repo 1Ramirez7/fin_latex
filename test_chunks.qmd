@@ -60,6 +60,7 @@ print("PowerPoint 'formulas.pptx' created and copied to _site/")
 ## quant folder 
 
 ```{python}
+#| eval: false
 # Convert to PDF, simple as pdf keeps tag
 import subprocess
 
@@ -79,6 +80,7 @@ print(f"PDF created at output/quant/a_rates_returns.pdf")
 
 
 ```{python}
+#| eval: false
 # Convert to PDF, simple as pdf keeps tag
 import subprocess
 
@@ -98,6 +100,7 @@ print("PDF document '{output_path}' created.")
 
 
 ```{python}
+#| eval: false
 # Convert to PDF, simple as pdf keeps tag
 import subprocess
 
@@ -120,6 +123,7 @@ print("PDF document '{output_path}' created.")
 
 
 ```{python}
+#| eval: false
 # Convert to PDF, simple as pdf keeps tag
 import subprocess
 

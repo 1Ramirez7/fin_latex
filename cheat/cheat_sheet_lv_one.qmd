@@ -8,6 +8,11 @@ format:
     toc: False
 ---
 
+::: {.callout-note icon="false"}
+## Download pdf
+
+<a href="https://github.com/1Ramirez7/fin_latex/cheat/cheat_sheet_lv_one.pdf" download="cheat_sheet_lv_one.pdf"> cheat_sheet_lv_one.pdf </a>
+:::
 
 
 ## CFA ${ }^{\text {® }}$ Program Level I
