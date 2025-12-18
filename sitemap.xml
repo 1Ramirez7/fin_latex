@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://1Ramirez7.github.io/fin_latex/formulas_tag.html</loc>
-    <lastmod>2025-12-18T00:18:19.306Z</lastmod>
-  </url>
-  <url>
-    <loc>https://1Ramirez7.github.io/fin_latex/cheat/cheat_sheet_lv_one.html</loc>
-    <lastmod>2025-12-18T00:16:50.397Z</lastmod>
-  </url>
-  <url>
-    <loc>https://1Ramirez7.github.io/fin_latex/quant/a_rates_returns.html</loc>
-    <lastmod>2025-12-18T00:16:50.400Z</lastmod>
+    <loc>https://1Ramirez7.github.io/fin_latex/test_chunks.html</loc>
+    <lastmod>2025-12-18T02:51:43.993Z</lastmod>
   </url>
   <url>
     <loc>https://1Ramirez7.github.io/fin_latex/quant/b_time_value.html</loc>
-    <lastmod>2025-12-18T00:16:50.400Z</lastmod>
+    <lastmod>2025-12-18T02:51:43.992Z</lastmod>
   </url>
   <url>
     <loc>https://1Ramirez7.github.io/fin_latex/index.html</loc>
-    <lastmod>2025-12-18T00:16:50.397Z</lastmod>
-  </url>
-  <url>
-    <loc>https://1Ramirez7.github.io/fin_latex/quant/c_stat_measures.html</loc>
-    <lastmod>2025-12-18T00:16:50.401Z</lastmod>
-  </url>
-  <url>
-    <loc>https://1Ramirez7.github.io/fin_latex/test_chunks.html</loc>
-    <lastmod>2025-12-18T00:16:50.401Z</lastmod>
+    <lastmod>2025-12-18T02:51:43.989Z</lastmod>
   </url>
   <url>
     <loc>https://1Ramirez7.github.io/fin_latex/formulas.html</loc>
-    <lastmod>2025-12-18T00:16:50.397Z</lastmod>
+    <lastmod>2025-12-18T02:51:43.989Z</lastmod>
+  </url>
+  <url>
+    <loc>https://1Ramirez7.github.io/fin_latex/cheat/cheat_sheet_lv_one.html</loc>
+    <lastmod>2025-12-18T02:51:43.988Z</lastmod>
+  </url>
+  <url>
+    <loc>https://1Ramirez7.github.io/fin_latex/formulas_tag.html</loc>
+    <lastmod>2025-12-18T02:53:23.563Z</lastmod>
+  </url>
+  <url>
+    <loc>https://1Ramirez7.github.io/fin_latex/quant/a_rates_returns.html</loc>
+    <lastmod>2025-12-18T02:51:43.992Z</lastmod>
+  </url>
+  <url>
+    <loc>https://1Ramirez7.github.io/fin_latex/quant/c_stat_measures.html</loc>
+    <lastmod>2025-12-18T02:51:43.992Z</lastmod>
   </url>
 </urlset>
