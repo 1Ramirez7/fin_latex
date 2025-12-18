@@ -23,3 +23,7 @@ files/
 
 
 **/*.quarto_ipynb
+
+output/site_libs/
+
+output/index.html

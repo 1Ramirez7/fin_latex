@@ -1,6 +1,13 @@
 project: 
   type: website
+  resources:
+  - output/
+  render:
+    - "*.qmd"
+    - "!output/"
 
+# code to render site in vs-code
+# quarto render
 
 website:
   title: "Latex Finance Formulas"
