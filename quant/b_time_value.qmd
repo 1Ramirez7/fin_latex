@@ -11,7 +11,7 @@ format:
 ::: {.callout-note icon="false"}
 ## Download pdf
 
-<a href="https://1ramirez7/fin_latex/output/quant/b_time_value.pdf" download="b_time_value.pdf"> b_time_value.pdf </a>
+<a href="https://github.com/1Ramirez7/fin_latex/output/quant/b_time_value.pdf" download="b_time_value.pdf"> b_time_value.pdf </a>
 :::
 
 
